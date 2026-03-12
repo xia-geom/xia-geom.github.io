@@ -24,18 +24,10 @@ I am a PhD candidate in mathematics at [UQAM](https://uqam.ca), under the superv
 
 Before my PhD, I completed a B.Sc. in Mathematics at Sichuan University (China), an M.Sc. at [IMPA](https://impa.br) (Brazil) under Reimundo Heluani, and a Master 2 at Université Paris-Saclay (France).
 
-**Email:** xiao.xia@courrier.uqam.ca · **Office:** UQAM, Montréal, Canada
+**Email:** xiao.xia AT courrier DOT uqam DOT ca · **Office:** UQAM, Montréal, Canada
 
 ### Research interests
 
 Kähler metrics, complex geometry, geometric analysis, Riemannian geometry, PDEs, algebraic geometry, non-archimedean geometry.
 
 My dissertation studies the **convexity of the weighted twisted K-energy**, with applications to the Yau–Tian–Donaldson conjecture and metrics with prescribed singularities.
-
----
-
-Je suis doctorant en mathématiques à l'[UQAM](https://uqam.ca), sous la direction de [Julien Keller](https://www.cirget.uqam.ca/keller/) (UQAM) et [Hugues Auvray](https://www.imo.universite-paris-saclay.fr/~auvray/) (Université Paris-Saclay). Mes recherches portent sur la géométrie kählérienne, l'analyse géométrique et les équations aux dérivées partielles.
-
-Avant mon doctorat, j'ai obtenu une licence à l'Université du Sichuan (Chine), un master à l'[IMPA](https://impa.br) (Brésil) sous la direction de Reimundo Heluani, et un Master 2 à l'Université Paris-Saclay (France).
-
-*[Version française complète](/fr/)*
