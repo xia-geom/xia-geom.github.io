@@ -45,32 +45,6 @@ cv:
           - "Thèse : Théorème de représentation de Skorokhod (Probabilités)"
           - "Directeur : Zechun Hu (Université du Sichuan)"
 
-    Financements:
-      - title: Bourse Sophie Germain
-        awarder: Consulat général de France à Québec
-        date: 2025
-        summary: "2000 euros"
-
-      - title: Bourse Sophie Germain
-        awarder: Consulat général de France à Québec
-        date: 2023
-        summary: "1500 euros"
-
-      - title: Programme Visibilité Scientifique Junior
-        awarder: Fondation Jacques Hadamard
-        date: 2022-03
-        summary: "2300 euros, Mars–Avril 2022"
-
-      - title: Bourse scolaire au mérite de maîtrise Sophie Germain
-        awarder: Fondation Jacques Hadamard
-        date: 2020-09
-        summary: "11800 euros, Sept 2020–Août 2021"
-
-      - title: Bourse de maîtrise
-        awarder: IMPA
-        date: 2017-09
-        summary: "43000 Reais, Sep 2017–Août 2019"
-
     Enseignement:
       - company: UQAM
         position: "Chargé de cours — MAT0339 Mathématiques générales"
@@ -191,7 +165,7 @@ cv:
         summary: "Courant"
 
       - name: Anglais
-        summary: "Courant (TOEFL 103)"
+        summary: "Courant"
 
       - name: Portugais
         summary: "Courant"
