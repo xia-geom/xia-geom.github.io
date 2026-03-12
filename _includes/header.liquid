@@ -126,15 +126,29 @@
             </li>
           {% endif %}
           <!-- Language toggle -->
-          <li class="nav-item">
-            {% if page.url contains '/fr' %}
-              {% assign en_url = page.url | remove_first: '/fr' %}
-              {% if en_url == '' or en_url == '/' %}{% assign en_url = '/' %}{% endif %}
-              <a class="nav-link" href="{{ en_url | relative_url }}" title="English version">🇬🇧 English</a>
-            {% else %}
-              {% assign fr_url = '/fr' | append: page.url %}
-              <a class="nav-link" href="{{ fr_url | relative_url }}" title="Version française">🇫🇷 Français</a>
+          {% assign lang_map_en = '/ /publications/ /teaching/ /cv/' | split: ' ' %}
+          {% assign lang_map_fr = '/fr/ /fr/research/ /fr/teaching/ /fr/cv/' | split: ' ' %}
+          {% assign toggle_href = '/' %}
+          {% assign toggle_label = '🇫🇷 Français' %}
+          {% assign toggle_title = 'Version française' %}
+          {% for en_path in lang_map_en %}
+            {% if page.url == en_path %}
+              {% assign idx = forloop.index0 %}
+              {% assign toggle_href = lang_map_fr[idx] %}
+              {% assign toggle_label = '🇫🇷 Français' %}
+              {% assign toggle_title = 'Version française' %}
             {% endif %}
+          {% endfor %}
+          {% for fr_path in lang_map_fr %}
+            {% if page.url == fr_path %}
+              {% assign idx = forloop.index0 %}
+              {% assign toggle_href = lang_map_en[idx] %}
+              {% assign toggle_label = '🇬🇧 English' %}
+              {% assign toggle_title = 'English version' %}
+            {% endif %}
+          {% endfor %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ toggle_href | relative_url }}" title="{{ toggle_title }}">{{ toggle_label }}</a>
           </li>
 
           {% if site.enable_darkmode %}

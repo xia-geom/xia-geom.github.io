@@ -5,7 +5,7 @@ cv:
   summary: "Doctorant en mathématiques à l'UQAM, spécialisé en géométrie kählérienne, géométrie complexe et analyse géométrique."
 
   sections:
-    Éducation:
+    Education:
       - institution: Université du Québec à Montréal (UQAM)
         location: Montréal, Canada
         area: Mathématiques
@@ -42,7 +42,12 @@ cv:
         highlights:
           - "Thèse : *Théorème de représentation de Skorokhod* (Probabilités) — sous la direction de Zechun Hu"
 
-    Enseignement:
+    Experience:
+      - company: UQAM
+        position: "Chargé de cours — MAT0339 Mathématiques générales"
+        start_date: 2026-01
+        end_date: 2026-04
+
       - company: UQAM
         position: "Chargé de cours — MAT0339 Mathématiques générales"
         start_date: 2025-09
@@ -88,54 +93,6 @@ cv:
         position: "Démonstrateur — MAT2150 Analyse II"
         start_date: 2022-09
         end_date: 2022-12
-
-    Conférences:
-      - title: "Complex Geometry, Complex Analysis and Dynamics"
-        date: 2025-07
-        awarder: CIRM, Marseille
-        summary: "7–11 juillet 2025"
-
-      - title: "Real Algebraic Geometry and Birational Geometry"
-        date: 2025-06
-        awarder: CIRM, Marseille
-        summary: "2–6 juin 2025"
-
-      - title: "Semestre thématique en analyse géométrique"
-        date: 2024
-        awarder: CRM, Montréal
-
-      - title: "Séminaire Tianyuan sur les variables complexes"
-        date: 2024
-        awarder: Kunming, Chine
-        summary: "Exposé : *Géométrie non archimédienne et conjecture de Yau–Tian–Donaldson*"
-
-      - title: "École d'été sur les métriques de Kähler spéciales"
-        date: 2023
-        awarder: Le Croisic, France
-
-      - title: "Paris–London / Jours de géométries"
-        date: 2023
-        awarder: France & Angleterre
-
-      - title: "Frontières géométriques et arithmétiques des orbifolds II"
-        date: 2023
-        awarder: Strasbourg, France
-
-      - title: "32e Colloque Brésilien de Mathématiques"
-        date: 2019
-        awarder: IMPA, Rio de Janeiro
-
-      - title: "1re Réunion Brésil-France en Mathématiques"
-        date: 2019
-        awarder: IMPA, Rio de Janeiro
-
-      - title: "4e École Latino-Américaine de Géométrie Algébrique"
-        date: 2019
-        awarder: Chili
-
-      - title: "Congrès International des Mathématiciens (ICM)"
-        date: 2018
-        awarder: Rio de Janeiro, Brésil
 
     Skills:
       - name: Mathématiques
