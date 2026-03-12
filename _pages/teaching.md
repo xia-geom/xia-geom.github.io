@@ -2,14 +2,32 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Course materials, schedules, and resources for classes taught.
+description:
 nav: true
 nav_order: 3
-calendar: true
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+All courses at [Université du Québec à Montréal (UQAM)](https://uqam.ca).
 
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
+---
 
-{% include courses.liquid %}
+### Chargé de cours (Instructor of record)
+
+| Semester | Course |
+|----------|--------|
+| Autumn 2025 | MAT0339 — Mathématiques générales *(with complete lecture notes written in LaTeX)* |
+| Autumn 2023 | MAT0341 — Calcul, Dérivée et Intégration I |
+
+---
+
+### Démonstrateur (Teaching assistant)
+
+| Semester | Course |
+|----------|--------|
+| Autumn 2025 | MAT0343 — Calcul différentiel *(hors programme)* |
+| Winter 2025 | MAT0600 — Algèbre linéaire et géométrie vectorielle *(hors programme)* |
+| Autumn 2024 | MAT0341 — Calcul, Dérivée et Intégration I |
+| Winter 2024 | MAT0341 — Calcul, Dérivée et Intégration I |
+| Winter 2024 | MAT0339 — Mathématiques générales |
+| Winter 2023 | MAT2160 — Analyse Complexe I |
+| Autumn 2022 | MAT2150 — Analyse II |
