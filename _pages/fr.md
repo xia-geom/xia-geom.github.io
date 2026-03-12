@@ -21,12 +21,8 @@ latest_posts:
   enabled: false
 ---
 
-*[🇬🇧 English version](/)*
-
----
-
 Je suis doctorant en mathématiques à l'[UQAM](https://uqam.ca), sous la direction de [Julien Keller](https://www.cirget.uqam.ca/keller/) (UQAM) et [Hugues Auvray](https://www.imo.universite-paris-saclay.fr/~auvray/) (Université Paris-Saclay). Ma thèse porte sur la convexité de l'énergie K-tordue pondérée, à la frontière de la géométrie kählérienne, de l'analyse géométrique et des équations aux dérivées partielles.
 
-**Courriel :** xiao.xia@courrier.uqam.ca · **Bureau :** UQAM, Montréal, Canada
+**Courriel :** xiao.xia AT courrier DOT uqam DOT ca · **Bureau :** UQAM, Montréal, Canada
 
 **Domaines de recherche :** Métriques de Kähler, géométrie complexe, analyse géométrique, géométrie riemannienne, EDP, géométrie algébrique, géométrie non-archimédienne.

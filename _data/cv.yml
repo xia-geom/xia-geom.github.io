@@ -14,12 +14,11 @@ cv:
         end_date: Présent
         highlights:
           - "Directeurs : Julien Keller (UQAM) et Hugues Auvray (Université Paris-Saclay)"
-          - "Titre de thèse : Convexité de l'énergie K-tordue pondérée (en préparation)"
-          - "Domaines : Géométrie kählérienne, Géométrie complexe, Analyse géométrique, Géométrie Riemannienne, EDP, Géométrie algébrique, Géométrie non-archimédienne"
+          - "Thèse : *Convexité de l'énergie K-tordue pondérée* (en préparation)"
 
       - institution: Université Paris-Saclay
         location: Orsay, France
-        area: Algèbre Analyse Géométrie (AAG)
+        area: Algèbre, Analyse, Géométrie (Master 2 AAG)
         studyType: Master 2
         start_date: 2020-09
         end_date: 2021-08
@@ -32,8 +31,7 @@ cv:
         end_date: 2020-02
         highlights:
           - "Directeur : Reimundo Heluani"
-          - "Thèse : Invariance des plurigenres (Géométrie complexe)"
-          - "Directeur de thèse : Henri Guenancia (CNRS, Université Paul Sabatier, Toulouse)"
+          - "Thèse : *Invariance des plurigenres* — sous la direction de Henri Guenancia (CNRS, Université Paul Sabatier, Toulouse)"
 
       - institution: Université du Sichuan (SCU)
         location: Chengdu, Chine
@@ -42,23 +40,22 @@ cv:
         start_date: 2013-09
         end_date: 2017-06
         highlights:
-          - "Thèse : Théorème de représentation de Skorokhod (Probabilités)"
-          - "Directeur : Zechun Hu (Université du Sichuan)"
+          - "Thèse : *Théorème de représentation de Skorokhod* (Probabilités) — sous la direction de Zechun Hu"
 
     Enseignement:
       - company: UQAM
         position: "Chargé de cours — MAT0339 Mathématiques générales"
         start_date: 2025-09
         end_date: 2025-12
-        summary: "Avec notes complètes écrites en LaTeX"
+        summary: "Notes de cours complètes rédigées en LaTeX"
 
       - company: UQAM
-        position: "Démonstrateur — MAT0343 Calcul différentiel (hors programme)"
+        position: "Démonstrateur — MAT0343 Calcul différentiel *(hors programme)*"
         start_date: 2025-09
         end_date: 2025-12
 
       - company: UQAM
-        position: "Démonstrateur — MAT0600 Algèbre linéaire et géométrie vectorielle (hors programme)"
+        position: "Démonstrateur — MAT0600 Algèbre linéaire et géométrie vectorielle *(hors programme)*"
         start_date: 2025-01
         end_date: 2025-04
 
@@ -93,60 +90,52 @@ cv:
         end_date: 2022-12
 
     Conférences:
-      - title: "Real algebraic geometry and Birational geometry"
-        date: 2025-06
-        awarder: CIRM
-        summary: "Géométrie algébrique réelle et géométrie birationnelle, 2–6 juin 2025"
-
       - title: "Complex Geometry, Complex Analysis and Dynamics"
         date: 2025-07
-        awarder: CIRM
-        summary: "Géométrie Complexe, Analyse et Dynamique Complexe, 7–11 juillet 2025"
+        awarder: CIRM, Marseille
+        summary: "7–11 juillet 2025"
+
+      - title: "Real Algebraic Geometry and Birational Geometry"
+        date: 2025-06
+        awarder: CIRM, Marseille
+        summary: "2–6 juin 2025"
 
       - title: "Semestre thématique en analyse géométrique"
         date: 2024
         awarder: CRM, Montréal
-        summary: ""
 
       - title: "Séminaire Tianyuan sur les variables complexes"
         date: 2024
         awarder: Kunming, Chine
-        summary: "Exposé : Géométrie non archimédienne et Conjecture Yau-Tian-Donaldson"
+        summary: "Exposé : *Géométrie non archimédienne et conjecture de Yau–Tian–Donaldson*"
 
       - title: "École d'été sur les métriques de Kähler spéciales"
         date: 2023
         awarder: Le Croisic, France
-        summary: ""
 
-      - title: "Paris–London / jours de géométries"
+      - title: "Paris–London / Jours de géométries"
         date: 2023
-        awarder: France et Angleterre
-        summary: ""
+        awarder: France & Angleterre
 
       - title: "Frontières géométriques et arithmétiques des orbifolds II"
         date: 2023
         awarder: Strasbourg, France
-        summary: ""
 
       - title: "32e Colloque Brésilien de Mathématiques"
         date: 2019
-        awarder: IMPA, Brésil
-        summary: ""
+        awarder: IMPA, Rio de Janeiro
 
       - title: "1re Réunion Brésil-France en Mathématiques"
         date: 2019
-        awarder: IMPA, Brésil
-        summary: ""
+        awarder: IMPA, Rio de Janeiro
 
       - title: "4e École Latino-Américaine de Géométrie Algébrique"
         date: 2019
         awarder: Chili
-        summary: ""
 
       - title: "Congrès International des Mathématiciens (ICM)"
         date: 2018
         awarder: Rio de Janeiro, Brésil
-        summary: ""
 
     Skills:
       - name: Mathématiques

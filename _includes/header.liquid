@@ -125,6 +125,15 @@
               </button>
             </li>
           {% endif %}
+          <!-- Language toggle -->
+          <li class="nav-item">
+            {% if page.permalink == '/fr/' %}
+              <a class="nav-link" href="{{ '/' | relative_url }}" title="English version">🇬🇧 English</a>
+            {% else %}
+              <a class="nav-link" href="{{ '/fr/' | relative_url }}" title="Version française">🇫🇷 Français</a>
+            {% endif %}
+          </li>
+
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">
