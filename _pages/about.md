@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Doctorant en Mathématiques · <a href="https://uqam.ca">Université du Québec à Montréal (UQAM)</a>
+subtitle: PhD candidate in Mathematics · <a href="https://uqam.ca">Université du Québec à Montréal (UQAM)</a>
 
 profile:
   align: right
@@ -20,16 +20,22 @@ latest_posts:
   enabled: false
 ---
 
-Je suis doctorant en mathématiques à l'[Université du Québec à Montréal (UQAM)](https://uqam.ca), sous la direction de [Julien Keller](https://www.cirget.uqam.ca/keller/) (UQAM) et [Hugues Auvray](https://www.imo.universite-paris-saclay.fr/~auvray/) (Université Paris-Saclay).
+I am a PhD candidate in mathematics at [UQAM](https://uqam.ca), under the supervision of [Julien Keller](https://www.cirget.uqam.ca/keller/) (UQAM) and [Hugues Auvray](https://www.imo.universite-paris-saclay.fr/~auvray/) (Université Paris-Saclay). My research lies at the intersection of Kähler geometry, complex analysis, and geometric PDEs.
 
-**Adresse :** CIRGET, Université du Québec à Montréal, Montréal, Canada
+Before my PhD, I completed a B.Sc. in Mathematics at Sichuan University (China), an M.Sc. at [IMPA](https://impa.br) (Brazil) under Reimundo Heluani, and a Master 2 at Université Paris-Saclay (France).
 
-**Courriel :** xiao.xia@courrier.uqam.ca
+**Email:** xiao.xia@courrier.uqam.ca · **Office:** UQAM, Montréal, Canada
+
+### Research interests
+
+Kähler metrics, complex geometry, geometric analysis, Riemannian geometry, PDEs, algebraic geometry, non-archimedean geometry.
+
+My dissertation studies the **convexity of the weighted twisted K-energy**, with applications to the Yau–Tian–Donaldson conjecture and metrics with prescribed singularities.
 
 ---
 
-### Intérêts de recherche
+Je suis doctorant en mathématiques à l'[UQAM](https://uqam.ca), sous la direction de [Julien Keller](https://www.cirget.uqam.ca/keller/) (UQAM) et [Hugues Auvray](https://www.imo.universite-paris-saclay.fr/~auvray/) (Université Paris-Saclay). Mes recherches portent sur la géométrie kählérienne, l'analyse géométrique et les équations aux dérivées partielles.
 
-Géométrie kählérienne, géométrie complexe, analyse géométrique, géométrie riemannienne, équations aux dérivées partielles, géométrie algébrique, géométrie non-archimédienne.
+Avant mon doctorat, j'ai obtenu une licence à l'Université du Sichuan (Chine), un master à l'[IMPA](https://impa.br) (Brésil) sous la direction de Reimundo Heluani, et un Master 2 à l'Université Paris-Saclay (France).
 
-Ma thèse porte sur la *convexité de l'énergie K-tordue pondérée*, avec pour thématiques : l'optimisation variationnelle, les métriques à singularités prescrites, et la convexité de fonctionnelles d'énergie.
+*[Version française complète](/fr/)*

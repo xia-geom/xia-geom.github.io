@@ -149,9 +149,13 @@ cv:
         summary: ""
 
     Skills:
+      - name: Mathématiques
+        icon: fa-solid fa-square-root-variable
+        keywords: "Géométrie kählérienne, analyse convexe, EDP, géométrie algébrique, géométrie non-archimédienne"
+
       - name: Programmation & Outils
         icon: fa-solid fa-code
-        keywords: "Python (Manim), Git"
+        keywords: "Python (Manim, PyTorch), Git"
 
       - name: Rédaction Scientifique
         icon: fa-solid fa-pen
