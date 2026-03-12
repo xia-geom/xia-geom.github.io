@@ -23,8 +23,6 @@ latest_posts:
 
 Je suis doctorant en mathématiques à l'[UQAM](https://uqam.ca), sous la direction de [Julien Keller](https://www.cirget.uqam.ca/keller/) (UQAM) et [Hugues Auvray](https://www.imo.universite-paris-saclay.fr/~auvray/) (Université Paris-Saclay). Mes recherches se situent à l'intersection de la géométrie kählérienne, de l'analyse complexe et des EDP géométriques.
 
-Avant mon doctorat, j'ai obtenu une licence à l'Université du Sichuan (Chine), un master à l'[IMPA](https://impa.br) (Brésil) sous la direction de Reimundo Heluani, et un Master 2 à l'Université Paris-Saclay (France).
-
 **Courriel :** xiao.xia AT courrier DOT uqam DOT ca · **Bureau :** UQAM, Montréal, Canada
 
 ### Domaines de recherche

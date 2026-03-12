@@ -22,8 +22,6 @@ latest_posts:
 
 I am a PhD candidate in mathematics at [UQAM](https://uqam.ca), under the supervision of [Julien Keller](https://www.cirget.uqam.ca/keller/) (UQAM) and [Hugues Auvray](https://www.imo.universite-paris-saclay.fr/~auvray/) (Université Paris-Saclay). My research lies at the intersection of Kähler geometry, complex analysis, and geometric PDEs.
 
-Before my PhD, I completed a B.Sc. in Mathematics at Sichuan University (China), an M.Sc. at [IMPA](https://impa.br) (Brazil) under Reimundo Heluani, and a Master 2 at Université Paris-Saclay (France).
-
 **Email:** xiao.xia AT courrier DOT uqam DOT ca · **Office:** UQAM, Montréal, Canada
 
 ### Research interests
