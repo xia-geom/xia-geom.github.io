@@ -75,20 +75,6 @@ ninja.data = [{
           window.open("/assets/pdf/example_pdf.pdf", "_blank");
         },
       },{
-        id: 'social-email',
-        title: 'email',
-        section: 'Socials',
-        handler: () => {
-          window.open("mailto:%78%69%61%6F.%78%69%61@%63%6F%75%72%72%69%65%72.%75%71%61%6D.%63%61", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=", "_blank");
-        },
-      },{
         id: 'social-github',
         title: 'GitHub',
         section: 'Socials',
