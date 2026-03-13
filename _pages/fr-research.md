@@ -8,7 +8,7 @@ nav: false
 
 <!-- _pages/fr-research.md -->
 
-{% include bib_search.liquid %}
+<!-- {% include bib_search.liquid %} -->
 
 <div class="publications">
 
