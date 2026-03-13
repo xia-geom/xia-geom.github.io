@@ -11,24 +11,24 @@ All courses at [Université du Québec à Montréal (UQAM)](https://uqam.ca).
 
 ---
 
-### Chargé de cours (Instructor of record)
+### Instructor
 
 | Semester | Course |
 |----------|--------|
-| Winter 2026 | MAT0339 — Mathématiques générales |
-| Autumn 2025 | MAT0339 — Mathématiques générales *(with complete lecture notes written in LaTeX)* |
-| Autumn 2023 | MAT0341 — Calcul, Dérivée et Intégration I |
+| Winter 2026 | MAT0339 — General Mathematics |
+| Autumn 2025 | MAT0339 — General Mathematics *(with complete lecture notes written in LaTeX)* |
+| Autumn 2023 | MAT0341 — Calculus I |
 
 ---
 
-### Démonstrateur (Teaching assistant)
+### Teaching Assistant
 
 | Semester | Course |
 |----------|--------|
-| Autumn 2025 | MAT0343 — Calcul différentiel *(hors programme)* |
-| Winter 2025 | MAT0600 — Algèbre linéaire et géométrie vectorielle *(hors programme)* |
-| Autumn 2024 | MAT0341 — Calcul, Dérivée et Intégration I |
-| Winter 2024 | MAT0341 — Calcul, Dérivée et Intégration I |
-| Winter 2024 | MAT0339 — Mathématiques générales |
-| Winter 2023 | MAT2160 — Analyse Complexe I |
-| Autumn 2022 | MAT2150 — Analyse II |
+| Autumn 2025 | MAT0343 — Differential Calculus *(out-of-program)* |
+| Winter 2025 | MAT0600 — Linear Algebra and Vector Geometry *(out-of-program)* |
+| Autumn 2024 | MAT0341 — Calculus I |
+| Winter 2024 | MAT0341 — Calculus I |
+| Winter 2024 | MAT0339 — General Mathematics |
+| Winter 2023 | MAT2160 — Complex Analysis I |
+| Autumn 2022 | MAT2150 — Analysis II |
