@@ -6,7 +6,7 @@ subtitle: PhD candidate in Mathematics · <a href="https://uqam.ca">Université 
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image:
   image_circular: false
   more_info:
 
