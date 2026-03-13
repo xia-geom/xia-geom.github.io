@@ -52,11 +52,15 @@ cv:
 
       - name: Programmation & Outils
         icon: fa-solid fa-code
-        keywords: "Python (Manim, PyTorch), Git"
+        keywords: "Python (NumPy, Manim (animation mathématique)), Git"
 
       - name: Rédaction Scientifique
         icon: fa-solid fa-pen
         keywords: "LaTeX (avancé), Beamer"
+
+      - name: Algorithmique
+        icon: fa-solid fa-diagram-project
+        keywords: "programmation dynamique"
 
     Languages:
       - name: Chinois (sichuanais)
