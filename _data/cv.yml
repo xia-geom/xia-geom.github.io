@@ -23,7 +23,7 @@ cv:
         start_date: 2020-09
         end_date: 2021-08
         highlights:
-          - "Mémoire: *Invariance des plurigenres* — under the supervision of Henri Guenancia (CNRS, Université Paul Sabatier, Toulouse)"
+          - "Mémoire: *Invariance des plurigenres* — advised by Henri Guenancia (CNRS, Université Paul Sabatier, Toulouse)"
 
       - institution: Instituto Nacional de Matemática Pura e Aplicada (IMPA)
         location: Rio de Janeiro, Brazil
@@ -39,11 +39,59 @@ cv:
         start_date: 2013-09
         end_date: 2017-06
         highlights:
-          - "Dissertation: *Skorokhod Representation Theorem* (Probability) — under the supervision of Zechun Hu"
+          - "Dissertation: *Skorokhod Representation Theorem* (Probability) — advised by Zechun Hu"
 
     Experience:
-      - position: "See Teaching page"
-        url: /teaching/
+      - company: UQAM
+        position: "Instructor of Record — MAT0339 Mathématiques générales"
+        start_date: 2026-01
+        end_date: 2026-04
+
+      - company: UQAM
+        position: "Instructor of Record — MAT0339 Mathématiques générales"
+        start_date: 2025-09
+        end_date: 2025-12
+        summary: "Complete lecture notes written in LaTeX"
+
+      - company: UQAM
+        position: "Teaching Assistant — MAT0343 Calcul différentiel *(out-of-program)*"
+        start_date: 2025-09
+        end_date: 2025-12
+
+      - company: UQAM
+        position: "Teaching Assistant — MAT0600 Algèbre linéaire et géométrie vectorielle *(out-of-program)*"
+        start_date: 2025-01
+        end_date: 2025-04
+
+      - company: UQAM
+        position: "Teaching Assistant — MAT0341 Calcul, Dérivée et Intégration I"
+        start_date: 2024-09
+        end_date: 2024-12
+
+      - company: UQAM
+        position: "Teaching Assistant — MAT0341 Calcul, Dérivée et Intégration I"
+        start_date: 2024-01
+        end_date: 2024-04
+
+      - company: UQAM
+        position: "Teaching Assistant — MAT0339 Mathématiques générales"
+        start_date: 2024-01
+        end_date: 2024-04
+
+      - company: UQAM
+        position: "Instructor of Record — MAT0341 Calcul, Dérivée et Intégration I"
+        start_date: 2023-09
+        end_date: 2023-12
+
+      - company: UQAM
+        position: "Teaching Assistant — MAT2160 Analyse Complexe I"
+        start_date: 2023-01
+        end_date: 2023-04
+
+      - company: UQAM
+        position: "Teaching Assistant — MAT2150 Analyse II"
+        start_date: 2022-09
+        end_date: 2022-12
 
     Skills:
       - name: Mathematics
@@ -59,10 +107,10 @@ cv:
         keywords: "LaTeX (advanced), Beamer"
 
     Languages:
-      - name: Sichuanese
+      - name: Chinese (Sichuanese)
         summary: "Native"
 
-      - name: Mandarin Chinese
+      - name: Chinese (Mandarin)
         summary: "Fluent"
 
       - name: English
