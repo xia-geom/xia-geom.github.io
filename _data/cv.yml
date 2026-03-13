@@ -100,11 +100,15 @@ cv:
 
       - name: Programming & Tools
         icon: fa-solid fa-code
-        keywords: "Python (Manim, PyTorch), Git"
+        keywords: "Python (NumPy, Manim (mathematical animation)), Git"
 
       - name: Scientific Writing
         icon: fa-solid fa-pen
         keywords: "LaTeX (advanced), Beamer"
+
+      - name: Algorithms
+        icon: fa-solid fa-diagram-project
+        keywords: "dynamic programming"
 
     Languages:
       - name: Chinese (Sichuanese)
