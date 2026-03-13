@@ -1,124 +1,75 @@
 cv:
   name: Xia Xiao
-  label: Doctorant en Mathématiques
+  label: PhD Candidate in Mathematics
   email: xiao.xia@courrier.uqam.ca
-  summary: "Doctorant en mathématiques à l'UQAM, spécialisé en géométrie kählérienne, géométrie complexe et analyse géométrique."
+  summary: "PhD candidate in mathematics at UQAM, specializing in Kähler geometry, complex geometry, and geometric analysis."
 
   sections:
     Education:
       - institution: Université du Québec à Montréal (UQAM)
         location: Montréal, Canada
-        area: Mathématiques
-        studyType: Doctorat
+        area: Mathematics
+        studyType: PhD
         start_date: 2021-09
-        end_date: Présent
+        end_date: Present
         highlights:
-          - "Directeurs : Julien Keller (UQAM) et Hugues Auvray (Université Paris-Saclay)"
-          - "Thèse : *Convexité de l'énergie K-tordue pondérée* (en préparation)"
+          - "Advisors: Julien Keller (UQAM) and Hugues Auvray (Université Paris-Saclay)"
+          - "Dissertation: *Convexity of the Weighted Twisted K-Energy* (in preparation)"
 
       - institution: Université Paris-Saclay
         location: Orsay, France
-        area: Algèbre, Analyse, Géométrie (Master 2 AAG)
+        area: Algebra, Analysis, Geometry (Master 2 AAG)
         studyType: Master 2
         start_date: 2020-09
         end_date: 2021-08
+        highlights:
+          - "Mémoire: *Invariance des plurigenres* — under the supervision of Henri Guenancia (CNRS, Université Paul Sabatier, Toulouse)"
 
       - institution: Instituto Nacional de Matemática Pura e Aplicada (IMPA)
-        location: Rio de Janeiro, Brésil
-        area: Mathématiques
+        location: Rio de Janeiro, Brazil
+        area: Mathematics
         studyType: M.Sc.
         start_date: 2018-03
         end_date: 2020-02
-        highlights:
-          - "Directeur : Reimundo Heluani"
-          - "Thèse : *Invariance des plurigenres* — sous la direction de Henri Guenancia (CNRS, Université Paul Sabatier, Toulouse)"
 
-      - institution: Université du Sichuan (SCU)
-        location: Chengdu, Chine
-        area: Mathématiques
+      - institution: Sichuan University (SCU)
+        location: Chengdu, China
+        area: Mathematics
         studyType: B.Sc.
         start_date: 2013-09
         end_date: 2017-06
         highlights:
-          - "Thèse : *Théorème de représentation de Skorokhod* (Probabilités) — sous la direction de Zechun Hu"
+          - "Dissertation: *Skorokhod Representation Theorem* (Probability) — under the supervision of Zechun Hu"
 
     Experience:
-      - company: UQAM
-        position: "Chargé de cours — MAT0339 Mathématiques générales"
-        start_date: 2026-01
-        end_date: 2026-04
-
-      - company: UQAM
-        position: "Chargé de cours — MAT0339 Mathématiques générales"
-        start_date: 2025-09
-        end_date: 2025-12
-        summary: "Notes de cours complètes rédigées en LaTeX"
-
-      - company: UQAM
-        position: "Démonstrateur — MAT0343 Calcul différentiel *(hors programme)*"
-        start_date: 2025-09
-        end_date: 2025-12
-
-      - company: UQAM
-        position: "Démonstrateur — MAT0600 Algèbre linéaire et géométrie vectorielle *(hors programme)*"
-        start_date: 2025-01
-        end_date: 2025-04
-
-      - company: UQAM
-        position: "Démonstrateur — MAT0341 Calcul, Dérivée et Intégration I"
-        start_date: 2024-09
-        end_date: 2024-12
-
-      - company: UQAM
-        position: "Démonstrateur — MAT0341 Calcul, Dérivée et Intégration I"
-        start_date: 2024-01
-        end_date: 2024-04
-
-      - company: UQAM
-        position: "Démonstrateur — MAT0339 Mathématiques générales"
-        start_date: 2024-01
-        end_date: 2024-04
-
-      - company: UQAM
-        position: "Chargé de cours — MAT0341 Calcul, Dérivée et Intégration I"
-        start_date: 2023-09
-        end_date: 2023-12
-
-      - company: UQAM
-        position: "Démonstrateur — MAT2160 Analyse Complexe I"
-        start_date: 2023-01
-        end_date: 2023-04
-
-      - company: UQAM
-        position: "Démonstrateur — MAT2150 Analyse II"
-        start_date: 2022-09
-        end_date: 2022-12
+      - position: "See Teaching page"
+        url: /teaching/
 
     Skills:
-      - name: Mathématiques
+      - name: Mathematics
         icon: fa-solid fa-square-root-variable
-        keywords: "Géométrie kählérienne, analyse convexe, EDP, géométrie algébrique, géométrie non-archimédienne"
+        keywords: "Kähler geometry, convex analysis, PDE, algebraic geometry, non-Archimedean geometry"
 
-      - name: Programmation & Outils
+      - name: Programming & Tools
         icon: fa-solid fa-code
         keywords: "Python (Manim, PyTorch), Git"
 
-      - name: Rédaction Scientifique
+      - name: Scientific Writing
         icon: fa-solid fa-pen
-        keywords: "LaTeX (avancé), Beamer"
+        keywords: "LaTeX (advanced), Beamer"
 
     Languages:
-      - name: Chinois (sichuanais)
-        summary: "Langue maternelle"
+      - name: Sichuanese
+        summary: "Native"
 
-      - name: Chinois (mandarin)
-        summary: "Courant"
+      - name: Mandarin Chinese
+        summary: "Fluent"
 
-      - name: Anglais
-        summary: "Courant"
+      - name: English
+        summary: "Fluent"
 
-      - name: Portugais
-        summary: "Courant"
+      - name: Portuguese
+        summary: "Fluent"
 
-      - name: Français
-        summary: "Courant"
+      - name: French
+        summary: "Fluent"
