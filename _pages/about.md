@@ -24,6 +24,8 @@ I am a PhD candidate in mathematics at [UQAM](https://uqam.ca), under the superv
 
 **Email:** xiao.xia AT courrier DOT uqam DOT ca · **Office:** UQAM, Montréal, Canada
 
+Outside research, I enjoy long-distance cycling and hiking — I have cycled across Canada and walked the Camino in Spain and Portugal.
+
 ### Research interests
 
 Kähler metrics, complex geometry, geometric analysis, Riemannian geometry, PDEs, algebraic geometry, non-archimedean geometry.
