@@ -27,5 +27,3 @@ I am a PhD candidate in mathematics at [UQAM](https://uqam.ca), under the superv
 ### Research interests
 
 Kähler metrics, complex geometry, geometric analysis, Riemannian geometry, PDEs, algebraic geometry, non-archimedean geometry.
-
-My dissertation studies the **convexity of the weighted twisted K-energy**, with applications to the Yau–Tian–Donaldson conjecture and metrics with prescribed singularities.
