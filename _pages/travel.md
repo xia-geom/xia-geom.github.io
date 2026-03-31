@@ -85,11 +85,11 @@ These are a few photographs from journeys I've taken outside research — long w
     <div class="photo-caption">Barcelos, Portugal</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-portugal_t1_01.jpg" alt="Ourense, Galicia, Spain" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/camino-portugal_05.jpg" alt="Ourense, Galicia, Spain" zoomable=true loading="lazy" %}
     <div class="photo-caption">Ourense, Galicia</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-portugal_t1_02.jpg" alt="Chaves, Portugal" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/camino-portugal_06.jpg" alt="Chaves, Portugal" zoomable=true loading="lazy" %}
     <div class="photo-caption">Chaves, Portugal</div>
   </div>
 </div>
@@ -114,15 +114,11 @@ These are a few photographs from journeys I've taken outside research — long w
     <div class="photo-caption">León, Spain</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-spain_04.jpg" alt="León, Spain" zoomable=true loading="lazy" %}
-    <div class="photo-caption">León, Spain</div>
-  </div>
-  <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-spain_t1_01.jpg" alt="Zubiri, Navarra, Spain" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/camino-spain_04.jpg" alt="Zubiri, Navarra, Spain" zoomable=true loading="lazy" %}
     <div class="photo-caption">Zubiri, Navarra</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-spain_t1_02.jpg" alt="Logroño, La Rioja, Spain" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/camino-spain_05.jpg" alt="Logroño, La Rioja, Spain" zoomable=true loading="lazy" %}
     <div class="photo-caption">Logroño, La Rioja</div>
   </div>
 </div>
@@ -151,19 +147,19 @@ These are a few photographs from journeys I've taken outside research — long w
     <div class="photo-caption">Champex-Lac, Switzerland</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_t1_01.jpg" alt="Argentière, Chamonix Valley, France" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/mont-blanc_05.jpg" alt="Argentière, Chamonix Valley, France" zoomable=true loading="lazy" %}
     <div class="photo-caption">Argentière, Chamonix</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_t1_02.jpg" alt="Le Tour, Chamonix Valley, France" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/mont-blanc_06.jpg" alt="Le Tour, Chamonix Valley, France" zoomable=true loading="lazy" %}
     <div class="photo-caption">Le Tour, Chamonix</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_t1_03.jpg" alt="Chamonix, France" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/mont-blanc_07.jpg" alt="Chamonix, France" zoomable=true loading="lazy" %}
     <div class="photo-caption">Chamonix, France</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_t1_04.jpg" alt="Les Houches, Chamonix Valley, France" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/mont-blanc_08.jpg" alt="Les Houches, Chamonix Valley, France" zoomable=true loading="lazy" %}
     <div class="photo-caption">Les Houches, Chamonix</div>
   </div>
 </div>
@@ -176,19 +172,15 @@ These are a few photographs from journeys I've taken outside research — long w
 <p class="trip-meta">September 2021 · Haute Route & Vaud Alps</p>
 <div class="photo-grid">
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/swiss-alps_01.jpg" alt="Nyon, Lake Geneva" zoomable=true loading="lazy" %}
-    <div class="photo-caption">Nyon, Lake Geneva</div>
-  </div>
-  <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/swiss-alps_02.jpg" alt="Aigle, Vaud" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/swiss-alps_01.jpg" alt="Aigle, Vaud" zoomable=true loading="lazy" %}
     <div class="photo-caption">Aigle, Vaud</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/swiss-alps_03.jpg" alt="Château-d'Oex" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/swiss-alps_02.jpg" alt="Château-d'Oex" zoomable=true loading="lazy" %}
     <div class="photo-caption">Château-d'Oex</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/swiss-alps_04.jpg" alt="Nyon, Lake Geneva" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/swiss-alps_03.jpg" alt="Nyon, Lake Geneva" zoomable=true loading="lazy" %}
     <div class="photo-caption">Nyon, Lake Geneva</div>
   </div>
 </div>
@@ -217,19 +209,19 @@ These are a few photographs from journeys I've taken outside research — long w
     <div class="photo-caption">Winnipeg, Manitoba</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/cross-canada_t1_04.jpg" alt="Sault Ste. Marie, Ontario" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/cross-canada_05.jpg" alt="Sault Ste. Marie, Ontario" zoomable=true loading="lazy" %}
     <div class="photo-caption">Sault Ste. Marie, Ontario</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/cross-canada_t1_01.jpg" alt="Thunder Bay, Ontario" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/cross-canada_06.jpg" alt="Thunder Bay, Ontario" zoomable=true loading="lazy" %}
     <div class="photo-caption">Thunder Bay, Ontario</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/cross-canada_t1_02.jpg" alt="Lake Superior Shore, Ontario" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/cross-canada_07.jpg" alt="Lake Superior Shore, Ontario" zoomable=true loading="lazy" %}
     <div class="photo-caption">Lake Superior Shore</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/cross-canada_t1_03.jpg" alt="Calgary, Alberta" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/cross-canada_08.jpg" alt="Calgary, Alberta" zoomable=true loading="lazy" %}
     <div class="photo-caption">Calgary, Alberta</div>
   </div>
 </div>
