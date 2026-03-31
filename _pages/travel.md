@@ -66,7 +66,7 @@ These are a few photographs from journeys I've taken outside research — long w
 
 <div class="travel-section">
 <h2>🇵🇹 Camino de Santiago — Portugal</h2>
-<p class="trip-meta">November 2021 · Coastal and Central Portuguese Routes · ~600 km</p>
+<p class="trip-meta">October – November 2021 · Coastal and Central Portuguese Routes · ~600 km</p>
 <div class="photo-grid">
   <div class="photo-cell">
     {% include figure.liquid path="assets/img/travel/camino-portugal_01.jpg" alt="Ponte de Lima, Portugal" zoomable=true loading="lazy" %}
@@ -83,6 +83,14 @@ These are a few photographs from journeys I've taken outside research — long w
   <div class="photo-cell">
     {% include figure.liquid path="assets/img/travel/camino-portugal_04.jpg" alt="Barcelos, Portugal" zoomable=true loading="lazy" %}
     <div class="photo-caption">Barcelos, Portugal</div>
+  </div>
+  <div class="photo-cell">
+    {% include figure.liquid path="assets/img/travel/camino-portugal_t1_01.jpg" alt="Ourense, Galicia, Spain" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Ourense, Galicia</div>
+  </div>
+  <div class="photo-cell">
+    {% include figure.liquid path="assets/img/travel/camino-portugal_t1_02.jpg" alt="Chaves, Portugal" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Chaves, Portugal</div>
   </div>
 </div>
 </div>
@@ -109,6 +117,14 @@ These are a few photographs from journeys I've taken outside research — long w
     {% include figure.liquid path="assets/img/travel/camino-spain_04.jpg" alt="León, Spain" zoomable=true loading="lazy" %}
     <div class="photo-caption">León, Spain</div>
   </div>
+  <div class="photo-cell">
+    {% include figure.liquid path="assets/img/travel/camino-spain_t1_01.jpg" alt="Zubiri, Navarra, Spain" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Zubiri, Navarra</div>
+  </div>
+  <div class="photo-cell">
+    {% include figure.liquid path="assets/img/travel/camino-spain_t1_02.jpg" alt="Logroño, La Rioja, Spain" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Logroño, La Rioja</div>
+  </div>
 </div>
 </div>
 
@@ -124,7 +140,7 @@ These are a few photographs from journeys I've taken outside research — long w
   </div>
   <div class="photo-cell">
     {% include figure.liquid path="assets/img/travel/mont-blanc_02.jpg" alt="Col de Balme, France/Switzerland" zoomable=true loading="lazy" %}
-    <div class="photo-caption">Col de Balme, France / Switzerland</div>
+    <div class="photo-caption">Col de Balme</div>
   </div>
   <div class="photo-cell">
     {% include figure.liquid path="assets/img/travel/mont-blanc_03.jpg" alt="Champex-Lac, Switzerland" zoomable=true loading="lazy" %}
@@ -133,6 +149,22 @@ These are a few photographs from journeys I've taken outside research — long w
   <div class="photo-cell">
     {% include figure.liquid path="assets/img/travel/mont-blanc_04.jpg" alt="Champex-Lac, Switzerland" zoomable=true loading="lazy" %}
     <div class="photo-caption">Champex-Lac, Switzerland</div>
+  </div>
+  <div class="photo-cell">
+    {% include figure.liquid path="assets/img/travel/mont-blanc_t1_01.jpg" alt="Argentière, Chamonix Valley, France" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Argentière, Chamonix</div>
+  </div>
+  <div class="photo-cell">
+    {% include figure.liquid path="assets/img/travel/mont-blanc_t1_02.jpg" alt="Le Tour, Chamonix Valley, France" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Le Tour, Chamonix</div>
+  </div>
+  <div class="photo-cell">
+    {% include figure.liquid path="assets/img/travel/mont-blanc_t1_03.jpg" alt="Chamonix, France" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Chamonix, France</div>
+  </div>
+  <div class="photo-cell">
+    {% include figure.liquid path="assets/img/travel/mont-blanc_t1_04.jpg" alt="Les Houches, Chamonix Valley, France" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Les Houches, Chamonix</div>
   </div>
 </div>
 </div>
@@ -183,6 +215,22 @@ These are a few photographs from journeys I've taken outside research — long w
   <div class="photo-cell">
     {% include figure.liquid path="assets/img/travel/cross-canada_04.jpg" alt="Winnipeg, Manitoba" zoomable=true loading="lazy" %}
     <div class="photo-caption">Winnipeg, Manitoba</div>
+  </div>
+  <div class="photo-cell">
+    {% include figure.liquid path="assets/img/travel/cross-canada_t1_04.jpg" alt="Sault Ste. Marie, Ontario" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Sault Ste. Marie, Ontario</div>
+  </div>
+  <div class="photo-cell">
+    {% include figure.liquid path="assets/img/travel/cross-canada_t1_01.jpg" alt="Thunder Bay, Ontario" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Thunder Bay, Ontario</div>
+  </div>
+  <div class="photo-cell">
+    {% include figure.liquid path="assets/img/travel/cross-canada_t1_02.jpg" alt="Lake Superior Shore, Ontario" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Lake Superior Shore</div>
+  </div>
+  <div class="photo-cell">
+    {% include figure.liquid path="assets/img/travel/cross-canada_t1_03.jpg" alt="Calgary, Alberta" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Calgary, Alberta</div>
   </div>
 </div>
 </div>
