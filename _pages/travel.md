@@ -60,8 +60,7 @@ nav_order: 5
 }
 </style>
 
-These are a few photographs from journeys I've taken outside research — long walks and long rides that have shaped how I think about patience, distance, and terrain.
-
+Some stories from the past
 ---
 
 <div class="travel-section">

@@ -46,35 +46,14 @@ cv:
         url: /teaching/
 
 
-    Skills:
-      - name: Mathematics
-        icon: fa-solid fa-square-root-variable
-        keywords: "Kähler geometry, convex analysis, PDE, algebraic geometry, non-Archimedean geometry"
-
-      - name: Programming & Tools
-        icon: fa-solid fa-code
-        keywords: "Python (NumPy, Manim (mathematical animation)), Git"
-
-      - name: Scientific Writing
-        icon: fa-solid fa-pen
-        keywords: "LaTeX (advanced), Beamer"
-
-      - name: Algorithms
-        icon: fa-solid fa-diagram-project
-        keywords: "dynamic programming"
+    Research Interests:
+      - label: "Topics"
+        details: "Kähler geometry, K-stability, canonical metrics, pluripotential theory"
 
     Languages:
-      - name: Chinese (Sichuanese)
-        summary: "Native"
+      - name: "Chinese (Mandarin, Sichuanese), English, French, Portuguese"
+        summary: ""
 
-      - name: Chinese (Mandarin)
-        summary: "Fluent"
-
-      - name: English
-        summary: "Fluent"
-
-      - name: Portuguese
-        summary: "Fluent"
-
-      - name: French
-        summary: "Fluent"
+    Software:
+      - label: "Tools"
+        details: "LaTeX, Python, Git"

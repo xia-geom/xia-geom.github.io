@@ -24,8 +24,8 @@ Tous les cours dispensés à l'[Université du Québec à Montréal (UQAM)](http
 
 | Session | Cours |
 |---------|-------|
-| Automne 2025 | MAT0343 — Calcul différentiel *(hors programme)* |
-| Hiver 2025 | MAT0600 — Algèbre linéaire et géométrie vectorielle *(hors programme)* |
+| Automne 2025 | MAT0343 — Calcul différentiel  |
+| Hiver 2025 | MAT0600 — Algèbre linéaire et géométrie vectorielle  |
 | Automne 2024 | MAT0341 — Calcul, Dérivée et Intégration I |
 | Hiver 2024 | MAT0341 — Calcul, Dérivée et Intégration I |
 | Hiver 2024 | MAT0339 — Mathématiques générales |

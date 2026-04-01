@@ -25,8 +25,8 @@ All courses at [Université du Québec à Montréal (UQAM)](https://uqam.ca).
 
 | Semester | Course |
 |----------|--------|
-| Autumn 2025 | MAT0343 — Differential Calculus *(out-of-program)* |
-| Winter 2025 | MAT0600 — Linear Algebra and Vector Geometry *(out-of-program)* |
+| Autumn 2025 | MAT0343 — Differential Calculus |
+| Winter 2025 | MAT0600 — Linear Algebra and Vector Geometry |
 | Autumn 2024 | MAT0341 — Calculus I |
 | Winter 2024 | MAT0341 — Calculus I |
 | Winter 2024 | MAT0339 — General Mathematics |

@@ -45,35 +45,14 @@ cv:
       - position: "Voir la page Enseignement"
         url: /fr/teaching/
 
-    Skills:
-      - name: Mathématiques
-        icon: fa-solid fa-square-root-variable
-        keywords: "Géométrie kählérienne, analyse convexe, EDP, géométrie algébrique, géométrie non-archimédienne"
+    Thèmes de recherche:
+      - label: "Thèmes"
+        details: "Géométrie kählérienne, K-stabilité, métriques canoniques, théorie du pluripotentiel"
 
-      - name: Programmation & Outils
-        icon: fa-solid fa-code
-        keywords: "Python (NumPy, Manim (animation mathématique)), Git"
+    Langues:
+      - name: "Chinois (mandarin, sichuanais), anglais, français, portugais"
+        summary: ""
 
-      - name: Rédaction Scientifique
-        icon: fa-solid fa-pen
-        keywords: "LaTeX (avancé), Beamer"
-
-      - name: Algorithmique
-        icon: fa-solid fa-diagram-project
-        keywords: "programmation dynamique"
-
-    Languages:
-      - name: Chinois (sichuanais)
-        summary: "Langue maternelle"
-
-      - name: Chinois (mandarin)
-        summary: "Courant"
-
-      - name: Anglais
-        summary: "Courant"
-
-      - name: Portugais
-        summary: "Courant"
-
-      - name: Français
-        summary: "Courant"
+    Logiciels:
+      - label: "Outils"
+        details: "LaTeX, Python, Git"
