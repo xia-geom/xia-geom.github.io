@@ -1,10 +1,10 @@
 ---
 layout: page
-title: travel
-permalink: /travel/
-description: Snapshots from long-distance hiking and cycling adventures.
+title: voyages
+permalink: /fr-travel/
+description: Instantanés d'aventures de randonnée et de cyclisme longue distance.
 nav: true
-nav_order: 5
+nav_order: 6
 ---
 
 <style>
@@ -60,12 +60,12 @@ nav_order: 5
 }
 </style>
 
-Some stories from the past
+Quelques histoires du passé
 ---
 
 <div class="travel-section">
-<h2>🇵🇹 Camino de Santiago — Portugal</h2>
-<p class="trip-meta">October – November 2021 · Coastal and Central Portuguese Routes · ~600 km</p>
+<h2>🇵🇹 Chemin de Saint-Jacques-de-Compostelle — Portugal</h2>
+<p class="trip-meta">Octobre – Novembre 2021 · Voies côtière et centrale portugaises · ~600 km</p>
 <div class="photo-grid">
   <div class="photo-cell">
     {% include figure.liquid path="assets/img/travel/camino-portugal_01.jpg" alt="Ponte de Lima, Portugal" zoomable=true loading="lazy" %}
@@ -84,8 +84,8 @@ Some stories from the past
     <div class="photo-caption">Barcelos, Portugal</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-portugal_05.jpg" alt="Ourense, Galicia, Spain" zoomable=true loading="lazy" %}
-    <div class="photo-caption">Ourense, Galicia</div>
+    {% include figure.liquid path="assets/img/travel/camino-portugal_05.jpg" alt="Ourense, Galice, Espagne" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Ourense, Galice</div>
   </div>
   <div class="photo-cell">
     {% include figure.liquid path="assets/img/travel/camino-portugal_06.jpg" alt="Chaves, Portugal" zoomable=true loading="lazy" %}
@@ -97,27 +97,27 @@ Some stories from the past
 ---
 
 <div class="travel-section">
-<h2>🇪🇸 Camino de Santiago — Spain</h2>
-<p class="trip-meta">September – November 2021 · Camino Francés · ~800 km, Saint-Jean-Pied-de-Port to Santiago</p>
+<h2>🇪🇸 Chemin de Saint-Jacques-de-Compostelle — Espagne</h2>
+<p class="trip-meta">Septembre – Novembre 2021 · Camino Francés · ~800 km, de Saint-Jean-Pied-de-Port à Saint-Jacques</p>
 <div class="photo-grid">
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-spain_01.jpg" alt="León, Spain" zoomable=true loading="lazy" %}
-    <div class="photo-caption">León, Spain</div>
+    {% include figure.liquid path="assets/img/travel/camino-spain_01.jpg" alt="León, Espagne" zoomable=true loading="lazy" %}
+    <div class="photo-caption">León, Espagne</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-spain_02.jpg" alt="León, Spain" zoomable=true loading="lazy" %}
-    <div class="photo-caption">León, Spain</div>
+    {% include figure.liquid path="assets/img/travel/camino-spain_02.jpg" alt="León, Espagne" zoomable=true loading="lazy" %}
+    <div class="photo-caption">León, Espagne</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-spain_03.jpg" alt="León, Spain" zoomable=true loading="lazy" %}
-    <div class="photo-caption">León, Spain</div>
+    {% include figure.liquid path="assets/img/travel/camino-spain_03.jpg" alt="León, Espagne" zoomable=true loading="lazy" %}
+    <div class="photo-caption">León, Espagne</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-spain_04.jpg" alt="Zubiri, Navarra, Spain" zoomable=true loading="lazy" %}
-    <div class="photo-caption">Zubiri, Navarra</div>
+    {% include figure.liquid path="assets/img/travel/camino-spain_04.jpg" alt="Zubiri, Navarre, Espagne" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Zubiri, Navarre</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-spain_05.jpg" alt="Logroño, La Rioja, Spain" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/camino-spain_05.jpg" alt="Logroño, La Rioja, Espagne" zoomable=true loading="lazy" %}
     <div class="photo-caption">Logroño, La Rioja</div>
   </div>
 </div>
@@ -126,31 +126,31 @@ Some stories from the past
 ---
 
 <div class="travel-section">
-<h2>🏔️ Tour du Mont Blanc</h2>
-<p class="trip-meta">June 2021 · 100 km loop through France, Italy & Switzerland</p>
+<h2>🏔️ Tour du Mont-Blanc</h2>
+<p class="trip-meta">Juin 2021 · Boucle de 100 km à travers la France, l'Italie et la Suisse</p>
 <div class="photo-grid">
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_01.jpg" alt="Champex-Lac, Switzerland" zoomable=true loading="lazy" %}
-    <div class="photo-caption">Champex-Lac, Switzerland</div>
+    {% include figure.liquid path="assets/img/travel/mont-blanc_01.jpg" alt="Champex-Lac, Suisse" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Champex-Lac, Suisse</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_02.jpg" alt="Col de Balme, France/Switzerland" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/mont-blanc_02.jpg" alt="Col de Balme, France/Suisse" zoomable=true loading="lazy" %}
     <div class="photo-caption">Col de Balme</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_03.jpg" alt="Champex-Lac, Switzerland" zoomable=true loading="lazy" %}
-    <div class="photo-caption">Champex-Lac, Switzerland</div>
+    {% include figure.liquid path="assets/img/travel/mont-blanc_03.jpg" alt="Champex-Lac, Suisse" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Champex-Lac, Suisse</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_04.jpg" alt="Champex-Lac, Switzerland" zoomable=true loading="lazy" %}
-    <div class="photo-caption">Champex-Lac, Switzerland</div>
+    {% include figure.liquid path="assets/img/travel/mont-blanc_04.jpg" alt="Champex-Lac, Suisse" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Champex-Lac, Suisse</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_05.jpg" alt="Argentière, Chamonix Valley, France" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/mont-blanc_05.jpg" alt="Argentière, vallée de Chamonix, France" zoomable=true loading="lazy" %}
     <div class="photo-caption">Argentière, Chamonix</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_06.jpg" alt="Le Tour, Chamonix Valley, France" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/mont-blanc_06.jpg" alt="Le Tour, vallée de Chamonix, France" zoomable=true loading="lazy" %}
     <div class="photo-caption">Le Tour, Chamonix</div>
   </div>
   <div class="photo-cell">
@@ -158,7 +158,7 @@ Some stories from the past
     <div class="photo-caption">Chamonix, France</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_08.jpg" alt="Les Houches, Chamonix Valley, France" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/mont-blanc_08.jpg" alt="Les Houches, vallée de Chamonix, France" zoomable=true loading="lazy" %}
     <div class="photo-caption">Les Houches, Chamonix</div>
   </div>
 </div>
@@ -167,8 +167,8 @@ Some stories from the past
 ---
 
 <div class="travel-section">
-<h2>🇨🇭 Swiss Alps Mountain Pass Traverse</h2>
-<p class="trip-meta">September 2021 · Haute Route & Vaud Alps</p>
+<h2>🇨🇭 Traversée des cols des Alpes suisses</h2>
+<p class="trip-meta">Septembre 2021 · Haute Route et Alpes vaudoises</p>
 <div class="photo-grid">
   <div class="photo-cell">
     {% include figure.liquid path="assets/img/travel/swiss-alps_01.jpg" alt="Aigle, Vaud" zoomable=true loading="lazy" %}
@@ -179,8 +179,8 @@ Some stories from the past
     <div class="photo-caption">Château-d'Oex</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/swiss-alps_03.jpg" alt="Nyon, Lake Geneva" zoomable=true loading="lazy" %}
-    <div class="photo-caption">Nyon, Lake Geneva</div>
+    {% include figure.liquid path="assets/img/travel/swiss-alps_03.jpg" alt="Nyon, lac Léman" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Nyon, lac Léman</div>
   </div>
 </div>
 </div>
@@ -188,8 +188,8 @@ Some stories from the past
 ---
 
 <div class="travel-section">
-<h2>🚴 Cross-Canada Bike Trip</h2>
-<p class="trip-meta">August – September 2023 · Montreal → Calgary · ~3,800 km</p>
+<h2>🚴 Traversée du Canada à vélo</h2>
+<p class="trip-meta">Août – Septembre 2023 · Montréal → Calgary · ~3 800 km</p>
 <div class="photo-grid">
   <div class="photo-cell">
     {% include figure.liquid path="assets/img/travel/cross-canada_01.jpg" alt="Winnipeg, Manitoba" zoomable=true loading="lazy" %}
@@ -208,16 +208,16 @@ Some stories from the past
     <div class="photo-caption">Winnipeg, Manitoba</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/cross-canada_05.jpg" alt="Sault Ste. Marie, Ontario" zoomable=true loading="lazy" %}
-    <div class="photo-caption">Sault Ste. Marie, Ontario</div>
+    {% include figure.liquid path="assets/img/travel/cross-canada_05.jpg" alt="Sault-Sainte-Marie, Ontario" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Sault-Sainte-Marie, Ontario</div>
   </div>
   <div class="photo-cell">
     {% include figure.liquid path="assets/img/travel/cross-canada_06.jpg" alt="Thunder Bay, Ontario" zoomable=true loading="lazy" %}
     <div class="photo-caption">Thunder Bay, Ontario</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/cross-canada_07.jpg" alt="Lake Superior Shore, Ontario" zoomable=true loading="lazy" %}
-    <div class="photo-caption">Lake Superior Shore</div>
+    {% include figure.liquid path="assets/img/travel/cross-canada_07.jpg" alt="Rive du lac Supérieur, Ontario" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Rive du lac Supérieur</div>
   </div>
   <div class="photo-cell">
     {% include figure.liquid path="assets/img/travel/cross-canada_08.jpg" alt="Calgary, Alberta" zoomable=true loading="lazy" %}
