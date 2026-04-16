@@ -1,10 +1,9 @@
 ---
 layout: page
+permalink: /fr/travel/
 title: voyages
-permalink: /fr-travel/
 description: Instantanés d'aventures de randonnée et de cyclisme longue distance.
-nav: true
-nav_order: 6
+nav: false
 ---
 
 <style>
