@@ -28,4 +28,4 @@ Outside research, I enjoy long-distance cycling and hiking — I have cycled acr
 
 ### Research interests
 
-Kähler metrics, complex geometry, geometric analysis, Riemannian geometry, PDEs, algebraic geometry, non-archimedean geometry.
+My research lies in Kähler geometry and geometric analysis, especially variational methods for canonical metrics, questions surrounding the Yau–Tian–Donaldson conjecture, and singular Kähler metrics with conic or cusp singularities, including in the toric setting.

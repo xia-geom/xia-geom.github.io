@@ -29,4 +29,5 @@ En dehors de la recherche, j'aime le cyclisme longue distance et la randonnée �
 
 ### Domaines de recherche
 
-Métriques de Kähler, géométrie complexe, analyse géométrique, géométrie riemannienne, EDP, géométrie algébrique, géométrie non-archimédienne.
+Mes recherches portent sur la géométrie kählérienne et l’analyse géométrique, en particulier sur les méthodes variationnelles pour les métriques canoniques, les questions liées à la conjecture de Yau–Tian–Donaldson, ainsi que sur les métriques kählériennes singulières à singularités coniques ou cuspides, notamment dans le cadre torique.
+
