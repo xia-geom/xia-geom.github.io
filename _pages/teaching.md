@@ -2,9 +2,10 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description:
+description: Teaching at UQAM in Montréal, including MAT0339 General Mathematics, calculus, linear algebra, and introductory university mathematics.
 nav: true
 nav_order: 3
+lang: en
 ---
 
 All courses at [Université du Québec à Montréal (UQAM)](https://uqam.ca).

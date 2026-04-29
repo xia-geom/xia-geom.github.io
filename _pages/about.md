@@ -2,7 +2,9 @@
 layout: about
 title: about
 permalink: /
+description: Xia Xiao is a PhD candidate in mathematics at UQAM working in Kähler geometry, geometric analysis, and visual mathematics education.
 subtitle: PhD candidate in Mathematics · <a href="https://uqam.ca">Université du Québec à Montréal (UQAM)</a>
+lang: en
 
 profile:
   align: right
@@ -29,3 +31,7 @@ Outside research, I enjoy long-distance cycling and hiking — I have cycled acr
 ### Research interests
 
 My research lies in Kähler geometry and geometric analysis, especially variational methods for canonical metrics, questions surrounding the Yau–Tian–Donaldson conjecture, and singular Kähler metrics with conic or cusp singularities, including in the toric setting.
+
+### Teaching and visual explanations
+
+I teach mathematics at UQAM, including MAT0339 General Mathematics, and maintain a small project of French educational mathematics videos made with Python and Manim. See the [teaching page]({{ '/teaching/' | relative_url }}) and the [math video project]({{ '/projects/math-video/' | relative_url }}) for details.

@@ -2,8 +2,10 @@
 layout: about
 title: à propos
 permalink: /fr/
+description: Xia Xiao est doctorant en mathématiques à l'UQAM, avec des activités de recherche en géométrie kählérienne, d'enseignement et de vulgarisation mathématique en français.
 subtitle: Doctorant en Mathématiques · <a href="https://uqam.ca">Université du Québec à Montréal (UQAM)</a>
 nav: false
+lang: fr
 
 profile:
   align: right
@@ -31,3 +33,6 @@ En dehors de la recherche, j'aime le cyclisme longue distance et la randonnée �
 
 Mes recherches portent sur la géométrie kählérienne et l’analyse géométrique, en particulier sur les méthodes variationnelles pour les métriques canoniques, les questions liées à la conjecture de Yau–Tian–Donaldson, ainsi que sur les métriques kählériennes singulières à singularités coniques ou cuspides, notamment dans le cadre torique.
 
+### Enseignement et vidéos
+
+J'enseigne les mathématiques à l'UQAM, notamment MAT0339 Mathématiques générales, et je développe une petite série de vidéos mathématiques en français avec Python et Manim. Voir la page [enseignement]({{ '/fr/teaching/' | relative_url }}) et les [projets]({{ '/fr/projects/' | relative_url }}).

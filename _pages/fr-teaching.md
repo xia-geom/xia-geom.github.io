@@ -2,8 +2,9 @@
 layout: page
 permalink: /fr/teaching/
 title: enseignement
-description:
+description: Enseignement à l'UQAM à Montréal, notamment MAT0339 Mathématiques générales, calcul, algèbre linéaire et mathématiques universitaires d'introduction.
 nav: false
+lang: fr
 ---
 
 Tous les cours dispensés à l'[Université du Québec à Montréal (UQAM)](https://uqam.ca).

@@ -2,14 +2,18 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Educational mathematics video projects, including French visual explanations built with Python and Manim.
 nav: false
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [work]
 horizontal: false
+lang: en
 ---
 
 <!-- pages/projects.md -->
+
+Selected projects related to teaching, mathematical visualization, and research communication.
+
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
