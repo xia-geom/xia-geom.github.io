@@ -1,6 +1,6 @@
 ---
 layout: about
-title: à propos
+title: À propos
 permalink: /fr/
 description: Xia Xiao est doctorant en mathématiques à l'UQAM, avec des activités de recherche en géométrie kählérienne, d'enseignement et de vulgarisation mathématique en français.
 subtitle: Doctorant en Mathématiques · <a href="https://uqam.ca">Université du Québec à Montréal (UQAM)</a>

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: Educational mathematics video projects, including French visual explanations built with Python and Manim.
 nav: false

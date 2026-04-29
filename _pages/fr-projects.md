@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projets
+title: Projets
 permalink: /fr/projects/
 description: Projets de vidéos éducatives en mathématiques, avec des explications visuelles en français construites avec Python et Manim.
 nav: false
@@ -8,6 +8,8 @@ lang: fr
 ---
 
 <!-- _pages/fr-projects.md -->
+
+Projets liés à l'enseignement, à la visualisation mathématique et à la communication de la recherche.
 
 <div class="projects">
   <div class="row row-cols-1 row-cols-md-3">

@@ -2,6 +2,9 @@
 layout: about
 title: about
 permalink: /
+redirect_from:
+  - /about/
+  - /about
 description: Xia Xiao is a PhD candidate in mathematics at UQAM working in Kähler geometry, geometric analysis, and visual mathematics education.
 subtitle: PhD candidate in Mathematics · <a href="https://uqam.ca">Université du Québec à Montréal (UQAM)</a>
 lang: en

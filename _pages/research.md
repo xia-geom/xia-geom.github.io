@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /research/
-title: research
+title: Research
 description: Research in Kähler geometry, complex geometry, geometric analysis, and canonical metrics.
 nav: true
 nav_order: 2

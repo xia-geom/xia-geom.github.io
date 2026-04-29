@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /fr/research/
-title: recherche
+title: Recherche
 description: Recherche en géométrie kählérienne, géométrie complexe, analyse géométrique et métriques canoniques.
 nav: false
 lang: fr
