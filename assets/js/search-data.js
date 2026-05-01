@@ -31,7 +31,7 @@ ninja.data = [{
             window.location.href = "/cv/";
           },
         },{id: "nav-travel",
-          title: "travel",
+          title: "Travel",
           description: "Snapshots from long-distance hiking and cycling adventures.",
           section: "Navigation",
           handler: () => {
