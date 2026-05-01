@@ -1,6 +1,6 @@
 ---
 layout: page
-title: travel
+title: Travel
 permalink: /travel/
 description: Snapshots from long-distance hiking and cycling adventures.
 nav: true
@@ -60,8 +60,7 @@ nav_order: 5
 }
 </style>
 
-Some stories from the past
----
+## Some stories from the past
 
 <div class="travel-section">
 <h2>🇵🇹 Camino de Santiago — Portugal</h2>
@@ -91,6 +90,18 @@ Some stories from the past
     {% include figure.liquid path="assets/img/travel/camino-portugal_06.jpg" alt="Chaves, Portugal" zoomable=true loading="lazy" %}
     <div class="photo-caption">Chaves, Portugal</div>
   </div>
+  {% for photo_number in (7..15) %}
+    {% if photo_number < 10 %}
+      {% assign photo_suffix = photo_number | prepend: '0' %}
+    {% else %}
+      {% assign photo_suffix = photo_number %}
+    {% endif %}
+    {% assign photo_path = 'assets/img/travel/camino-portugal_' | append: photo_suffix | append: '.jpg' %}
+    <div class="photo-cell">
+      {% include figure.liquid path=photo_path alt="Camino Portuguese Route" zoomable=true loading="lazy" %}
+      <div class="photo-caption">Camino Portuguese Route</div>
+    </div>
+  {% endfor %}
 </div>
 </div>
 
@@ -120,6 +131,14 @@ Some stories from the past
     {% include figure.liquid path="assets/img/travel/camino-spain_05.jpg" alt="Logroño, La Rioja, Spain" zoomable=true loading="lazy" %}
     <div class="photo-caption">Logroño, La Rioja</div>
   </div>
+  {% for photo_number in (6..8) %}
+    {% assign photo_suffix = photo_number | prepend: '0' %}
+    {% assign photo_path = 'assets/img/travel/camino-spain_' | append: photo_suffix | append: '.jpg' %}
+    <div class="photo-cell">
+      {% include figure.liquid path=photo_path alt="Camino Francés" zoomable=true loading="lazy" %}
+      <div class="photo-caption">Camino Francés</div>
+    </div>
+  {% endfor %}
 </div>
 </div>
 
@@ -161,6 +180,10 @@ Some stories from the past
     {% include figure.liquid path="assets/img/travel/mont-blanc_08.jpg" alt="Les Houches, Chamonix Valley, France" zoomable=true loading="lazy" %}
     <div class="photo-caption">Les Houches, Chamonix</div>
   </div>
+  <div class="photo-cell">
+    {% include figure.liquid path="assets/img/travel/mont-blanc_09.jpg" alt="Tour du Mont Blanc" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Tour du Mont Blanc</div>
+  </div>
 </div>
 </div>
 
@@ -182,6 +205,18 @@ Some stories from the past
     {% include figure.liquid path="assets/img/travel/swiss-alps_03.jpg" alt="Nyon, Lake Geneva" zoomable=true loading="lazy" %}
     <div class="photo-caption">Nyon, Lake Geneva</div>
   </div>
+  {% for photo_number in (4..17) %}
+    {% if photo_number < 10 %}
+      {% assign photo_suffix = photo_number | prepend: '0' %}
+    {% else %}
+      {% assign photo_suffix = photo_number %}
+    {% endif %}
+    {% assign photo_path = 'assets/img/travel/swiss-alps_' | append: photo_suffix | append: '.jpg' %}
+    <div class="photo-cell">
+      {% include figure.liquid path=photo_path alt="Swiss Alps" zoomable=true loading="lazy" %}
+      <div class="photo-caption">Swiss Alps</div>
+    </div>
+  {% endfor %}
 </div>
 </div>
 
@@ -222,6 +257,10 @@ Some stories from the past
   <div class="photo-cell">
     {% include figure.liquid path="assets/img/travel/cross-canada_08.jpg" alt="Calgary, Alberta" zoomable=true loading="lazy" %}
     <div class="photo-caption">Calgary, Alberta</div>
+  </div>
+  <div class="photo-cell">
+    {% include figure.liquid path="assets/img/travel/cross-canada_09.jpg" alt="Canadian Prairies" zoomable=true loading="lazy" %}
+    <div class="photo-caption">Canadian Prairies</div>
   </div>
 </div>
 </div>

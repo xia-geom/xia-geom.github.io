@@ -42,22 +42,30 @@
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
-          {% for page in site.pages %}
-            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
+          {% assign english_about_title = 'about' %}
+          {% assign french_about_title = 'À propos' %}
+          {% for site_page in site.pages %}
+            {% if site_page.permalink == '/' %}
+              {% assign english_about_title = site_page.title %}
+            {% elsif site_page.permalink == '/fr/' %}
+              {% assign french_about_title = site_page.title %}
+            {% endif %}
           {% endfor %}
 
           <!-- Detect current language prefix -->
           {% assign is_french = false %}
-          {% if page.url contains '/fr/' or page.permalink contains '/fr/' %}
+          {% if page.lang == 'fr' or page.url contains '/fr/' or page.permalink contains '/fr/' %}
             {% assign is_french = true %}
           {% endif %}
 
           <!-- About -->
           {% if is_french %}
+            {% assign about_title = french_about_title %}
             {% assign about_href = '/fr/' %}
             {% assign about_active = '' %}
             {% if page.url == '/fr/' %}{% assign about_active = 'active' %}{% endif %}
           {% else %}
+            {% assign about_title = english_about_title %}
             {% assign about_href = '/' %}
             {% assign about_active = '' %}
             {% if page.permalink == '/' %}{% assign about_active = 'active' %}{% endif %}
@@ -74,7 +82,7 @@
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
-            {% if p.nav and p.autogen == null %}
+            {% if p.nav and p.autogen == null and p.lang != 'fr' %}
               {% if p.dropdown %}
                 {% assign has_active_child = false %}
                 {% for child in p.children %}
@@ -114,11 +122,19 @@
                 </li>
               {% else %}
                 {% assign parent_link = p.permalink | remove: 'index.html' %}
+                {% assign nav_title = p.title %}
                 {% if is_french %}
-                  {% assign fr_url = p.url | replace: p.url, '/fr' | append: p.url %}
-                  {% assign nav_url = '/fr' | append: p.url %}
+                  {% assign nav_url = p.url %}
+                  {% assign translated_url = '/fr' | append: p.url %}
+                  {% for translated_page in site.pages %}
+                    {% if translated_page.url == translated_url or translated_page.permalink == translated_url %}
+                      {% assign nav_title = translated_page.title %}
+                      {% assign nav_url = translated_url %}
+                      {% break %}
+                    {% endif %}
+                  {% endfor %}
                   {% assign nav_active = '' %}
-                  {% if page.url contains p.url %}{% assign nav_active = 'active' %}{% endif %}
+                  {% if page.url == nav_url %}{% assign nav_active = 'active' %}{% endif %}
                 {% else %}
                   {%- if p.permalink contains '://' -%}
                     {%- assign nav_url = p.permalink -%}
@@ -132,7 +148,7 @@
                 {% endif %}
                 <li class="nav-item {{ nav_active }}">
                   <a class="nav-link" href="{{ nav_url | relative_url }}">
-                    {{- p.title }}
+                    {{- nav_title }}
                     {% if nav_active == 'active' %}
                       <span class="sr-only">(current)</span>
                     {% endif %}
