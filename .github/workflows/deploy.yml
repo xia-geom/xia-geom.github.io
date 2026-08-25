@@ -59,7 +59,8 @@ jobs:
           python-version: "3.13"
           cache: "pip"
       - name: Configure repository metadata ⚙️
-        run: sed -i "s|^  repo:.*|  repo: ${GITHUB_REPOSITORY}|" _config.yml
+        run: |
+          sed -i "s|^  repo:.*|  repo: ${GITHUB_REPOSITORY}|" _config.yml
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
@@ -90,7 +91,8 @@ jobs:
           python-version: "3.13"
           cache: "pip"
       - name: Configure repository metadata ⚙️
-        run: sed -i "s|^  repo:.*|  repo: ${GITHUB_REPOSITORY}|" _config.yml
+        run: |
+          sed -i "s|^  repo:.*|  repo: ${GITHUB_REPOSITORY}|" _config.yml
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
