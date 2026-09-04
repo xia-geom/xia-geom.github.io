@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-research",
           title: "Research",
-          description: "Research in Kähler geometry, complex geometry, geometric analysis, and canonical metrics.",
+          description: "Research in Kähler geometry, canonical metrics, pluripotential methods, stability, and singular Kähler geometry.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
@@ -23,12 +23,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "Academic CV of Xia Xiao, PhD candidate in mathematics at UQAM.",
+        },{id: "nav-projects",
+          title: "Projects",
+          description: "Educational mathematics video projects, including French visual explanations built with Python and Manim.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/projects/";
           },
         },{id: "nav-travel",
           title: "Travel",
@@ -36,6 +36,13 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/travel/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Academic CV of Xia Xiao, PhD candidate in mathematics at UQAM.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
           },
         },{id: "projects-educational-mathematics-video-series",
           title: 'Educational Mathematics Video Series',
