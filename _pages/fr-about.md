@@ -27,6 +27,6 @@ Je suis doctorant en mathématiques à l'[UQAM](https://uqam.ca), sous la direct
 
 **Courriel :** xiao.xia AT courrier DOT uqam DOT ca · **Bureau :** UQAM, Montréal, Canada
 
-J'enseigne les mathématiques à l'UQAM et je développe des visualisations mathématiques en français avec Python et Manim. Voir [Enseignement]({{ '/fr/teaching/' | relative_url }}) et [Projets]({{ '/fr/projects/' | relative_url }}).
+J'enseigne les mathématiques à l'UQAM. Voir [Enseignement]({{ '/fr/teaching/' | relative_url }}) pour les cours et activités d'enseignement.
 
 En dehors de la recherche, j'aime le cyclisme longue distance et la randonnée — j'ai traversé le Canada à vélo et parcouru le Camino en Espagne et au Portugal. Voir [Voyages]({{ '/fr/travel/' | relative_url }}).
