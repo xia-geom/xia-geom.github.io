@@ -1,5 +1,8 @@
 <!doctype html>
 {% assign document_lang = page.lang | default: site.lang %}
+{% if page.url contains '/fr/' or page.permalink contains '/fr/' %}
+  {% assign document_lang = 'fr' %}
+{% endif %}
 <html lang="{{ document_lang }}">
   <!-- Head -->
   <head>
