@@ -2,14 +2,12 @@
 layout: page
 title: Projets
 permalink: /fr/projects/
-description: Projets de vidéos éducatives en mathématiques, avec des explications visuelles en français construites avec Python et Manim.
+description: Projets de visualisation mathématique et de vidéos éducatives en français réalisés avec Python et Manim.
 nav: false
 lang: fr
 ---
 
-<!-- _pages/fr-projects.md -->
-
-Projets liés à l'enseignement, à la visualisation mathématique et à la communication de la recherche.
+Projets sélectionnés en visualisation mathématique et en enseignement.
 
 <div class="projects">
   <div class="row row-cols-1 row-cols-md-3">
@@ -17,7 +15,7 @@ Projets liés à l'enseignement, à la visualisation mathématique et à la comm
       <div class="card h-100">
         <div class="card-body">
           <h2 class="card-title">Série de vidéos éducatives en mathématiques</h2>
-          <p class="card-text">Un projet personnel visant à produire des explications mathématiques rigoureuses et visuellement épurées pour les étudiants francophones, développé avec Python et Manim. Les scènes couvrent des sujets du programme scolaire (théorème de Pythagore, notation sigma, fonctions) ainsi qu'une visualisation 3D d'une déformation hyperbolique cône-vers-pointe — une construction issue directement de mon travail de thèse. La narration en français est assurée par Azure Cognitive Services TTS.</p>
+          <p class="card-text">Une série d'explications mathématiques visuelles en français, conçues avec Python et Manim pour accompagner des sujets d'introduction à l'université ainsi que certaines visualisations liées à la géométrie.</p>
           <div class="row ml-1 mr-1 p-0">
             <div class="github-icon">
               <div class="icon" data-toggle="tooltip" title="Dépôt de code">
