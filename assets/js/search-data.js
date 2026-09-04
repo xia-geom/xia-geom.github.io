@@ -23,12 +23,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "nav-projects",
-          title: "Projects",
-          description: "Educational mathematics video projects, including French visual explanations built with Python and Manim.",
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Academic CV of Xia Xiao, PhD candidate in mathematics at UQAM.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/projects/";
+            window.location.href = "/cv/";
           },
         },{id: "nav-travel",
           title: "Travel",
@@ -37,19 +37,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/travel/";
           },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "Academic CV of Xia Xiao, PhD candidate in mathematics at UQAM.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
-          },
-        },{id: "projects-educational-mathematics-video-series",
-          title: 'Educational Mathematics Video Series',
-          description: "French educational mathematics videos built with Python and Manim for visually clean explanations of university-level and curriculum topics.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/math-video/";
-            },},{
+        },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
