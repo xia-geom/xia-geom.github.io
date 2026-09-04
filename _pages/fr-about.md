@@ -2,19 +2,19 @@
 layout: about
 title: À propos
 permalink: /fr/
-description: Xia Xiao est doctorant en mathématiques à l'UQAM, avec des activités de recherche en géométrie kählérienne, d'enseignement et de vulgarisation mathématique en français.
+description: Xia Xiao est doctorant en mathématiques à l'UQAM et travaille en géométrie kählérienne et analyse géométrique.
 subtitle: Doctorant en Mathématiques · <a href="https://uqam.ca">Université du Québec à Montréal (UQAM)</a>
 nav: false
 lang: fr
 
 profile:
   align: right
-  image: 
+  image:
   image_circular: false
   more_info:
 
 selected_papers: false
-social: true
+social: false
 
 announcements:
   enabled: false
@@ -23,16 +23,10 @@ latest_posts:
   enabled: false
 ---
 
-Je suis doctorant en mathématiques à l'[UQAM](https://uqam.ca), sous la direction de [Julien Keller](https://www.cirget.uqam.ca/keller/) (UQAM) et [Hugues Auvray](https://www.imo.universite-paris-saclay.fr/~auvray/) (Université Paris-Saclay). Mes recherches se situent à l'intersection de la géométrie kählérienne, de l'analyse complexe et des EDP géométriques.
+Je suis doctorant en mathématiques à l'[UQAM](https://uqam.ca), sous la direction de [Julien Keller](https://www.cirget.uqam.ca/keller/) (UQAM) et [Hugues Auvray](https://www.imo.universite-paris-saclay.fr/~auvray/) (Université Paris-Saclay). Mes recherches portent sur la géométrie kählérienne et l'analyse géométrique, en particulier sur les métriques canoniques et les questions variationnelles qui leur sont liées. Voir [Recherche]({{ '/fr/research/' | relative_url }}) pour mes thèmes de recherche et mes articles.
 
 **Courriel :** xiao.xia AT courrier DOT uqam DOT ca · **Bureau :** UQAM, Montréal, Canada
 
-En dehors de la recherche, j'aime le cyclisme longue distance et la randonnée — j'ai traversé le Canada à vélo et marché le Chemin de Compostelle en Espagne et au Portugal.
+J'enseigne les mathématiques à l'UQAM et je développe des visualisations mathématiques en français avec Python et Manim. Voir [Enseignement]({{ '/fr/teaching/' | relative_url }}) et [Projets]({{ '/fr/projects/' | relative_url }}).
 
-### Domaines de recherche
-
-Mes recherches portent sur la géométrie kählérienne et l’analyse géométrique, en particulier sur les méthodes variationnelles pour les métriques canoniques, les questions liées à la conjecture de Yau–Tian–Donaldson, ainsi que sur les métriques kählériennes singulières à singularités coniques ou cuspides, notamment dans le cadre torique.
-
-### Enseignement et vidéos
-
-J'enseigne les mathématiques à l'UQAM, notamment MAT0339 Mathématiques générales, et je développe une petite série de vidéos mathématiques en français avec Python et Manim. Voir la page [enseignement]({{ '/fr/teaching/' | relative_url }}) et les [projets]({{ '/fr/projects/' | relative_url }}).
+En dehors de la recherche, j'aime le cyclisme longue distance et la randonnée — j'ai traversé le Canada à vélo et parcouru le Camino en Espagne et au Portugal. Voir [Voyages]({{ '/fr/travel/' | relative_url }}).

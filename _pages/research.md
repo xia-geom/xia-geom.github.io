@@ -2,15 +2,17 @@
 layout: page
 permalink: /research/
 title: Research
-description: Research in Kähler geometry, complex geometry, geometric analysis, and canonical metrics.
+description: Research in Kähler geometry, canonical metrics, pluripotential methods, stability, and singular Kähler geometry.
 nav: true
 nav_order: 2
 lang: en
 ---
 
-<!-- _pages/research.md -->
+My research is in Kähler geometry and geometric analysis, especially canonical metrics and the variational structures surrounding them. I am interested in pluripotential and finite-energy methods, stability questions related to the Yau–Tian–Donaldson picture, and singular Kähler metrics with conic or cusp singularities, including problems with toric structure.
 
-My research is in Kähler geometry, complex geometry, and geometric analysis, with an emphasis on variational methods for canonical metrics and related stability questions.
+A recurring theme in my work is to understand how analytic properties of canonical metrics interact with variational, algebro-geometric, and singularity-theoretic data.
+
+## Papers
 
 <div class="publications">
 
