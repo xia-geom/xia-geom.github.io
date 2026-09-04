@@ -29,6 +29,6 @@ I am a PhD candidate in mathematics at [UQAM](https://uqam.ca), under the superv
 
 **Email:** xiao.xia AT courrier DOT uqam DOT ca · **Office:** UQAM, Montréal, Canada
 
-I teach mathematics at UQAM and develop French-language mathematical visualizations with Python and Manim. See [Teaching]({{ '/teaching/' | relative_url }}) and [Projects]({{ '/projects/' | relative_url }}).
+I teach mathematics at UQAM. See [Teaching]({{ '/teaching/' | relative_url }}) for courses and teaching activities.
 
 Outside research, I enjoy long-distance cycling and hiking — I have cycled across Canada and walked the Camino in Spain and Portugal. See [Travel]({{ '/travel/' | relative_url }}).
