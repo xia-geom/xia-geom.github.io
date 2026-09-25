@@ -25,10 +25,18 @@ Tous les cours dispensés à l'[Université du Québec à Montréal (UQAM)](http
 
 | Session | Cours |
 |---------|-------|
-| Automne 2025 | MAT0343 — Calcul différentiel  |
-| Hiver 2025 | MAT0600 — Algèbre linéaire et géométrie vectorielle  |
+| Automne 2025 | MAT0343 — Calcul différentiel |
+| Hiver 2025 | MAT0600 — Algèbre linéaire et géométrie vectorielle |
 | Automne 2024 | MAT0341 — Calcul, Dérivée et Intégration I |
 | Hiver 2024 | MAT0341 — Calcul, Dérivée et Intégration I |
 | Hiver 2024 | MAT0339 — Mathématiques générales |
 | Hiver 2023 | MAT2160 — Analyse Complexe I |
 | Automne 2022 | MAT2150 — Analyse II |
+
+---
+
+### Vidéos de mathématiques et sur l’UQAM
+
+Le [Math Video Project]({{ '/fr/projects/math-video/' | relative_url }}) réunit des
+leçons animées de mathématiques, des explications d’erreurs fréquentes et des vidéos
+présentant les programmes et les parcours d’études à l’UQAM.

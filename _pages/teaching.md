@@ -33,3 +33,11 @@ All courses at [Université du Québec à Montréal (UQAM)](https://uqam.ca).
 | Winter 2024 | MAT0339 — General Mathematics |
 | Winter 2023 | MAT2160 — Complex Analysis I |
 | Autumn 2022 | MAT2150 — Analysis II |
+
+---
+
+### Mathematics and UQAM videos
+
+The [Math Video Project]({{ '/projects/math-video/' | relative_url }}) brings together
+animated mathematics lessons, explanations of common errors, and videos presenting
+UQAM programmes and study pathways.

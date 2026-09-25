@@ -31,4 +31,12 @@ I am a PhD candidate in mathematics at [UQAM](https://uqam.ca), under the superv
 
 I teach mathematics at UQAM. See [Teaching]({{ '/teaching/' | relative_url }}) for courses and teaching activities.
 
+## Projects
+
+My projects include [*Le français qui vit*]({{ '/projects/french-learning/' | relative_url }}), a French-learning book for everyday and university life; the [Math Video Project]({{ '/projects/math-video/' | relative_url }}), covering mathematics lessons **and UQAM programme and outreach videos**; and [Conversation Archive]({{ '/projects/conversation-archive/' | relative_url }}), an experimental tool for traceable conversation extraction and organization.
+
+[Explore all projects]({{ '/projects/' | relative_url }})
+
+## Beyond work
+
 Outside research, I enjoy long-distance cycling and hiking — I have cycled across Canada and walked the Camino in Spain and Portugal. See [Travel]({{ '/travel/' | relative_url }}).

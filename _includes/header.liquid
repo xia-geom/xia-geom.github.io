@@ -134,7 +134,7 @@
                     {% endif %}
                   {% endfor %}
                   {% assign nav_active = '' %}
-                  {% if page.url == nav_url %}{% assign nav_active = 'active' %}{% endif %}
+                  {% if page.url contains nav_url %}{% assign nav_active = 'active' %}{% endif %}
                 {% else %}
                   {%- if p.permalink contains '://' -%}
                     {%- assign nav_url = p.permalink -%}
@@ -166,8 +166,8 @@
             </li>
           {% endif %}
           <!-- Language toggle -->
-          {% assign lang_map_en = '/ /research/ /teaching/ /projects/ /cv/ /travel/' | split: ' ' %}
-          {% assign lang_map_fr = '/fr/ /fr/research/ /fr/teaching/ /fr/projects/ /fr/cv/ /fr/travel/' | split: ' ' %}
+          {% assign lang_map_en = '/ /research/ /teaching/ /projects/ /projects/french-learning/ /projects/math-video/ /projects/conversation-archive/ /cv/ /travel/' | split: ' ' %}
+          {% assign lang_map_fr = '/fr/ /fr/research/ /fr/teaching/ /fr/projects/ /fr/projects/french-learning/ /fr/projects/math-video/ /fr/projects/conversation-archive/ /fr/cv/ /fr/travel/' | split: ' ' %}
           {% assign toggle_href = '/' %}
           {% assign toggle_label = '🇫🇷 Français' %}
           {% assign toggle_title = 'Version française' %}
