@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
+        },{id: "nav-projects",
+          title: "Projects",
+          description: "French learning, mathematics and UQAM videos, and traceable conversation extraction.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
         },{id: "nav-cv",
           title: "CV",
           description: "Academic CV of Xia Xiao, PhD candidate in mathematics at UQAM.",
