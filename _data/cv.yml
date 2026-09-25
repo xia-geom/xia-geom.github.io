@@ -45,7 +45,6 @@ cv:
       - position: "See teaching page"
         url: /teaching/
 
-
     Research Interests:
       - label: "Topics"
         details: "Kähler geometry, K-stability, canonical metrics, pluripotential theory"

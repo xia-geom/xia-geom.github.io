@@ -17,39 +17,39 @@
       <meta http-equiv="refresh" content="3; url={{ redirect }}">
     {% endif %}
     {% include head.liquid %}
+    {% include language-alternates.liquid %}
   </head>
 
   <!-- Body -->
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+    <a class="skip-link" href="#main-content">
+      {%- if document_lang == 'fr' %}Aller au contenu{% else %}Skip to content{% endif -%}
+    </a>
     <!-- Header -->
     {% include header.liquid %}
 
     <!-- Content -->
-    <div class="container mt-5" role="main">
+    <main class="container mt-5" id="main-content" tabindex="-1">
       {% if page.toc and page.toc.sidebar %}
         {% if page.toc.sidebar == 'right' %}
           <div class="row">
-            <!-- main content area -->
             <div class="col-sm-9">{{ content }}</div>
-            <!-- sidebar, which will move to the top on a small screen -->
             <div class="col-sm-3">
               <nav id="toc-sidebar" class="sticky-top"></nav>
             </div>
           </div>
         {% else %}
           <div class="row">
-            <!-- sidebar, which will move to the top on a small screen -->
             <div class="col-sm-3">
               <nav id="toc-sidebar" class="sticky-top"></nav>
             </div>
-            <!-- main content area -->
             <div class="col-sm-9">{{ content }}</div>
           </div>
         {% endif %}
       {% else %}
         {{ content }}
       {% endif %}
-    </div>
+    </main>
 
     <!-- Footer -->
     {% include footer.liquid %}

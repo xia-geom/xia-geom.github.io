@@ -1,72 +1,47 @@
-# xia-geom.github.io
+# Xia Xiao — academic website
 
-Personal academic website of **Xia Xiao**, PhD candidate in mathematics at [UQAM](https://uqam.ca), working on Kähler geometry, complex analysis, and geometric PDEs under the supervision of Julien Keller (UQAM) and Hugues Auvray (Université Paris-Saclay).
+Personal academic website, built with Jekyll and the al-folio theme.
 
-Live site: <https://xia-geom.github.io>
+## Public content
 
-## Stack
+English and French pages cover research, teaching, projects, the CV and travel.
+The two project pages present mathematics/UQAM videos and Conversation Archive.
 
-Built with [Jekyll](https://jekyllrb.com/) and the [al-folio](https://github.com/alshedivat/al-folio) theme, hosted on GitHub Pages.
+## Editing
 
-## Contents
+Page sources are in `_pages/`. French pages use `/fr/` permalinks.
+The header and language metadata find matching pages automatically; there is no
+separate language-toggle map to update.
 
-The site is bilingual (English and French), with a 🇫🇷 / 🇬🇧 toggle in the navbar.
+The CV views read `_data/cv.yml` and `_data/cv_fr.yml` without duplicating records.
+`_layouts/academic-cv.liquid` renders both languages. Research pages use
+`_layouts/academic-bib.liquid`, with native Abstract and BibTeX disclosures.
 
-| Section | English | French |
-| --- | --- | --- |
-| About | `/` | `/fr/` |
-| Research | `/research/` | `/fr/research/` |
-| Teaching | `/teaching/` | `/fr/teaching/` |
-| CV | `/cv/` | `/fr/cv/` |
-| Projects | `/projects/` | `/fr/projects/` |
-| Travel | `/travel/` | `/fr/travel/` |
+## Local checks
 
-Page sources live in [`_pages/`](_pages/); French counterparts are prefixed with `fr-` (e.g. [`fr-travel.md`](_pages/fr-travel.md)) and use `/fr/...` permalinks.
+Use the Docker setup described in [AGENTS.md](AGENTS.md) to build the site.
+After building, prepare and check the same output that will be published:
 
-## Local development
-
-Docker is the recommended setup:
-
-```bash
-docker compose pull && docker compose up
-# Site at http://localhost:8080
+```sh
+python3 -m unittest discover -s bin -p 'test_public_site.py' -v
+python3 bin/check_public_site.py _site --prepare --report site-validation.json
 ```
 
-Rebuild after dependency changes:
+Run `npm ci --ignore-scripts` and `npx prettier . --check` for formatting.
+The validator performs local checks only; it does not test external services,
+video playback or full accessibility conformance.
 
-```bash
-docker compose up --build
-```
+## Publication
 
-Stop and free port 8080:
+The deployment workflow builds the site, removes non-public output, validates
+local links and specific regressions, and saves the result as `site-preview`.
+Only the main/master deployment job has repository write permission. It publishes
+that exact artifact rather than rebuilding it. A `.nojekyll` marker prevents a
+second Pages processing pass. The follow-up workflow rechecks the saved artifact.
 
-```bash
-docker compose down
-```
-
-## Pre-commit checklist
-
-1. Format:
-   ```bash
-   npx prettier . --write
-   ```
-2. Rebuild and verify at `http://localhost:8080` — check navigation, images, dark mode, and the language toggle.
-
-## Project conventions
-
-- `_config.yml` — site-wide config; `url` and `baseurl` must match the deployment target.
-- `_pages/` — top-level pages (about, research, teaching, cv, projects, travel) in English and French.
-- `_bibliography/papers.bib` — publications, rendered via [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar).
-- `_includes/header.liquid` — navbar, including the language-toggle map (`lang_map_en` / `lang_map_fr`). When adding a new bilingual page, extend **both** arrays in lockstep.
-- `assets/img/travel/` — travel photos referenced from [`_pages/travel.md`](_pages/travel.md) and [`_pages/fr-travel.md`](_pages/fr-travel.md).
-
-## Further reading
-
-- [`AGENTS.md`](AGENTS.md) — agent/contributor guide
-- [`CUSTOMIZE.md`](CUSTOMIZE.md) — theming and customization
-- [`INSTALL.md`](INSTALL.md) — installation and deployment
-- [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) — common issues
+Repository guides stay in Git but are removed from the public build. Personal
+conversation archives are not published.
 
 ## License
 
-Theme distributed under the MIT License (see [`LICENSE`](LICENSE)). Site content © Xia Xiao.
+The theme is distributed under the [MIT License](LICENSE). Site content © Xia Xiao.

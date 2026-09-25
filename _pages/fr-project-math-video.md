@@ -2,63 +2,29 @@
 layout: page
 permalink: /fr/projects/math-video/
 title: Math Video Project
-description: Des leçons animées de mathématiques et des vidéos sur les programmes et parcours d’études à l’UQAM.
+description: Des leçons animées de mathématiques et des vidéos sur les études à l’UQAM.
 nav: false
 lang: fr
 ---
 
 [Tous les projets]({{ '/fr/projects/' | relative_url }})
 
-## Mathématiques et UQAM : deux volets d’un même projet
+Le Math Video Project réunit des vidéos pédagogiques de mathématiques et des présentations des programmes de l’UQAM.
 
-Le **Math Video Project** réunit des vidéos pédagogiques de mathématiques et des
-vidéos consacrées aux études à l’**Université du Québec à Montréal (UQAM)**.
-Il ne s’agit donc pas uniquement d’une collection de leçons : la présentation
-des programmes, le recrutement et l’orientation font également partie du projet.
+## Enseignement des mathématiques
 
-[Explorer le dépôt public](https://github.com/xia-geom/math_video_project)
+Les leçons s’appuient sur des exemples, des arguments visuels et des contre-exemples. Le programme couvre l’algèbre, les fonctions, la géométrie, le dénombrement, les vecteurs et les matrices. Une collection distincte traite des erreurs fréquentes.
 
-## Expliquer les mathématiques par l’animation
+[Programme des leçons](https://github.com/xia-geom/math_video_project/blob/main/curriculum/programme_principal_fr.yaml) · [Erreurs fréquentes](https://github.com/xia-geom/math_video_project/tree/main/scenes/erreurs_frequentes_fr)
 
-Le volet pédagogique s’appuie sur des exemples, des contre-exemples et des
-explications visuelles progressives. Le programme couvre l’algèbre, les fonctions
-et les graphiques, le dénombrement, les vecteurs, les matrices, la géométrie et
-la trigonométrie. Une collection distincte analyse des erreurs fréquentes et les
-raisonnements permettant de les corriger.
+## Programmes et parcours à l’UQAM
 
-Le programme actuel est organisé en **27 leçons numérotées et six leçons sur les
-erreurs fréquentes**. Il s’agit du contenu prévu dans les sources et le programme,
-non d’une affirmation selon laquelle toutes les vidéos finales sont publiques.
+Ce volet présente le baccalauréat en mathématiques, ses cheminements et les possibilités d’associer les mathématiques ou la statistique à une autre discipline. Il comprend une présentation longue du programme et de courtes vidéos de recrutement et d’orientation.
 
-[Programme principal](https://github.com/xia-geom/math_video_project/blob/main/curriculum/programme_principal_fr.yaml)
-· [Sources des leçons sur les erreurs fréquentes](https://github.com/xia-geom/math_video_project/tree/main/scenes/erreurs_frequentes_fr)
+[Présentation du programme](https://github.com/xia-geom/math_video_project/tree/main/miscellaneous/uqam-baccalaureat-mathematiques-cheminements) · [Étudier les mathématiques à l’UQAM](https://github.com/xia-geom/math_video_project/tree/main/miscellaneous/bac_math_uqam_fr) · [Parcours interdisciplinaires](https://github.com/xia-geom/math_video_project/tree/main/miscellaneous/bac_sciences_ouvertures_fr)
 
-## Programmes, recrutement et orientation à l’UQAM
+## Code source
 
-Le volet UQAM comprend trois formats complémentaires :
+Le dépôt contient les scripts, animations, sous-titres et outils de production. Les liens ci-dessus donnent accès aux sources des projets, et non à un catalogue public de vidéos.
 
-- **Programme et cheminements :** une présentation longue du baccalauréat en
-  mathématiques et de ses parcours.
-- **Étudier les mathématiques à l’UQAM :** une introduction destinée au recrutement,
-  présentant le programme et son environnement.
-- **Ouvertures interdisciplinaires :** une courte présentation des possibilités
-  d’associer les mathématiques ou la statistique à une autre discipline.
-
-[Cheminements — fichiers du projet](https://github.com/xia-geom/math_video_project/tree/main/miscellaneous/uqam-baccalaureat-mathematiques-cheminements)
-· [Mathématiques à l’UQAM — fichiers du projet](https://github.com/xia-geom/math_video_project/tree/main/miscellaneous/bac_math_uqam_fr)
-· [Études interdisciplinaires — fichiers du projet](https://github.com/xia-geom/math_video_project/tree/main/miscellaneous/bac_sciences_ouvertures_fr)
-
-Ces liens mènent aux sources et aux notes de production. Ils ne signifient pas
-que chaque projet dispose déjà d’un film final accessible au public. Cette
-présentation personnelle ne remplace pas une page officielle d’admission de l’UQAM.
-
-## Une approche de production commune
-
-Les leçons de mathématiques et les courtes capsules sur l’UQAM utilisent Manim,
-avec une narration Azure facultative. Le film long sur les cheminements possède
-sa propre chaîne de production. Le dépôt réunit scripts, scènes, sous-titres,
-ressources visuelles et outils de vérification des rendus.
-
-Ce même projet de production héberge aussi une
-[présentation anglaise sous-titrée de Conversation Archive]({{ '/fr/projects/conversation-archive/' | relative_url }}),
-qui relie le travail vidéo au projet d’extraction.
+[Dépôt GitHub](https://github.com/xia-geom/math_video_project)

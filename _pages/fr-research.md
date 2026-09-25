@@ -15,6 +15,6 @@ Un thème récurrent de mon travail consiste à comprendre les interactions entr
 
 <div class="publications">
 
-{% bibliography %}
+{% bibliography --template academic-bib %}
 
 </div>

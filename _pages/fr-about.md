@@ -31,9 +31,7 @@ J'enseigne les mathématiques à l'UQAM. Voir [Enseignement]({{ '/fr/teaching/' 
 
 ## Projets
 
-Mes projets comprennent [_Le français qui vit_]({{ '/fr/projects/french-learning/' | relative_url }}), un livre de français pour la vie quotidienne et universitaire ; le [Math Video Project]({{ '/fr/projects/math-video/' | relative_url }}), qui réunit des leçons de mathématiques **et des vidéos de présentation et de promotion de l’UQAM** ; et [Conversation Archive]({{ '/fr/projects/conversation-archive/' | relative_url }}), un outil expérimental d’extraction et d’organisation traçables de conversations.
-
-[Découvrir tous les projets]({{ '/fr/projects/' | relative_url }})
+Je réalise des [vidéos pédagogiques de mathématiques et de présentation de l’UQAM]({{ '/fr/projects/math-video/' | relative_url }}). Je développe également [Conversation Archive]({{ '/fr/projects/conversation-archive/' | relative_url }}), un outil d’extraction et d’organisation d’informations issues de conversations avec des assistants d’IA.
 
 ## En dehors du travail
 

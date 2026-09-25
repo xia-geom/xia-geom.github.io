@@ -1,0 +1,9 @@
+{% assign en_url = page.url %}
+{% if page.lang == 'fr' or page.url contains '/fr/' %}{% assign en_url = page.url | remove_first: '/fr' %}{% endif %}
+{% assign fr_url = '/fr' | append: en_url %}
+{% assign en_page = site.pages | where: 'url', en_url | first %}
+{% assign fr_page = site.pages | where: 'url', fr_url | first %}
+{% if en_page and fr_page %}
+  <link rel="alternate" hreflang="en" href="{{ en_url | absolute_url }}">
+  <link rel="alternate" hreflang="fr" href="{{ fr_url | absolute_url }}">
+{% endif %}
