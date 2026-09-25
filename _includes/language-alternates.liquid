@@ -1,5 +1,5 @@
 {% assign en_url = page.url %}
-{% if page.lang == 'fr' %}{% assign en_url = page.url | remove_first: '/fr' %}{% endif %}
+{% if page.lang == 'fr' or page.url contains '/fr/' %}{% assign en_url = page.url | remove_first: '/fr' %}{% endif %}
 {% assign fr_url = '/fr' | append: en_url %}
 {% assign en_page = site.pages | where: 'url', en_url | first %}
 {% assign fr_page = site.pages | where: 'url', fr_url | first %}

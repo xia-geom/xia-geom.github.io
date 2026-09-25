@@ -8,16 +8,27 @@ layout: default
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    {% if page.description %}<p class="post-description">{{ page.description }}</p>{% endif %}
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
   </header>
   <article class="cv">
     <section class="card mt-3 p-3">
-      <h2 class="card-title">{% if french %}Coordonnées{% else %}Contact{% endif %}</h2>
-      <p><strong>{{ cv.name }}</strong><br>{{ cv.label }}<br>{{ cv.email }}</p>
+      <h2 class="card-title">
+        {% if french %}Coordonnées{% else %}Contact{% endif %}
+      </h2>
+      <p>
+        <strong>{{ cv.name }}</strong><br>
+        {{ cv.label -}}
+        <br>
+        {{ cv.email }}
+      </p>
     </section>
     {% if cv.summary %}
       <section class="card mt-3 p-3">
-        <h2 class="card-title">{% if french %}Profil{% else %}Profile{% endif %}</h2>
+        <h2 class="card-title">
+          {% if french %}Profil{% else %}Profile{% endif %}
+        </h2>
         {{ cv.summary | markdownify }}
       </section>
     {% endif %}
@@ -34,22 +45,46 @@ layout: default
           <div class="cv-entry">
             {% if key == 'Education' %}
               <h3 class="cv-entry-title">{{ item.institution }}</h3>
-              <p>{{ item.studyType }} — {{ item.area }}<br>{{ item.location }}</p>
+              <p>
+                {{ item.studyType }} — {{ item.area -}}
+                <br>
+                {{ item.location }}
+              </p>
             {% elsif key == 'Experience' %}
               {% if item.url %}
-                <p><a href="{{ item.url | relative_url }}">{{ item.position }}</a></p>
+                <p>
+                  <a href="{{ item.url | relative_url }}">{{ item.position }}</a>
+                </p>
               {% else %}
-                <p><strong>{{ item.position }}</strong>{% if item.company %}<br>{{ item.company }}{% endif %}</p>
+                <p>
+                  <strong>{{ item.position }}</strong>
+                  {%- if item.company -%}
+                    <br>
+                    {{ item.company -}}
+                  {%- endif %}
+                </p>
               {% endif %}
             {% elsif item.name %}
-              <p>{{ item.name }}{% if item.summary != blank %}<br>{{ item.summary }}{% endif %}</p>
+              <p>
+                {{ item.name -}}
+                {%- if item.summary != blank -%}
+                  <br>
+                  {{ item.summary -}}
+                {%- endif %}
+              </p>
             {% elsif item.label %}
-              <p><strong>{{ item.label }}:</strong> {{ item.details }}</p>
+              <p>
+                <strong>{{ item.label }}:</strong> {{ item.details }}
+              </p>
             {% elsif item.bullet %}
               {{ item.bullet | markdownify }}
             {% endif %}
             {% if item.start_date or item.end_date %}
-              <p class="cv-dates">{{ item.start_date }}{% if item.start_date and item.end_date %} – {% endif %}{{ item.end_date }}</p>
+              <p class="cv-dates">
+                {{ item.start_date -}}
+                {%- if item.start_date and item.end_date %} – {% endif -%}
+                {{- item.end_date }}
+              </p>
             {% endif %}
             {% if item.highlights %}
               <ul>

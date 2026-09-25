@@ -22,7 +22,9 @@
 
   <!-- Body -->
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
-    <a class="skip-link" href="#main-content">{% if document_lang == 'fr' %}Aller au contenu{% else %}Skip to content{% endif %}</a>
+    <a class="skip-link" href="#main-content">
+      {%- if document_lang == 'fr' %}Aller au contenu{% else %}Skip to content{% endif -%}
+    </a>
     <!-- Header -->
     {% include header.liquid %}
 

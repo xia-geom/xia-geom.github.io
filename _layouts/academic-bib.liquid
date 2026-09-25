@@ -4,29 +4,48 @@
   <h3 class="paper-title" id="{{ entry.key }}-title">{{ entry.title }}</h3>
   <div class="author">
     {% for author in entry.author_array %}
-      {{ author.first }} {{ author.last }}{% unless forloop.last %}, {% endunless %}
+      {{ author.first }}
+      {{ author.last -}}
+      {%- unless forloop.last %}, {% endunless %}
     {% endfor %}
   </div>
   <p class="periodical">
-    {% if entry.journal %}<em>{{ entry.journal }}</em>, {% endif %}
-    {% if entry.booktitle %}<em>{{ entry.booktitle }}</em>, {% endif %}
-    {{ entry.year }}{% if entry.note %} — {{ entry.note }}{% endif %}
+    {% if entry.journal -%}
+      <em>{{ entry.journal }}</em>,
+    {% endif %}
+    {% if entry.booktitle -%}
+      <em>{{ entry.booktitle }}</em>,
+    {% endif %}
+    {{ entry.year -}}
+    {%- if entry.note %} — {{ entry.note }}{% endif %}
   </p>
   <p class="paper-links">
-    {% if entry.arxiv %}<a href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv</a>{% endif %}
-    {% if entry.doi %}<a href="https://doi.org/{{ entry.doi }}">DOI</a>{% endif %}
-    {% if entry.hal %}<a href="https://hal.science/{{ entry.hal }}">HAL</a>{% endif %}
+    {% if entry.arxiv -%}
+      <a href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv</a>
+    {%- endif %}
+    {% if entry.doi -%}
+      <a href="https://doi.org/{{ entry.doi }}">DOI</a>
+    {%- endif %}
+    {% if entry.hal -%}
+      <a href="https://hal.science/{{ entry.hal }}">HAL</a>
+    {%- endif %}
     {% if entry.pdf %}
       {% assign pdf_url = entry.pdf %}
       {% unless entry.pdf contains '://' %}{% assign pdf_url = entry.pdf | prepend: '/assets/pdf/' | relative_url %}{% endunless %}
       <a href="{{ pdf_url }}">PDF</a>
     {% endif %}
-    {% if entry.code %}<a href="{{ entry.code }}">Code</a>{% endif %}
+    {% if entry.code -%}
+      <a href="{{ entry.code }}">Code</a>
+    {%- endif %}
   </p>
   {% if entry.abstract %}
     <details class="paper-details">
-      <summary>{% if page.lang == 'fr' %}Résumé{% else %}Abstract{% endif %}</summary>
-      <div class="paper-panel"><p>{{ entry.abstract }}</p></div>
+      <summary>
+        {% if page.lang == 'fr' %}Résumé{% else %}Abstract{% endif %}
+      </summary>
+      <div class="paper-panel">
+        <p>{{ entry.abstract }}</p>
+      </div>
     </details>
   {% endif %}
   {% if entry.bibtex_show %}

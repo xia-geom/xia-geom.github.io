@@ -1,4 +1,7 @@
 {% assign lang = page.lang | default: site.lang %}
+{% if page.url contains '/fr/' or page.permalink contains '/fr/' %}
+  {% assign lang = 'fr' %}
+{% endif %}
 {% assign home_url = '/' %}
 {% assign about_label = 'About' %}
 {% assign menu_label = 'Toggle navigation' %}
@@ -21,10 +24,22 @@
   {% if lang == 'fr' %}{% assign other_url = '/' %}{% endif %}
 {% endunless %}
 <header>
-  <nav id="navbar" class="navbar navbar-light navbar-expand-lg {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" aria-label="{% if lang == 'fr' %}Navigation principale{% else %}Main navigation{% endif %}">
+  <nav
+    id="navbar"
+    class="navbar navbar-light navbar-expand-lg {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}"
+    aria-label="{% if lang == 'fr' %}Navigation principale{% else %}Main navigation{% endif %}"
+  >
     <div class="container">
       <a class="navbar-brand title font-weight-lighter" href="{{ home_url | relative_url }}">{{ site.title }}</a>
-      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="{{ menu_label }}">
+      <button
+        class="navbar-toggler collapsed ml-auto"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="{{ menu_label }}"
+      >
         <span class="icon-bar top-bar"></span>
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>
@@ -32,7 +47,15 @@
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
           <li class="nav-item {% if page.url == home_url %}active{% endif %}">
-            <a class="nav-link" href="{{ home_url | relative_url }}" {% if page.url == home_url %}aria-current="page"{% endif %}>{{ about_label }}</a>
+            <a
+              class="nav-link"
+              href="{{ home_url | relative_url }}"
+              {% if page.url == home_url %}
+                aria-current="page"
+              {% endif %}
+            >
+              {{- about_label -}}
+            </a>
           </li>
           {% assign pages = site.pages | sort: 'nav_order' %}
           {% for item in pages %}
@@ -48,7 +71,15 @@
                 {% endif %}
               {% endif %}
               <li class="nav-item {% if page.url contains nav_url %}active{% endif %}">
-                <a class="nav-link" href="{{ nav_url | relative_url }}" {% if page.url == nav_url %}aria-current="page"{% endif %}>{{ nav_title }}</a>
+                <a
+                  class="nav-link"
+                  href="{{ nav_url | relative_url }}"
+                  {% if page.url == nav_url %}
+                    aria-current="page"
+                  {% endif %}
+                >
+                  {{- nav_title -}}
+                </a>
               </li>
             {% endif %}
           {% endfor %}
