@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "French learning, mathematics and UQAM videos, and traceable conversation extraction.",
+          description: "Mathematics and UQAM videos, and conversation-extraction software.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
