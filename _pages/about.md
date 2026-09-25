@@ -33,7 +33,7 @@ I teach mathematics at UQAM. See [Teaching]({{ '/teaching/' | relative_url }}) f
 
 ## Projects
 
-My projects include [*Le français qui vit*]({{ '/projects/french-learning/' | relative_url }}), a French-learning book for everyday and university life; the [Math Video Project]({{ '/projects/math-video/' | relative_url }}), covering mathematics lessons **and UQAM programme and outreach videos**; and [Conversation Archive]({{ '/projects/conversation-archive/' | relative_url }}), an experimental tool for traceable conversation extraction and organization.
+My projects include [_Le français qui vit_]({{ '/projects/french-learning/' | relative_url }}), a French-learning book for everyday and university life; the [Math Video Project]({{ '/projects/math-video/' | relative_url }}), covering mathematics lessons **and UQAM programme and outreach videos**; and [Conversation Archive]({{ '/projects/conversation-archive/' | relative_url }}), an experimental tool for traceable conversation extraction and organization.
 
 [Explore all projects]({{ '/projects/' | relative_url }})
 

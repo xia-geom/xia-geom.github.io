@@ -12,7 +12,7 @@ lang: en
 ## Everyday life, stories and research
 
 A café, an unexpected parcel, a conversation with a neighbour, a research meeting:
-learning French should prepare us for all of them. *Le français qui vit* is a
+learning French should prepare us for all of them. _Le français qui vit_ is a
 French-learning book developed around situations, connected stories and reusable
 language, with English explanations and selected Québec usage notes.
 

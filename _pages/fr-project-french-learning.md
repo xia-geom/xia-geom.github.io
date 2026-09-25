@@ -13,7 +13,7 @@ lang: fr
 
 Un café, un colis inattendu, une conversation avec un voisin, une réunion de
 recherche : apprendre le français doit préparer à toutes ces situations.
-*Le français qui vit* est un livre d’apprentissage construit autour de situations,
+_Le français qui vit_ est un livre d’apprentissage construit autour de situations,
 de récits suivis et de formulations réutilisables, avec des explications en anglais
 et des notes sur certains usages québécois.
 
