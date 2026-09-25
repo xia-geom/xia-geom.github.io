@@ -16,6 +16,6 @@ A recurring theme in my work is to understand how analytic properties of canonic
 
 <div class="publications">
 
-{% bibliography %}
+{% bibliography --template academic-bib %}
 
 </div>

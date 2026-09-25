@@ -1,11 +1,10 @@
 ---
-layout: cv
+layout: academic-cv
 permalink: /cv/
 title: CV
 nav: true
 nav_order: 4
-#cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
-cv_format: rendercv # options: rendercv, jsonresume
+cv_format: rendercv
 description: Academic CV of Xia Xiao, PhD candidate in mathematics at UQAM.
 lang: en
 toc:
