@@ -29,4 +29,12 @@ Je suis doctorant en mathématiques à l'[UQAM](https://uqam.ca), sous la direct
 
 J'enseigne les mathématiques à l'UQAM. Voir [Enseignement]({{ '/fr/teaching/' | relative_url }}) pour les cours et activités d'enseignement.
 
+## Projets
+
+Mes projets comprennent [_Le français qui vit_]({{ '/fr/projects/french-learning/' | relative_url }}), un livre de français pour la vie quotidienne et universitaire ; le [Math Video Project]({{ '/fr/projects/math-video/' | relative_url }}), qui réunit des leçons de mathématiques **et des vidéos de présentation et de promotion de l’UQAM** ; et [Conversation Archive]({{ '/fr/projects/conversation-archive/' | relative_url }}), un outil expérimental d’extraction et d’organisation traçables de conversations.
+
+[Découvrir tous les projets]({{ '/fr/projects/' | relative_url }})
+
+## En dehors du travail
+
 En dehors de la recherche, j'aime le cyclisme longue distance et la randonnée — j'ai traversé le Canada à vélo et parcouru le Camino en Espagne et au Portugal. Voir [Voyages]({{ '/fr/travel/' | relative_url }}).
