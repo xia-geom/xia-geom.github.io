@@ -16,6 +16,6 @@ Animated mathematics lessons and videos presenting UQAM programmes and study pat
 
 ## Conversation Archive
 
-Software for extracting and organizing information from AI conversations, with source references and human review.
+An experimental tool for organizing AI conversation exports into a Markdown reference, with source links and human review.
 
-[Project overview and demonstration]({{ '/projects/conversation-archive/' | relative_url }})
+[Project overview]({{ '/projects/conversation-archive/' | relative_url }}) · [Source code](https://github.com/xia-geom/conversation-archive)

@@ -15,6 +15,6 @@ Des leçons animées de mathématiques et des vidéos présentant les programmes
 
 ## Conversation Archive
 
-Un logiciel pour extraire et organiser les informations issues de conversations avec des assistants d’IA, avec références aux sources et validation humaine.
+Un outil expérimental pour organiser les exports de conversations avec des assistants d’IA dans un document Markdown, avec références aux sources et relecture humaine.
 
-[Présentation et démonstration]({{ '/fr/projects/conversation-archive/' | relative_url }})
+[Présentation du projet]({{ '/fr/projects/conversation-archive/' | relative_url }}) · [Code source](https://github.com/xia-geom/conversation-archive)

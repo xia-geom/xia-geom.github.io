@@ -31,7 +31,7 @@ J'enseigne les mathématiques à l'UQAM. Voir [Enseignement]({{ '/fr/teaching/' 
 
 ## Projets
 
-Je réalise des [vidéos pédagogiques de mathématiques et de présentation de l’UQAM]({{ '/fr/projects/math-video/' | relative_url }}). Je développe également [Conversation Archive]({{ '/fr/projects/conversation-archive/' | relative_url }}), un outil d’extraction et d’organisation d’informations issues de conversations avec des assistants d’IA.
+Je réalise des [vidéos pédagogiques de mathématiques et de présentation de l’UQAM]({{ '/fr/projects/math-video/' | relative_url }}). Je développe également [Conversation Archive]({{ '/fr/projects/conversation-archive/' | relative_url }}), un outil pour organiser les exports de conversations avec des assistants d’IA dans un document Markdown avec références aux sources. [Code source](https://github.com/xia-geom/conversation-archive).
 
 ## En dehors du travail
 

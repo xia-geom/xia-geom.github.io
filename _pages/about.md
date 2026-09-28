@@ -33,7 +33,7 @@ I teach mathematics at UQAM. See [Teaching]({{ '/teaching/' | relative_url }}) f
 
 ## Projects
 
-I produce [mathematics teaching and UQAM presentation videos]({{ '/projects/math-video/' | relative_url }}). I also develop [Conversation Archive]({{ '/projects/conversation-archive/' | relative_url }}), a tool for extracting and organizing information from AI conversations.
+I produce [mathematics teaching and UQAM presentation videos]({{ '/projects/math-video/' | relative_url }}). I also develop [Conversation Archive]({{ '/projects/conversation-archive/' | relative_url }}), a tool for organizing AI conversation exports into a Markdown reference with source links. [Source code](https://github.com/xia-geom/conversation-archive).
 
 ## Beyond work
 
