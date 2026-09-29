@@ -35,6 +35,8 @@ I teach mathematics at UQAM. See [Teaching]({{ '/teaching/' | relative_url }}) f
 
 I produce [mathematics teaching and UQAM presentation videos]({{ '/projects/math-video/' | relative_url }}). I also develop [Conversation Archive]({{ '/projects/conversation-archive/' | relative_url }}), a tool for organizing AI conversation exports into a Markdown reference with source links. [Source code](https://github.com/xia-geom/conversation-archive).
 
+[AI for Math]({{ '/projects/ai-for-math/' | relative_url }}) collects recent results, proof tools, and perspectives from the mathematical community.
+
 ## Beyond work
 
 Outside research, I enjoy long-distance cycling and hiking — I have cycled across Canada and walked the Camino in Spain and Portugal. See [Travel]({{ '/travel/' | relative_url }}).

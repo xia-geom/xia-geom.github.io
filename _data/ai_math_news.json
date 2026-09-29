@@ -1,0 +1,205 @@
+{
+  "last_checked": "2026-09-28",
+  "entries": [
+    {
+      "id": "mathathon-redesign",
+      "date": "2026-09-28",
+      "category": "community",
+      "author": "Mathathon / Caltech",
+      "title": {
+        "en": "Mathathon shifts its focus to understanding and exposition",
+        "fr": "Mathathon se recentre sur la compréhension et l’exposition"
+      },
+      "summary": {
+        "en": "A joint statement announces a redesigned event focused on explaining existing mathematics and developing alternative proofs. AI is presented as one of several optional tools, rather than the purpose of the event.",
+        "fr": "Une déclaration commune annonce un événement repensé autour de l’explication de mathématiques existantes et de preuves alternatives. L’IA y figure comme un outil parmi d’autres, et non comme la finalité du concours."
+      },
+      "status": {
+        "en": "Organizers’ statement; guest post hosted by Terence Tao.",
+        "fr": "Déclaration des organisateurs, publiée sur le blog de Terence Tao."
+      },
+      "sources": [
+        {
+          "label": "Joint Statement about Mathathon",
+          "url": "https://terrytao.wordpress.com/2026/09/28/joint-statement-about-mathathon/"
+        }
+      ],
+      "event_start": "2026-11-13",
+      "event_end": "2026-11-15"
+    },
+    {
+      "id": "corwin-value",
+      "date": "2026-09-26",
+      "category": "community",
+      "author": "Ivan Corwin",
+      "title": {
+        "en": "A value-based approach to mathematics",
+        "fr": "Une approche des mathématiques fondée sur leur valeur"
+      },
+      "summary": {
+        "en": "Corwin discusses how AI might connect mathematical fields and applications, while arguing that training, mentoring and human understanding must remain central to assessing progress.",
+        "fr": "Corwin examine comment l’IA pourrait rapprocher domaines mathématiques et applications, tout en défendant la place de la formation, de l’encadrement et de la compréhension humaine dans l’évaluation des progrès."
+      },
+      "status": {
+        "en": "Personal perspective; Corwin is the guest author, not Tao.",
+        "fr": "Point de vue personnel de Corwin, invité sur le blog de Tao."
+      },
+      "sources": [
+        {
+          "label": "Ivan Corwin",
+          "url": "https://terrytao.wordpress.com/2026/09/26/a-value-based-approach-to-mathematics/"
+        }
+      ]
+    },
+    {
+      "id": "phd-education-summit",
+      "date": "2026-09-25",
+      "category": "community",
+      "author": "Bryna Kra & Rachel Ward",
+      "title": {
+        "en": "Draft recommendations on PhD mathematics education",
+        "fr": "Premières recommandations sur le doctorat en mathématiques"
+      },
+      "summary": {
+        "en": "Kra and Ward share initial recommendations from the Harvard summit on PhD mathematics education in the age of AI. The document is explicitly a draft, open to feedback and revision.",
+        "fr": "Kra et Ward présentent les premières recommandations du sommet de Harvard sur le doctorat en mathématiques à l’ère de l’IA. Le document est explicitement provisoire et ouvert aux commentaires et aux révisions."
+      },
+      "status": {
+        "en": "Draft recommendations, not an adopted university policy.",
+        "fr": "Recommandations provisoires, et non politique universitaire adoptée."
+      },
+      "sources": [
+        {
+          "label": "Bryna Kra & Rachel Ward",
+          "url": "https://terrytao.wordpress.com/2026/09/25/recommendations-of-the-summit-on-phd-math-education-in-the-age-of-ai/"
+        }
+      ],
+      "event_start": "2026-09-17",
+      "event_end": "2026-09-18"
+    },
+    {
+      "id": "iciam-statement",
+      "date": "2026-09-24",
+      "category": "community",
+      "author": "International Council for Industrial and Applied Mathematics (ICIAM)",
+      "title": {
+        "en": "ICIAM on discovery, understanding and trust",
+        "fr": "L’ICIAM sur la découverte, la compréhension et la confiance"
+      },
+      "summary": {
+        "en": "ICIAM welcomes AI-assisted discovery while emphasizing reproducibility, attribution, validation and human judgement. It also calls for reporting unsuccessful approaches and maintaining mathematical expertise.",
+        "fr": "L’ICIAM accueille les possibilités de découverte assistée par IA tout en soulignant la reproductibilité, l’attribution, la validation et le jugement humain. Il recommande aussi de rendre compte des échecs et de préserver l’expertise mathématique."
+      },
+      "status": {
+        "en": "Institutional statement; distinct from individual opinions.",
+        "fr": "Déclaration institutionnelle, distincte des opinions individuelles."
+      },
+      "sources": [
+        {
+          "label": "ICIAM",
+          "url": "https://iciam.org/news/26/9/24/iciam-statement-mathematics-and-artificial-intelligence"
+        },
+        {
+          "label": "Terence Tao",
+          "url": "https://terrytao.wordpress.com/2026/09/25/iciam-statement-on-mathematics-and-artificial-intelligence/"
+        }
+      ]
+    },
+    {
+      "id": "lean-kernel-challenge",
+      "date": "2026-09-16",
+      "category": "benchmarks",
+      "author": "Lean FRO and SAIR Foundation",
+      "title": {
+        "en": "Lean Kernel Challenge: verified computation",
+        "fr": "Lean Kernel Challenge : calcul certifié"
+      },
+      "summary": {
+        "en": "Stage 1 invites faster algorithms for eight computational tasks, with Lean proofs that submissions satisfy the given specifications. This concerns proof-checking infrastructure, not a newly solved open theorem.",
+        "fr": "La première étape propose d’accélérer huit tâches de calcul, avec des preuves Lean garantissant le respect des spécifications. Il s’agit d’infrastructure de vérification, et non de la résolution d’un nouveau problème ouvert."
+      },
+      "status": {
+        "en": "Competition announcement; no claim of an AI research breakthrough.",
+        "fr": "Annonce de concours, sans revendication de percée mathématique par IA."
+      },
+      "sources": [
+        {
+          "label": "Lean FRO / SAIR",
+          "url": "https://terrytao.wordpress.com/2026/09/16/sair-competition-lean-kernel-challenge/"
+        }
+      ]
+    },
+    {
+      "id": "math-ai-declaration",
+      "date": "2026-09-11",
+      "category": "community",
+      "author": "Math and AI (Terence Tao et al.)",
+      "title": {
+        "en": "A declaration on AI and the aims of mathematics",
+        "fr": "Une déclaration sur l’IA et les finalités des mathématiques"
+      },
+      "summary": {
+        "en": "The signatories argue that mathematical progress should be evaluated through understanding and the transmission of ideas, not only solved problems. They raise concerns about attribution, exposition and the training of future mathematicians.",
+        "fr": "Les signataires soutiennent que le progrès mathématique doit s’évaluer par la compréhension et la transmission des idées, et pas seulement par les problèmes résolus. Ils soulèvent des questions d’attribution, d’exposition et de formation."
+      },
+      "status": {
+        "en": "Collective viewpoint; not a unanimous position of all mathematicians.",
+        "fr": "Point de vue collectif, et non position unanime de tous les mathématiciens."
+      },
+      "sources": [
+        {
+          "label": "Math and AI / Terence Tao",
+          "url": "https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/"
+        }
+      ]
+    },
+    {
+      "id": "forced-navier-stokes",
+      "date": "2026-09-08",
+      "category": "research",
+      "author": "OpenAI",
+      "title": {
+        "en": "Reported finite-time blow-up for forced Navier–Stokes",
+        "fr": "Explosion en temps fini annoncée pour Navier–Stokes avec forçage"
+      },
+      "summary": {
+        "en": "OpenAI reports an AI-produced analytical proof and Lean formalization of finite-time blow-up from rest under smooth external forcing, with finite energy. The stated scope is the forced alternatives C and D, not unforced Navier–Stokes regularity.",
+        "fr": "OpenAI annonce une preuve analytique produite par IA et une formalisation Lean d’une explosion en temps fini depuis le repos, sous un forçage extérieur lisse et à énergie finie. La portée annoncée concerne les alternatives C et D avec forçage, et non la régularité sans forçage."
+      },
+      "status": {
+        "en": "Author-reported result with released artifacts; no independent proof audit by this page.",
+        "fr": "Résultat annoncé par l’auteur, avec documents publiés ; cette page n’a pas audité la preuve."
+      },
+      "sources": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/navier-stokes-solution/"
+        }
+      ]
+    },
+    {
+      "id": "fermat-formalization",
+      "date": "2026-09-04",
+      "category": "formalization",
+      "author": "Anthropic",
+      "title": {
+        "en": "Claude-assisted formalization of Fermat’s Last Theorem",
+        "fr": "Formalisation du dernier théorème de Fermat avec Claude"
+      },
+      "summary": {
+        "en": "Anthropic reports a complete Lean formalization assembled with Claude agents, following an established proof strategy. The contribution is machine-checkable formalization of an already proved theorem, not the first mathematical proof of Fermat’s Last Theorem.",
+        "fr": "Anthropic annonce une formalisation complète dans Lean, construite avec des agents Claude suivant une stratégie de preuve établie. L’apport est la formalisation vérifiable d’un théorème déjà démontré, et non sa première preuve mathématique."
+      },
+      "status": {
+        "en": "Formalization reported by Anthropic; the checker has not been rerun for this page.",
+        "fr": "Formalisation annoncée par Anthropic ; le vérificateur n’a pas été relancé pour cette page."
+      },
+      "sources": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem"
+        }
+      ]
+    }
+  ]
+}

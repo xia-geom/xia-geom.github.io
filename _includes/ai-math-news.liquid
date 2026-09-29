@@ -1,0 +1,55 @@
+{% assign news_lang = page.lang | default: 'en' %}
+{% assign feed = site.data.ai_math_news %}
+{% assign categories = 'research,formalization,benchmarks,community' | split: ',' %}
+{% assign labels_en = 'Research results|Formalization and tools|Benchmarks and competitions|Community perspectives' | split: '|' %}
+{% assign labels_fr = 'Résultats de recherche|Formalisation et outils|Évaluations et concours|Regards de la communauté' | split: '|' %}
+{% assign labels = labels_en %}
+{% if news_lang == 'fr' %}{% assign labels = labels_fr %}{% endif %}
+{% assign ordered = feed.entries | sort: 'date' | reverse %}
+<p class="ai-news-updated">
+  {% if news_lang == 'fr' %}Sources consultées le{% else %}Sources last checked{% endif %}
+  <time datetime="{{ feed.last_checked | escape }}">{{ feed.last_checked | escape }}</time>.
+</p>
+<nav class="ai-news-nav" aria-label="{% if news_lang == 'fr' %}Catégories d’actualités{% else %}News categories{% endif %}">
+  {% for category in categories %}
+    <a href="#ai-{{ category }}">{{ labels[forloop.index0] }}</a>
+  {% endfor %}
+</nav>
+<h2>{% if news_lang == 'fr' %}Les plus récentes{% else %}Most recent{% endif %}</h2>
+<ul>
+  {% for item in ordered limit: 3 %}
+    <li>
+      <time datetime="{{ item.date | escape }}">{{ item.date | escape }}</time> — <a href="#{{ item.id | escape }}">{{ item.title[news_lang] | escape }}</a>
+    </li>
+  {% endfor %}
+</ul>
+{% for category in categories %}
+  <section class="ai-news-section" id="ai-{{ category }}" aria-labelledby="ai-{{ category }}-title">
+    <h2 id="ai-{{ category }}-title">{{ labels[forloop.index0] }}</h2>
+    {% assign items = ordered | where: 'category', category %}
+    {% for item in items %}
+      <article class="ai-news-entry" id="{{ item.id | escape }}" aria-labelledby="{{ item.id | escape }}-title">
+        <h3 id="{{ item.id | escape }}-title">{{ item.title[news_lang] | escape }}</h3>
+        <p class="ai-news-meta">
+          <time datetime="{{ item.date | escape }}">{{ item.date | escape }}</time> · {{ item.author | escape }}
+        </p>
+        <p>{{ item.summary[news_lang] | escape }}</p>
+        <p class="ai-news-status"><em>{{ item.status[news_lang] | escape }}</em></p>
+        {% if item.event_start %}
+          <p class="ai-news-meta">
+            {% if news_lang == 'fr' %}Dates de l’événement :{% else %}Event dates:{% endif %}
+            <time datetime="{{ item.event_start | escape }}">{{ item.event_start | escape }}</time> –
+            <time datetime="{{ item.event_end | escape }}">{{ item.event_end | escape }}</time>
+          </p>
+        {% endif %}
+        <p class="ai-news-sources">
+          {% for source in item.sources %}
+            <a href="{{ source.url | escape }}">{{ source.label | escape }}</a>
+          {% endfor %}
+        </p>
+      </article>
+    {% else %}
+      <p>{% if news_lang == 'fr' %}Aucune note dans cette catégorie pour le moment.{% else %}No entries in this category yet.{% endif %}</p>
+    {% endfor %}
+  </section>
+{% endfor %}
