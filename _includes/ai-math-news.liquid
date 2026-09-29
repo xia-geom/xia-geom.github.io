@@ -15,11 +15,14 @@
     <a href="#ai-{{ category }}">{{ labels[forloop.index0] }}</a>
   {% endfor %}
 </nav>
-<h2>{% if news_lang == 'fr' %}Les plus récentes{% else %}Most recent{% endif %}</h2>
+<h2>
+  {% if news_lang == 'fr' %}Les plus récentes{% else %}Most recent{% endif %}
+</h2>
 <ul>
   {% for item in ordered limit: 3 %}
     <li>
-      <time datetime="{{ item.date | escape }}">{{ item.date | escape }}</time> — <a href="#{{ item.id | escape }}">{{ item.title[news_lang] | escape }}</a>
+      <time datetime="{{ item.date | escape }}">{{ item.date | escape }}</time> —
+      <a href="#{{ item.id | escape }}">{{ item.title[news_lang] | escape }}</a>
     </li>
   {% endfor %}
 </ul>
@@ -34,7 +37,9 @@
           <time datetime="{{ item.date | escape }}">{{ item.date | escape }}</time> · {{ item.author | escape }}
         </p>
         <p>{{ item.summary[news_lang] | escape }}</p>
-        <p class="ai-news-status"><em>{{ item.status[news_lang] | escape }}</em></p>
+        <p class="ai-news-status">
+          <em>{{ item.status[news_lang] | escape }}</em>
+        </p>
         {% if item.event_start %}
           <p class="ai-news-meta">
             {% if news_lang == 'fr' %}Dates de l’événement :{% else %}Event dates:{% endif %}
@@ -49,7 +54,9 @@
         </p>
       </article>
     {% else %}
-      <p>{% if news_lang == 'fr' %}Aucune note dans cette catégorie pour le moment.{% else %}No entries in this category yet.{% endif %}</p>
+      <p>
+        {% if news_lang == 'fr' %}Aucune note dans cette catégorie pour le moment.{% else %}No entries in this category yet.{% endif %}
+      </p>
     {% endfor %}
   </section>
 {% endfor %}
