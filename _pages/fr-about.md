@@ -25,15 +25,17 @@ latest_posts:
 
 Je suis doctorant en mathématiques à l'[UQAM](https://uqam.ca), sous la direction de [Julien Keller](https://www.cirget.uqam.ca/keller/) (UQAM) et [Hugues Auvray](https://www.imo.universite-paris-saclay.fr/~auvray/) (Université Paris-Saclay). Mes recherches portent sur la géométrie kählérienne et l'analyse géométrique, en particulier sur les métriques canoniques et les questions variationnelles qui leur sont liées. Voir [Recherche]({{ '/fr/research/' | relative_url }}) pour mes thèmes de recherche et mes articles.
 
-**Courriel :** xiao.xia AT courrier DOT uqam DOT ca · **Bureau :** UQAM, Montréal, Canada
+**Courriel :** xiao.xia AT courrier DOT uqam DOT ca · **Localisation :** UQAM, Montréal, Canada
 
 J'enseigne les mathématiques à l'UQAM. Voir [Enseignement]({{ '/fr/teaching/' | relative_url }}) pour les cours et activités d'enseignement.
 
 ## Projets
 
-Je réalise des [vidéos pédagogiques de mathématiques et de présentation de l’UQAM]({{ '/fr/projects/math-video/' | relative_url }}). Je développe également [Conversation Archive]({{ '/fr/projects/conversation-archive/' | relative_url }}), un outil pour organiser les exports de conversations avec des assistants d’IA dans un document Markdown avec références aux sources. [Code source](https://github.com/xia-geom/conversation-archive).
-
-[IA et mathématiques]({{ '/fr/projects/ai-for-math/' | relative_url }}) rassemble des résultats récents, des outils de preuve et des regards de la communauté mathématique.
+<ul class="project-links">
+  <li><a href="{{ '/fr/projects/math-video/' | relative_url }}">Vidéos de mathématiques et sur l’UQAM</a> — Leçons animées et présentations des programmes d’études de l’UQAM.</li>
+  <li><a href="{{ '/fr/projects/conversation-archive/' | relative_url }}">Conversation Archive</a> — Un logiciel pour organiser les exports de conversations avec des assistants d’IA dans un document Markdown avec références aux sources. <a href="https://github.com/xia-geom/conversation-archive">Code source</a>.</li>
+  <li><a href="{{ '/fr/projects/ai-for-math/' | relative_url }}">IA et mathématiques</a> — Actualités et lectures sur l’IA en mathématiques, avec les sources originales.</li>
+</ul>
 
 ## En dehors du travail
 

@@ -1,31 +1,47 @@
 {% assign news_lang = page.lang | default: 'en' %}
 {% assign feed = site.data.ai_math_news %}
 {% assign categories = 'research,formalization,benchmarks,community' | split: ',' %}
-{% assign labels_en = 'Research results|Formalization and tools|Benchmarks and competitions|Community perspectives' | split: '|' %}
-{% assign labels_fr = 'Résultats de recherche|Formalisation et outils|Évaluations et concours|Regards de la communauté' | split: '|' %}
+{% assign labels_en = 'Research results|Formal proofs and tools|Tests and competitions|Community and education' | split: '|' %}
+{% assign labels_fr = 'Résultats de recherche|Preuves formelles et outils|Évaluations et concours|Communauté et formation' | split: '|' %}
+{% assign descriptions_en = 'New mathematical results, with the scope and reported verification stated.|Computer-checkable proofs of existing theorems, and tools for building them.|Evaluations of AI systems and proof software, separate from new theorems.|Researchers’ views, institutional statements and mathematics education.' | split: '|' %}
+{% assign descriptions_fr = 'Nouveaux résultats mathématiques, avec leur portée et les vérifications annoncées.|Preuves de théorèmes connus vérifiables par ordinateur, et outils pour les construire.|Évaluations des systèmes d’IA et des logiciels de preuve, distinctes des nouveaux théorèmes.|Points de vue de chercheurs, déclarations institutionnelles et formation en mathématiques.' | split: '|' %}
 {% assign labels = labels_en %}
-{% if news_lang == 'fr' %}{% assign labels = labels_fr %}{% endif %}
+{% assign descriptions = descriptions_en %}
+{% if news_lang == 'fr' %}
+  {% assign labels = labels_fr %}
+  {% assign descriptions = descriptions_fr %}
+{% endif %}
 {% assign ordered = feed.entries | sort: 'date' | reverse %}
 <p class="ai-news-updated">
-  {% if news_lang == 'fr' %}Sources consultées le{% else %}Sources last checked{% endif %}
-  <time datetime="{{ feed.last_checked | escape }}">{{ feed.last_checked | escape }}</time>.
+  {% if news_lang == 'fr' %}Dernière consultation des sources :{% else %}Sources last checked:{% endif %}
+  <time datetime="{{ feed.last_checked | escape }}">{{ feed.last_checked | escape }}</time>
+  · <a href="#ai-about">{% if news_lang == 'fr' %}À propos des mises à jour{% else %}About the updates{% endif %}</a>
 </p>
-<nav class="ai-news-nav" aria-label="{% if news_lang == 'fr' %}Catégories d’actualités{% else %}News categories{% endif %}">
-  {% for category in categories %}
-    <a href="#ai-{{ category }}">{{ labels[forloop.index0] }}</a>
-  {% endfor %}
+<section class="ai-news-latest" id="ai-latest" aria-labelledby="ai-latest-title">
+  <h2 id="ai-latest-title">{% if news_lang == 'fr' %}Dernières notes{% else %}Latest notes{% endif %}</h2>
+  <ul>
+    {% for item in ordered limit: 3 %}
+      <li>
+        <time datetime="{{ item.date | escape }}">{{ item.date | escape }}</time>
+        <a href="#{{ item.id | escape }}">{{ item.title[news_lang] | escape }}</a>
+      </li>
+    {% else %}
+      <li>{% if news_lang == 'fr' %}Aucune note publiée pour le moment.{% else %}No notes published yet.{% endif %}</li>
+    {% endfor %}
+  </ul>
+</section>
+<nav class="ai-news-topics" id="ai-topics" aria-labelledby="ai-topics-title">
+  <h2 id="ai-topics-title">{% if news_lang == 'fr' %}Par thème{% else %}Browse by topic{% endif %}</h2>
+  <ul>
+    {% for category in categories %}
+      {% assign items = ordered | where: 'category', category %}
+      <li>
+        <a href="#ai-{{ category }}">{{ labels[forloop.index0] }}</a> <span class="ai-news-meta">({{ items.size }})</span>
+        <p>{{ descriptions[forloop.index0] }}</p>
+      </li>
+    {% endfor %}
+  </ul>
 </nav>
-<h2>
-  {% if news_lang == 'fr' %}Les plus récentes{% else %}Most recent{% endif %}
-</h2>
-<ul>
-  {% for item in ordered limit: 3 %}
-    <li>
-      <time datetime="{{ item.date | escape }}">{{ item.date | escape }}</time> —
-      <a href="#{{ item.id | escape }}">{{ item.title[news_lang] | escape }}</a>
-    </li>
-  {% endfor %}
-</ul>
 {% for category in categories %}
   <section class="ai-news-section" id="ai-{{ category }}" aria-labelledby="ai-{{ category }}-title">
     <h2 id="ai-{{ category }}-title">{{ labels[forloop.index0] }}</h2>
@@ -34,29 +50,33 @@
       <article class="ai-news-entry" id="{{ item.id | escape }}" aria-labelledby="{{ item.id | escape }}-title">
         <h3 id="{{ item.id | escape }}-title">{{ item.title[news_lang] | escape }}</h3>
         <p class="ai-news-meta">
+          {% if news_lang == 'fr' %}Publié le{% else %}Published{% endif %}
           <time datetime="{{ item.date | escape }}">{{ item.date | escape }}</time> · {{ item.author | escape }}
+          · <a href="#{{ item.id | escape }}" aria-label="{% if news_lang == 'fr' %}Lien vers cette note :{% else %}Link to this note:{% endif %} {{ item.title[news_lang] | escape }}">{% if news_lang == 'fr' %}Lien permanent{% else %}Permalink{% endif %}</a>
         </p>
         <p>{{ item.summary[news_lang] | escape }}</p>
         <p class="ai-news-status">
-          <em>{{ item.status[news_lang] | escape }}</em>
+          <strong>{% if news_lang == 'fr' %}À noter :{% else %}Source note:{% endif %}</strong>
+          {{ item.status[news_lang] | escape }}
         </p>
         {% if item.event_start %}
           <p class="ai-news-meta">
-            {% if news_lang == 'fr' %}Dates de l’événement :{% else %}Event dates:{% endif %}
+            {% if news_lang == 'fr' %}Événement mentionné dans la source :{% else %}Event mentioned in the source:{% endif %}
             <time datetime="{{ item.event_start | escape }}">{{ item.event_start | escape }}</time> –
             <time datetime="{{ item.event_end | escape }}">{{ item.event_end | escape }}</time>
           </p>
         {% endif %}
-        <p class="ai-news-sources">
+        <ul class="ai-news-sources" aria-label="{% if news_lang == 'fr' %}Sources originales{% else %}Original sources{% endif %}">
           {% for source in item.sources %}
-            <a href="{{ source.url | escape }}">{{ source.label | escape }}</a>
+            <li>
+              <a href="{{ source.url | escape }}">{% if news_lang == 'fr' %}Lire la source :{% else %}Read source:{% endif %} {{ source.label | escape }}</a>
+            </li>
           {% endfor %}
-        </p>
+        </ul>
       </article>
     {% else %}
-      <p>
-        {% if news_lang == 'fr' %}Aucune note dans cette catégorie pour le moment.{% else %}No entries in this category yet.{% endif %}
-      </p>
+      <p>{% if news_lang == 'fr' %}Aucune note dans ce thème pour le moment.{% else %}No notes in this topic yet.{% endif %}</p>
     {% endfor %}
+    <p class="ai-news-back"><a href="#ai-topics">{% if news_lang == 'fr' %}Retour aux thèmes{% else %}Back to topics{% endif %}</a></p>
   </section>
 {% endfor %}
