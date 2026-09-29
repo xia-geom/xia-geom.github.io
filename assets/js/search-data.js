@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "Mathematics and UQAM videos, and conversation-extraction software.",
+          description: "Mathematics and UQAM videos, conversation-archive software, and AI for Math notes.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
