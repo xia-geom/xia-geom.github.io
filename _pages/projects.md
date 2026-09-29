@@ -2,7 +2,7 @@
 layout: page
 permalink: /projects/
 title: Projects
-description: Mathematics and UQAM videos, conversation-archive software, and AI for Math notes.
+description: Teaching videos, conversation-archive software, and a reading resource on AI and mathematics.
 nav: true
 nav_order: 3.5
 lang: en
@@ -10,18 +10,18 @@ lang: en
 
 ## Math Video Project
 
-Animated mathematics lessons and videos presenting UQAM programmes and study pathways.
+Animated mathematics lessons and presentations of UQAM study programmes.
 
-[Mathematics and UQAM videos]({{ '/projects/math-video/' | relative_url }})
+[Explore the mathematics and UQAM videos]({{ '/projects/math-video/' | relative_url }})
 
 ## Conversation Archive
 
-An experimental tool for organizing AI conversation exports into a Markdown reference, with source links and human review.
+Experimental software for turning AI conversation exports into a Markdown reference, with source links and human review.
 
-[Project overview]({{ '/projects/conversation-archive/' | relative_url }}) · [Source code](https://github.com/xia-geom/conversation-archive)
+[About Conversation Archive]({{ '/projects/conversation-archive/' | relative_url }}) · [Source code](https://github.com/xia-geom/conversation-archive)
 
 ## AI for Math
 
-Dated notes on AI-assisted mathematical results, proof tools, benchmarks, and perspectives from researchers and mathematical institutions.
+News and reading material on AI in mathematics. Browse results, proof tools, evaluations and community perspectives, with links to original sources.
 
-[News and perspectives]({{ '/projects/ai-for-math/' | relative_url }})
+[Browse AI for Math]({{ '/projects/ai-for-math/' | relative_url }})

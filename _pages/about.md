@@ -27,15 +27,17 @@ latest_posts:
 
 I am a PhD candidate in mathematics at [UQAM](https://uqam.ca), under the supervision of [Julien Keller](https://www.cirget.uqam.ca/keller/) (UQAM) and [Hugues Auvray](https://www.imo.universite-paris-saclay.fr/~auvray/) (Université Paris-Saclay). My research is in Kähler geometry and geometric analysis, with a focus on canonical metrics and related variational questions. See [Research]({{ '/research/' | relative_url }}) for research interests and papers.
 
-**Email:** xiao.xia AT courrier DOT uqam DOT ca · **Office:** UQAM, Montréal, Canada
+**Email:** xiao.xia AT courrier DOT uqam DOT ca · **Location:** UQAM, Montréal, Canada
 
 I teach mathematics at UQAM. See [Teaching]({{ '/teaching/' | relative_url }}) for courses and teaching activities.
 
 ## Projects
 
-I produce [mathematics teaching and UQAM presentation videos]({{ '/projects/math-video/' | relative_url }}). I also develop [Conversation Archive]({{ '/projects/conversation-archive/' | relative_url }}), a tool for organizing AI conversation exports into a Markdown reference with source links. [Source code](https://github.com/xia-geom/conversation-archive).
-
-[AI for Math]({{ '/projects/ai-for-math/' | relative_url }}) collects recent results, proof tools, and perspectives from the mathematical community.
+<ul class="project-links">
+  <li><a href="{{ '/projects/math-video/' | relative_url }}">Mathematics and UQAM videos</a> — Animated lessons and presentations of UQAM study programmes.</li>
+  <li><a href="{{ '/projects/conversation-archive/' | relative_url }}">Conversation Archive</a> — Software for turning AI conversation exports into a source-linked Markdown reference. <a href="https://github.com/xia-geom/conversation-archive">Source code</a>.</li>
+  <li><a href="{{ '/projects/ai-for-math/' | relative_url }}">AI for Math</a> — News and reading material on AI in mathematics, with original sources.</li>
+</ul>
 
 ## Beyond work
 

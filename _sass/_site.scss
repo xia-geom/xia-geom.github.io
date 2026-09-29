@@ -161,3 +161,108 @@ summary:focus-visible {
 .cv-dates {
   font-size: 0.9rem;
 }
+
+// Keep text links recognizable without changing publication buttons.
+#main-content a:not(.paper-control):not(.btn) {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.ai-news-nav a,
+.ai-news-topics a,
+.ai-news-back a {
+  display: inline-block;
+  padding: 0.25rem 0;
+}
+
+.ai-news-latest,
+.ai-news-topics,
+.ai-working-group,
+.ai-news-method {
+  scroll-margin-top: 6rem;
+}
+
+.ai-news-latest ul,
+.ai-news-topics ul,
+.ai-news-sources {
+  padding-left: 0;
+  list-style: none;
+}
+
+.ai-news-latest li {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  gap: 0.35rem 0.75rem;
+  padding: 0.4rem 0;
+}
+
+.ai-news-latest time,
+.ai-news-topics p,
+.ai-news-back {
+  font-size: 0.9rem;
+}
+
+.ai-news-topics {
+  margin: 1.75rem 0;
+}
+
+.ai-news-topics ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.5rem;
+}
+
+.ai-news-topics li {
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--global-divider-color);
+}
+
+.ai-news-topics p {
+  margin: 0.25rem 0 0;
+}
+
+.ai-news-status {
+  border-left: 2px solid var(--global-divider-color);
+  padding-left: 0.75rem;
+}
+
+.ai-news-entry,
+.ai-news-topics,
+.ai-working-group,
+.ai-news-method,
+.project-links {
+  overflow-wrap: anywhere;
+}
+
+.ai-working-group {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.ai-news-method {
+  margin: 1.5rem 0;
+  padding: 0.75rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.25rem;
+}
+
+.ai-news-method summary {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.ai-news-method p {
+  margin: 0.75rem 0 0;
+}
+
+.project-links li + li {
+  margin-top: 0.65rem;
+}
+
+@media (max-width: 575.98px) {
+  .ai-news-latest li,
+  .ai-news-topics ul {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
