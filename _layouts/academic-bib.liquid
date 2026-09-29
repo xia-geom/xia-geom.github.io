@@ -19,43 +19,43 @@
     {{ entry.year -}}
     {%- if entry.note %} — {{ entry.note }}{% endif %}
   </p>
-  <p class="paper-links">
+  <div class="paper-actions">
     {% if entry.arxiv -%}
-      <a href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv</a>
+      <a class="paper-control" href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv</a>
     {%- endif %}
     {% if entry.doi -%}
-      <a href="https://doi.org/{{ entry.doi }}">DOI</a>
+      <a class="paper-control" href="https://doi.org/{{ entry.doi }}">DOI</a>
     {%- endif %}
     {% if entry.hal -%}
-      <a href="https://hal.science/{{ entry.hal }}">HAL</a>
+      <a class="paper-control" href="https://hal.science/{{ entry.hal }}">HAL</a>
     {%- endif %}
     {% if entry.pdf %}
       {% assign pdf_url = entry.pdf %}
       {% unless entry.pdf contains '://' %}{% assign pdf_url = entry.pdf | prepend: '/assets/pdf/' | relative_url %}{% endunless %}
-      <a href="{{ pdf_url }}">PDF</a>
+      <a class="paper-control" href="{{ pdf_url }}">PDF</a>
     {% endif %}
     {% if entry.code -%}
-      <a href="{{ entry.code }}">Code</a>
+      <a class="paper-control" href="{{ entry.code }}">Code</a>
     {%- endif %}
-  </p>
-  {% if entry.abstract %}
-    <details class="paper-details">
-      <summary>
-        {% if page.lang == 'fr' %}Résumé{% else %}Abstract{% endif %}
-      </summary>
-      <div class="paper-panel">
-        <p>{{ entry.abstract }}</p>
-      </div>
-    </details>
-  {% endif %}
-  {% if entry.bibtex_show %}
-    <details class="paper-details">
-      <summary>BibTeX</summary>
-      <div class="paper-panel">
-        {% highlight bibtex %}
-        {{- entry.bibtex | hideCustomBibtex -}}
-        {% endhighlight %}
-      </div>
-    </details>
-  {% endif %}
+    {% if entry.abstract %}
+      <details class="paper-details">
+        <summary class="paper-control">
+          {% if page.lang == 'fr' %}Résumé{% else %}Abstract{% endif %}
+        </summary>
+        <div class="paper-panel">
+          <p>{{ entry.abstract }}</p>
+        </div>
+      </details>
+    {% endif %}
+    {% if entry.bibtex_show %}
+      <details class="paper-details">
+        <summary class="paper-control">BibTeX</summary>
+        <div class="paper-panel">
+          {% highlight bibtex %}
+          {{- entry.bibtex | hideCustomBibtex -}}
+          {% endhighlight %}
+        </div>
+      </details>
+    {% endif %}
+  </div>
 </article>
