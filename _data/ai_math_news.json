@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-09-28",
+  "last_checked": "2026-09-29",
   "entries": [
     {
       "id": "mathathon-redesign",
@@ -78,6 +78,34 @@
       "event_end": "2026-09-18"
     },
     {
+      "id": "claude-nine-loop-amplitude",
+      "date": "2026-09-25",
+      "category": "research",
+      "author": "Matt von Hippel, with Lance Dixon",
+      "title": {
+        "en": "Claude computes a nine-loop amplitude in planar N=4 SYM",
+        "fr": "Claude calcule une amplitude à neuf boucles dans la théorie N=4 SYM plane"
+      },
+      "summary": {
+        "en": "Anthropic physicists Liam Fitzpatrick and Siddharth Mishra-Sharma used Claude to compute the six-particle MHV amplitude in planar N=4 super Yang–Mills theory at nine loops by two established routes. The source presents this theory as a toy model used to develop amplitude methods.",
+        "fr": "Les physiciens d’Anthropic Liam Fitzpatrick et Siddharth Mishra-Sharma ont utilisé Claude pour calculer à neuf boucles l’amplitude MHV à six particules de la théorie de super Yang–Mills N=4 plane, par deux méthodes établies. La source présente cette théorie comme un modèle servant à développer les méthodes de calcul d’amplitudes."
+      },
+      "status": {
+        "en": "Anthropic-hosted guest report with released result files; Lance Dixon reports independent validation of the nine-loop result. The released function-level result notes that it has no second independent computation.",
+        "fr": "Compte rendu invité hébergé par Anthropic, avec fichiers de résultats publiés ; Lance Dixon indique avoir validé indépendamment le résultat à neuf boucles. Le résultat publié au niveau fonctionnel précise qu’il n’existe pas de second calcul indépendant."
+      },
+      "sources": [
+        {
+          "label": "Anthropic / Matt von Hippel & Lance Dixon",
+          "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops"
+        },
+        {
+          "label": "Cosmic9 result files",
+          "url": "https://smsharma.io/cosmic-nine-loops/"
+        }
+      ]
+    },
+    {
       "id": "iciam-statement",
       "date": "2026-09-24",
       "category": "community",
@@ -102,6 +130,38 @@
         {
           "label": "Terence Tao",
           "url": "https://terrytao.wordpress.com/2026/09/25/iciam-statement-on-mathematics-and-artificial-intelligence/"
+        }
+      ]
+    },
+    {
+      "id": "agmai-advisory-group",
+      "date": "2026-09-21",
+      "category": "community",
+      "author": "Advisory Group on Mathematics and Artificial Intelligence (AGMAI)",
+      "title": {
+        "en": "IAS-hosted advisory group on AI and mathematics",
+        "fr": "Un groupe consultatif de l’IAS sur l’IA et les mathématiques"
+      },
+      "summary": {
+        "en": "An independent group of mathematicians hosted at the Institute for Advanced Study says it will advise AI companies on their interactions with mathematical research, including responsible presentation and release of results. Its current task is advising OpenAI on how to coordinate results that OpenAI reports were produced by an internal model.",
+        "fr": "Un groupe indépendant de mathématiciens hébergé à l’Institute for Advanced Study annonce qu’il conseillera les entreprises d’IA sur leurs interactions avec la recherche mathématique, notamment sur la présentation et la diffusion responsables des résultats. Sa tâche actuelle consiste à conseiller OpenAI sur la coordination de résultats que l’entreprise dit avoir obtenus avec un modèle interne."
+      },
+      "status": {
+        "en": "Institutional/group announcement; AGMAI is independent of AI companies. Its reference to OpenAI’s reported results is not a validation of those mathematical claims.",
+        "fr": "Annonce institutionnelle et collective ; AGMAI se dit indépendant des entreprises d’IA. La mention des résultats annoncés par OpenAI ne constitue pas une validation de ces affirmations mathématiques."
+      },
+      "sources": [
+        {
+          "label": "AGMAI",
+          "url": "https://agmai.org/"
+        },
+        {
+          "label": "Institute for Advanced Study",
+          "url": "https://www.ias.edu/nccr/projects"
+        },
+        {
+          "label": "AGMAI guest post on Terence Tao’s blog",
+          "url": "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/"
         }
       ]
     },
