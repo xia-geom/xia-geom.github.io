@@ -266,3 +266,64 @@ summary:focus-visible {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+// Working-group programme: keep dates, speakers and reading themes together.
+.ai-programme,
+.ai-programme-table tr,
+.ai-working-group details {
+  scroll-margin-top: 6rem;
+}
+
+.ai-programme-table {
+  width: 100%;
+  table-layout: fixed;
+  margin: 1rem 0 2rem;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.ai-programme-table th,
+.ai-programme-table td {
+  padding: 0.65rem 0.5rem;
+  vertical-align: top;
+  text-align: left;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.ai-programme-table th:first-child {
+  width: 18%;
+}
+
+.ai-programme-table th:nth-child(2) {
+  width: 51%;
+}
+
+.ai-programme-table th:nth-child(3) {
+  width: 31%;
+}
+
+.ai-programme-table tbody th {
+  font-weight: 500;
+}
+
+.ai-programme-affiliation {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+}
+
+.ai-working-group .ai-news-method li + li {
+  margin-top: 0.6rem;
+}
+
+.ai-working-group .ai-news-method li p {
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 575.98px) {
+  .ai-programme-table th,
+  .ai-programme-table td {
+    padding: 0.5rem 0.3rem;
+  }
+}
