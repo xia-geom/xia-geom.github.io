@@ -41,11 +41,8 @@ module AiMathWorkingGroup
     topics = data.fetch('topics')
     raise ArgumentError, 'Expected the six reading themes' unless topics.is_a?(Array) && topics.size == TOPICS.size
     ids = topics.map do |topic|
-      object(topic, %w[id title focus questions resources session], %w[networks])
-      %w[title focus session].each { |key| bilingual(topic.fetch(key)) }
-      questions = topic.fetch('questions')
-      raise ArgumentError, 'Expected 1 to 6 questions' unless questions.is_a?(Array) && (1..6).cover?(questions.size)
-      questions.each { |q| bilingual(q) }
+      object(topic, %w[id title focus resources], %w[networks])
+      %w[title focus].each { |key| bilingual(topic.fetch(key)) }
       resources = topic.fetch('resources')
       raise ArgumentError, 'Expected 1 to 8 readings' unless resources.is_a?(Array) && (1..8).cover?(resources.size)
       resources.each do |resource|

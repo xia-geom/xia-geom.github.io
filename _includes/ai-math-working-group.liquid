@@ -1,16 +1,10 @@
 {% assign study_lang = page.lang | default: 'en' %}
 <section class="ai-working-group" id="ai-working-group" aria-labelledby="ai-working-group-title">
   <h2 id="ai-working-group-title">
-    {% if study_lang == 'fr' %}Six thèmes pour un groupe de travail{% else %}Six themes for a working group{% endif %}
+    {% if study_lang == 'fr' %}Lectures{% else %}Readings{% endif %}
   </h2>
   <p>
-    {% if study_lang == 'fr' %}
-      Ouvrez un thème pour trouver des questions, des lectures et une idée de séance. Ce sont des pistes de discussion, non un programme arrêté ni une
-      position collective.
-    {% else %}
-      Open a theme for questions, readings and a session idea. These are starting points for discussion, not a fixed programme or a collective
-      position.
-    {% endif %}
+    {% if study_lang == 'fr' %}Ouvrez un thème pour consulter les ressources.{% else %}Open a topic to browse the resources.{% endif %}
   </p>
   {% for topic in site.data.ai_math_working_group.topics %}
     <details class="ai-news-method" id="ai-study-{{ topic.id | escape }}">
@@ -19,17 +13,6 @@
         <span class="d-block ai-news-meta">{{ topic.focus[study_lang] | escape }}</span>
       </summary>
       <div class="mt-3">
-        <h3 class="h5">
-          {% if study_lang == 'fr' %}Questions à discuter{% else %}Questions to discuss{% endif %}
-        </h3>
-        <ul>
-          {% for question in topic.questions %}
-            <li>{{ question[study_lang] | escape }}</li>
-          {% endfor %}
-        </ul>
-        <h3 class="h5">
-          {% if study_lang == 'fr' %}Lectures et ressources{% else %}Readings and resources{% endif %}
-        </h3>
         <ul>
           {% for resource in topic.resources %}
             <li>
@@ -40,7 +23,7 @@
         </ul>
         {% if topic.networks %}
           <h3 class="h5">
-            {% if study_lang == 'fr' %}Instituts et réseaux à explorer{% else %}Institutes and networks to explore{% endif %}
+            {% if study_lang == 'fr' %}Instituts et réseaux{% else %}Institutes and networks{% endif %}
           </h3>
           <ul>
             {% for network in topic.networks %}
@@ -50,21 +33,6 @@
             {% endfor %}
           </ul>
         {% endif %}
-        <p>
-          <strong>
-            {%- if study_lang == 'fr' %}Idée de séance :{% else %}Session idea:{% endif -%}
-          </strong>
-          {{ topic.session[study_lang] | escape }}
-        </p>
-        <p class="ai-news-meta">
-          <a href="#ai-study-{{ topic.id | escape }}">
-            {% if study_lang == 'fr' %}Lien vers ce thème{% else %}Link to this theme{% endif %}
-          </a>
-          ·
-          <a href="#ai-working-group">
-            {% if study_lang == 'fr' %}Retour aux six thèmes{% else %}Back to the six themes{% endif %}
-          </a>
-        </p>
       </div>
     </details>
   {% endfor %}
