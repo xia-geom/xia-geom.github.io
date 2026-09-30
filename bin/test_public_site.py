@@ -49,6 +49,25 @@ class PublicationTests(unittest.TestCase):
         self.assertTrue(any(t == "summary" for t, a in doc.tags))
         self.assertFalse(any(t == "a" for t, a in doc.tags))
 
+    def test_abstract_prose_and_unicode_notations_are_accepted(self):
+        for notation in ("complex projective line", "ℂℙ¹", "&#x2102;&#x2119;&#xb9;"):
+            with self.subTest(notation=notation):
+                for route in ("research", "fr/research"):
+                    folder = self.root / route
+                    folder.mkdir(parents=True, exist_ok=True)
+                    (folder / "index.html").write_text(
+                        f'<details><summary>Abstract</summary><p>{notation}</p></details>', encoding="utf-8")
+                errors = validate(self.root)["errors"]
+                self.assertFalse(any("repaired abstract absent" in e for e in errors))
+
+    def test_missing_abstract_still_rejected_in_both_languages(self):
+        for route in ("research", "fr/research"):
+            folder = self.root / route
+            folder.mkdir(parents=True, exist_ok=True)
+            (folder / "index.html").write_text('<details><summary>Abstract</summary></details>')
+        errors = validate(self.root)["errors"]
+        self.assertEqual(sum("repaired abstract absent" in e for e in errors), 2)
+
 
 if __name__ == "__main__":
     unittest.main()
