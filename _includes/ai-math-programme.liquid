@@ -25,13 +25,21 @@
   </p>
   <table class="ai-programme-table" aria-describedby="ai-programme-note">
     <caption class="sr-only">
-      {% if programme_lang == 'fr' %}Séances proposées pour le groupe IA et mathématiques{% else %}Proposed AI for Math working-group sessions{% endif %}
+      {% if programme_lang == 'fr' -%}
+        Séances proposées pour le groupe IA et mathématiques
+      {%- else -%}
+        Proposed AI for Math working-group sessions
+      {%- endif %}
     </caption>
     <thead>
       <tr>
         <th scope="col">Date</th>
-        <th scope="col">{% if programme_lang == 'fr' %}Intervenant{% else %}Speaker{% endif %}</th>
-        <th scope="col">{% if programme_lang == 'fr' %}Thème{% else %}Theme{% endif %}</th>
+        <th scope="col">
+          {% if programme_lang == 'fr' %}Intervenant{% else %}Speaker{% endif %}
+        </th>
+        <th scope="col">
+          {% if programme_lang == 'fr' %}Thème{% else %}Theme{% endif %}
+        </th>
       </tr>
     </thead>
     <tbody>
@@ -41,7 +49,8 @@
             <time datetime="{{ session.date | escape }}">
               {% if programme_lang == 'fr' %}
                 {% assign month_index = session.date | date: '%-m' | minus: 1 %}
-                {{ session.date | date: '%-d' }} {{ months_fr[month_index] }}
+                {{ session.date | date: '%-d' }}
+                {{ months_fr[month_index] }}
               {% else %}
                 {{ session.date | date: '%-d %b' }}
               {% endif %}

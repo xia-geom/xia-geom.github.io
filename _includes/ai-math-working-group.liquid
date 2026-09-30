@@ -5,9 +5,11 @@
   </h2>
   <p>
     {% if study_lang == 'fr' %}
-      Ouvrez un thème pour trouver des questions, des lectures et une idée de séance. Ce sont des pistes de discussion, non un programme arrêté ni une position collective.
+      Ouvrez un thème pour trouver des questions, des lectures et une idée de séance. Ce sont des pistes de discussion, non un programme arrêté ni une
+      position collective.
     {% else %}
-      Open a theme for questions, readings and a session idea. These are starting points for discussion, not a fixed programme or a collective position.
+      Open a theme for questions, readings and a session idea. These are starting points for discussion, not a fixed programme or a collective
+      position.
     {% endif %}
   </p>
   {% for topic in site.data.ai_math_working_group.topics %}
@@ -42,12 +44,16 @@
           </h3>
           <ul>
             {% for network in topic.networks %}
-              <li><a href="{{ network.url | escape }}">{{ network.label | escape }}</a></li>
+              <li>
+                <a href="{{ network.url | escape }}">{{ network.label | escape }}</a>
+              </li>
             {% endfor %}
           </ul>
         {% endif %}
         <p>
-          <strong>{% if study_lang == 'fr' %}Idée de séance :{% else %}Session idea:{% endif %}</strong>
+          <strong>
+            {%- if study_lang == 'fr' %}Idée de séance :{% else %}Session idea:{% endif -%}
+          </strong>
           {{ topic.session[study_lang] | escape }}
         </p>
         <p class="ai-news-meta">

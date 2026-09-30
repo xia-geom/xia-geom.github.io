@@ -19,90 +19,180 @@
     {
       "id": "research",
       "title": { "en": "AI and mathematical research", "fr": "IA et recherche en mathématiques" },
-      "focus": { "en": "Research practice, proof assistants, access and publication.", "fr": "Pratiques de recherche, assistants de preuve, accès et publications." },
+      "focus": {
+        "en": "Research practice, proof assistants, access and publication.",
+        "fr": "Pratiques de recherche, assistants de preuve, accès et publications."
+      },
       "questions": [
-        { "en": "Which parts of a mathematician’s work are well suited to AI, and how should its contribution be checked?", "fr": "Quelles parties du travail de recherche se prêtent à l’IA, et comment en vérifier l’apport ?" },
-        { "en": "What can Lean, Isabelle and Coq check? How do specialized AI agents fit into a research workflow?", "fr": "Que peuvent vérifier Lean, Isabelle et Coq ? Quelle place donner aux agents IA spécialisés dans le travail de recherche ?" },
-        { "en": "Who has access to models and computing resources? How should copyright and confidential research data be protected?", "fr": "Qui a accès aux modèles et au calcul ? Comment protéger les droits d’auteur et les données confidentielles de recherche ?" },
-        { "en": "How should research funding, attribution and publication evolve as more mathematical work is automated?", "fr": "Comment faire évoluer le financement, l’attribution et les publications à mesure que le travail mathématique s’automatise ?" }
+        {
+          "en": "Which parts of a mathematician’s work are well suited to AI, and how should its contribution be checked?",
+          "fr": "Quelles parties du travail de recherche se prêtent à l’IA, et comment en vérifier l’apport ?"
+        },
+        {
+          "en": "What can Lean, Isabelle and Coq check? How do specialized AI agents fit into a research workflow?",
+          "fr": "Que peuvent vérifier Lean, Isabelle et Coq ? Quelle place donner aux agents IA spécialisés dans le travail de recherche ?"
+        },
+        {
+          "en": "Who has access to models and computing resources? How should copyright and confidential research data be protected?",
+          "fr": "Qui a accès aux modèles et au calcul ? Comment protéger les droits d’auteur et les données confidentielles de recherche ?"
+        },
+        {
+          "en": "How should research funding, attribution and publication evolve as more mathematical work is automated?",
+          "fr": "Comment faire évoluer le financement, l’attribution et les publications à mesure que le travail mathématique s’automatise ?"
+        }
       ],
       "resources": [
         {
-          "title": { "en": "Complex structure on the six-sphere — shared manuscript", "fr": "Structure complexe sur la sphère de dimension six — manuscrit partagé" },
+          "title": {
+            "en": "Complex structure on the six-sphere — shared manuscript",
+            "fr": "Structure complexe sur la sphère de dimension six — manuscrit partagé"
+          },
           "url": "https://alpo.ge/s6.pdf",
-          "note": { "en": "Proposed construction in a public PDF; not independently verified here. The author attribution and AI contribution require confirmation.", "fr": "Construction proposée dans un PDF public, non vérifiée indépendamment ici. L’attribution et le rôle de l’IA restent à confirmer." }
+          "note": {
+            "en": "Proposed construction in a public PDF; not independently verified here. The author attribution and AI contribution require confirmation.",
+            "fr": "Construction proposée dans un PDF public, non vérifiée indépendamment ici. L’attribution et le rôle de l’IA restent à confirmer."
+          }
         },
         {
-          "title": { "en": "Fermat’s Last Theorem — Anthropic’s formalization report", "fr": "Dernier théorème de Fermat — annonce de formalisation par Anthropic" },
+          "title": {
+            "en": "Fermat’s Last Theorem — Anthropic’s formalization report",
+            "fr": "Dernier théorème de Fermat — annonce de formalisation par Anthropic"
+          },
           "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
-          "note": { "en": "Read as a report about formalizing an existing theorem, not its first mathematical proof.", "fr": "À lire comme une annonce de formalisation d’un théorème connu, et non comme sa première preuve mathématique." }
+          "note": {
+            "en": "Read as a report about formalizing an existing theorem, not its first mathematical proof.",
+            "fr": "À lire comme une annonce de formalisation d’un théorème connu, et non comme sa première preuve mathématique."
+          }
         },
         {
-          "title": { "en": "Forced Navier–Stokes — OpenAI’s announcement and proof links", "fr": "Navier–Stokes avec forçage — annonce et liens vers les preuves d’OpenAI" },
+          "title": {
+            "en": "Forced Navier–Stokes — OpenAI’s announcement and proof links",
+            "fr": "Navier–Stokes avec forçage — annonce et liens vers les preuves d’OpenAI"
+          },
           "url": "https://openai.com/index/navier-stokes-solution/",
-          "note": { "en": "The announced result uses smooth external forcing. Separate the stated theorem, released artifacts and independent verification.", "fr": "Le résultat annoncé utilise un forçage extérieur lisse. Distinguer l’énoncé, les documents publiés et la vérification indépendante." }
+          "note": {
+            "en": "The announced result uses smooth external forcing. Separate the stated theorem, released artifacts and independent verification.",
+            "fr": "Le résultat annoncé utilise un forçage extérieur lisse. Distinguer l’énoncé, les documents publiés et la vérification indépendante."
+          }
         },
         {
-          "title": { "en": "Terence Tao — interview on AI and mathematics (video)", "fr": "Terence Tao — entretien sur l’IA et les mathématiques (vidéo)" },
+          "title": {
+            "en": "Terence Tao — interview on AI and mathematics (video)",
+            "fr": "Terence Tao — entretien sur l’IA et les mathématiques (vidéo)"
+          },
           "url": "https://www.youtube.com/watch?v=Q8Fkpi18QXU",
-          "note": { "en": "A researcher’s perspective; not an institutional statement.", "fr": "Un point de vue de chercheur, non une déclaration institutionnelle." }
+          "note": {
+            "en": "A researcher’s perspective; not an institutional statement.",
+            "fr": "Un point de vue de chercheur, non une déclaration institutionnelle."
+          }
         },
         {
           "title": { "en": "Un résultat sans chemin — RogueESR", "fr": "Un résultat sans chemin — RogueESR" },
           "url": "https://rogueesr.fr/un-resultat-sans-chemin/",
-          "note": { "en": "A critical commentary to discuss alongside the original research announcement.", "fr": "Un texte critique à discuter en regard de l’annonce de recherche originale." }
+          "note": {
+            "en": "A critical commentary to discuss alongside the original research announcement.",
+            "fr": "Un texte critique à discuter en regard de l’annonce de recherche originale."
+          }
         }
       ],
-      "session": { "en": "Choose one reported result and separate its exact statement, the role of AI, the available evidence and the checks still needed.", "fr": "Choisir un résultat annoncé et distinguer son énoncé exact, le rôle de l’IA, les documents disponibles et les vérifications restantes." }
+      "session": {
+        "en": "Choose one reported result and separate its exact statement, the role of AI, the available evidence and the checks still needed.",
+        "fr": "Choisir un résultat annoncé et distinguer son énoncé exact, le rôle de l’IA, les documents disponibles et les vérifications restantes."
+      }
     },
     {
       "id": "education",
       "title": { "en": "Education and early-career mathematicians", "fr": "Formation et jeunes chercheurs" },
-      "focus": { "en": "Undergraduate programmes, doctoral training and mathematical skills.", "fr": "Programmes de premier cycle, doctorat et savoir-faire mathématique." },
+      "focus": {
+        "en": "Undergraduate programmes, doctoral training and mathematical skills.",
+        "fr": "Programmes de premier cycle, doctorat et savoir-faire mathématique."
+      },
       "questions": [
-        { "en": "How can we continue to attract students, and how should we explain the value of studying mathematics?", "fr": "Comment continuer à attirer les étudiants et présenter la valeur d’une formation en mathématiques ?" },
-        { "en": "Should undergraduate programmes and assessment change? Which skills should students develop without delegating them to AI?", "fr": "Faut-il adapter les programmes et les évaluations du premier cycle ? Quelles compétences développer sans les déléguer à l’IA ?" },
-        { "en": "What might a mathematics PhD profile look like in 2027 or 2035? Which skills become more important, and what knowledge could be lost?", "fr": "À quoi pourrait ressembler le profil d’un doctorant en 2027 ou en 2035 ? Quelles compétences deviennent plus importantes, et quels savoir-faire risquent de se perdre ?" }
+        {
+          "en": "How can we continue to attract students, and how should we explain the value of studying mathematics?",
+          "fr": "Comment continuer à attirer les étudiants et présenter la valeur d’une formation en mathématiques ?"
+        },
+        {
+          "en": "Should undergraduate programmes and assessment change? Which skills should students develop without delegating them to AI?",
+          "fr": "Faut-il adapter les programmes et les évaluations du premier cycle ? Quelles compétences développer sans les déléguer à l’IA ?"
+        },
+        {
+          "en": "What might a mathematics PhD profile look like in 2027 or 2035? Which skills become more important, and what knowledge could be lost?",
+          "fr": "À quoi pourrait ressembler le profil d’un doctorant en 2027 ou en 2035 ? Quelles compétences deviennent plus importantes, et quels savoir-faire risquent de se perdre ?"
+        }
       ],
       "resources": [
         {
           "title": { "en": "PhD education summit — Bryna Kra and Rachel Ward", "fr": "Sommet sur la formation doctorale — Bryna Kra et Rachel Ward" },
           "url": "https://terrytao.wordpress.com/2026/09/25/recommendations-of-the-summit-on-phd-math-education-in-the-age-of-ai/",
-          "note": { "en": "Draft recommendations hosted on Tao’s blog; a discussion document, not adopted UQAM policy.", "fr": "Recommandations provisoires publiées sur le blog de Tao : un document de discussion, non une politique adoptée par l’UQAM." }
+          "note": {
+            "en": "Draft recommendations hosted on Tao’s blog; a discussion document, not adopted UQAM policy.",
+            "fr": "Recommandations provisoires publiées sur le blog de Tao : un document de discussion, non une politique adoptée par l’UQAM."
+          }
         },
         {
           "title": { "en": "INTER-MATH-AI training programme", "fr": "Programme de formation INTER-MATH-AI" },
           "url": "https://intermath.ai/",
-          "note": { "en": "An example of interdisciplinary mathematics and AI training, with ethics and applications.", "fr": "Un exemple de formation interdisciplinaire en mathématiques et IA, incluant l’éthique et les applications." }
+          "note": {
+            "en": "An example of interdisciplinary mathematics and AI training, with ethics and applications.",
+            "fr": "Un exemple de formation interdisciplinaire en mathématiques et IA, incluant l’éthique et les applications."
+          }
         }
       ],
-      "session": { "en": "Take one course or doctoral activity and discuss what should be learned, what could be delegated and how understanding would be assessed.", "fr": "Choisir un cours ou une activité doctorale et discuter de ce qu’il faut apprendre, de ce qui peut être délégué et de la manière d’évaluer la compréhension." }
+      "session": {
+        "en": "Take one course or doctoral activity and discuss what should be learned, what could be delegated and how understanding would be assessed.",
+        "fr": "Choisir un cours ou une activité doctorale et discuter de ce qu’il faut apprendre, de ce qui peut être délégué et de la manière d’évaluer la compréhension."
+      }
     },
     {
       "id": "community",
       "title": { "en": "UQAM and the mathematical community", "fr": "IA, UQAM et communauté mathématique" },
-      "focus": { "en": "Public statements, collective choices and research networks.", "fr": "Déclarations publiques, choix collectifs et réseaux de recherche." },
+      "focus": {
+        "en": "Public statements, collective choices and research networks.",
+        "fr": "Déclarations publiques, choix collectifs et réseaux de recherche."
+      },
       "questions": [
-        { "en": "How should the department connect with existing initiatives, and what role could the CRM play?", "fr": "Quels liens établir entre le département et les initiatives existantes ? Quel rôle pour le CRM ?" },
-        { "en": "Should the department adopt shared rules or a public position on AI? Where do the available statements agree or differ?", "fr": "Faut-il adopter des règles communes ou une position publique sur l’IA ? Où les déclarations disponibles convergent-elles ou divergent-elles ?" },
-        { "en": "Could an open mathematics AI be hosted at a university, with transparent costs and environmental impacts?", "fr": "Peut-on héberger une IA mathématique libre à l’université, avec des coûts et des impacts environnementaux transparents ?" },
-        { "en": "What could a Québec research initiative on the mathematics of AI contribute, and how would it be funded?", "fr": "Quel serait l’apport d’une initiative québécoise sur les mathématiques de l’IA, et comment la financer ?" }
+        {
+          "en": "How should the department connect with existing initiatives, and what role could the CRM play?",
+          "fr": "Quels liens établir entre le département et les initiatives existantes ? Quel rôle pour le CRM ?"
+        },
+        {
+          "en": "Should the department adopt shared rules or a public position on AI? Where do the available statements agree or differ?",
+          "fr": "Faut-il adopter des règles communes ou une position publique sur l’IA ? Où les déclarations disponibles convergent-elles ou divergent-elles ?"
+        },
+        {
+          "en": "Could an open mathematics AI be hosted at a university, with transparent costs and environmental impacts?",
+          "fr": "Peut-on héberger une IA mathématique libre à l’université, avec des coûts et des impacts environnementaux transparents ?"
+        },
+        {
+          "en": "What could a Québec research initiative on the mathematics of AI contribute, and how would it be funded?",
+          "fr": "Quel serait l’apport d’une initiative québécoise sur les mathématiques de l’IA, et comment la financer ?"
+        }
       ],
       "resources": [
         {
           "title": { "en": "Math and AI declaration", "fr": "Déclaration Math and AI" },
           "url": "https://mathandai.org/",
-          "note": { "en": "A collective viewpoint on understanding, attribution and the aims of mathematics.", "fr": "Un point de vue collectif sur la compréhension, l’attribution et les finalités des mathématiques." }
+          "note": {
+            "en": "A collective viewpoint on understanding, attribution and the aims of mathematics.",
+            "fr": "Un point de vue collectif sur la compréhension, l’attribution et les finalités des mathématiques."
+          }
         },
         {
           "title": { "en": "Leiden Declaration on AI and Mathematics", "fr": "Déclaration de Leiden sur l’IA et les mathématiques" },
           "url": "https://leidendeclaration.ai/",
-          "note": { "en": "Community recommendations for the practice of mathematics; compare the text with other positions.", "fr": "Recommandations communautaires pour la pratique des mathématiques, à comparer aux autres prises de position." }
+          "note": {
+            "en": "Community recommendations for the practice of mathematics; compare the text with other positions.",
+            "fr": "Recommandations communautaires pour la pratique des mathématiques, à comparer aux autres prises de position."
+          }
         },
         {
           "title": { "en": "SMF board — Navier–Stokes and OpenAI", "fr": "Bureau de la SMF — Navier–Stokes et OpenAI" },
           "url": "https://smf.emath.fr/actualites-smf/position-bureau-smf-navier-stokes-et-openai",
-          "note": { "en": "An institutional position on the announcements and their ethical implications, not a proof audit.", "fr": "Une position institutionnelle sur les annonces et leurs implications éthiques, non un audit de preuve." }
+          "note": {
+            "en": "An institutional position on the announcements and their ethical implications, not a proof audit.",
+            "fr": "Une position institutionnelle sur les annonces et leurs implications éthiques, non un audit de preuve."
+          }
         },
         {
           "title": { "en": "Association for Human Mathematics", "fr": "Association for Human Mathematics" },
@@ -112,7 +202,10 @@
         {
           "title": { "en": "Proofs and Prompts", "fr": "Proofs and Prompts" },
           "url": "https://proofsandprompts.com/",
-          "note": { "en": "Community essays and discussions; attribute each contribution to its author.", "fr": "Essais et discussions communautaires ; chaque contribution doit être attribuée à son auteur." }
+          "note": {
+            "en": "Community essays and discussions; attribute each contribution to its author.",
+            "fr": "Essais et discussions communautaires ; chaque contribution doit être attribuée à son auteur."
+          }
         }
       ],
       "networks": [
@@ -123,70 +216,130 @@
         { "label": "Université Laval — Institut intelligence et données", "url": "https://web.iid.ulaval.ca/" },
         { "label": "ICARM — Institute for Computer-Aided Reasoning in Mathematics", "url": "https://icarm.io/" }
       ],
-      "session": { "en": "Compare two public statements and identify concrete questions for the department. The linked initiatives are resources to explore, not partners of this page.", "fr": "Comparer deux déclarations et dégager des questions concrètes pour le département. Les initiatives citées sont des pistes à explorer, non des partenaires de cette page." }
+      "session": {
+        "en": "Compare two public statements and identify concrete questions for the department. The linked initiatives are resources to explore, not partners of this page.",
+        "fr": "Comparer deux déclarations et dégager des questions concrètes pour le département. Les initiatives citées sont des pistes à explorer, non des partenaires de cette page."
+      }
     },
     {
       "id": "environment",
       "title": { "en": "AI for mathematics and the environment", "fr": "IA pour les mathématiques et environnement" },
-      "focus": { "en": "Computing infrastructure, energy use and the limits of footprint estimates.", "fr": "Infrastructures de calcul, consommation énergétique et limites des estimations." },
+      "focus": {
+        "en": "Computing infrastructure, energy use and the limits of footprint estimates.",
+        "fr": "Infrastructures de calcul, consommation énergétique et limites des estimations."
+      },
       "questions": [
-        { "en": "How can we estimate the environmental impact of a mathematical task assisted by AI?", "fr": "Comment estimer l’impact environnemental d’une tâche mathématique assistée par IA ?" },
-        { "en": "What can data-centre maps and footprint calculators tell us, and which assumptions or missing data prevent a reliable comparison?", "fr": "Que nous apprennent les cartes de centres de données et les calculateurs d’impact ? Quelles hypothèses ou données manquantes limitent les comparaisons ?" }
+        {
+          "en": "How can we estimate the environmental impact of a mathematical task assisted by AI?",
+          "fr": "Comment estimer l’impact environnemental d’une tâche mathématique assistée par IA ?"
+        },
+        {
+          "en": "What can data-centre maps and footprint calculators tell us, and which assumptions or missing data prevent a reliable comparison?",
+          "fr": "Que nous apprennent les cartes de centres de données et les calculateurs d’impact ? Quelles hypothèses ou données manquantes limitent les comparaisons ?"
+        }
       ],
       "resources": [
         {
           "title": { "en": "EcoLogits Calculator", "fr": "Calculateur EcoLogits" },
           "url": "https://calculator.ecologits.ai/",
-          "note": { "en": "A tool for estimating impacts of model inference; estimates are not direct measurements of a particular research project.", "fr": "Un outil d’estimation des impacts de l’inférence ; les estimations ne sont pas des mesures directes d’un projet de recherche donné." }
+          "note": {
+            "en": "A tool for estimating impacts of model inference; estimates are not direct measurements of a particular research project.",
+            "fr": "Un outil d’estimation des impacts de l’inférence ; les estimations ne sont pas des mesures directes d’un projet de recherche donné."
+          }
         },
         {
           "title": { "en": "EcoLogits — methodology and documentation", "fr": "EcoLogits — méthode et documentation" },
           "url": "https://ecologits.ai/latest/",
-          "note": { "en": "Read the assumptions and scope alongside the calculator.", "fr": "Lire les hypothèses et le périmètre de la méthode en parallèle du calculateur." }
+          "note": {
+            "en": "Read the assumptions and scope alongside the calculator.",
+            "fr": "Lire les hypothèses et le périmètre de la méthode en parallèle du calculateur."
+          }
         },
         {
           "title": { "en": "Data Centre Map — Montréal", "fr": "Data Centre Map — Montréal" },
           "url": "https://www.datacentermap.com/canada/montreal/",
-          "note": { "en": "Infrastructure directory, not a measurement of energy consumed by AI for mathematics.", "fr": "Annuaire d’infrastructures, non mesure de l’énergie consommée par l’IA pour les mathématiques." }
+          "note": {
+            "en": "Infrastructure directory, not a measurement of energy consumed by AI for mathematics.",
+            "fr": "Annuaire d’infrastructures, non mesure de l’énergie consommée par l’IA pour les mathématiques."
+          }
         },
         {
           "title": { "en": "Data Centre Map — Paris", "fr": "Data Centre Map — Paris" },
           "url": "https://www.datacentermap.com/france/paris/",
-          "note": { "en": "A second geographic reference for the infrastructure discussion.", "fr": "Un second repère géographique pour la discussion sur les infrastructures." }
+          "note": {
+            "en": "A second geographic reference for the infrastructure discussion.",
+            "fr": "Un second repère géographique pour la discussion sur les infrastructures."
+          }
         }
       ],
-      "session": { "en": "Estimate one clearly specified use case and list the assumptions and missing information before drawing conclusions.", "fr": "Estimer un usage bien défini et expliciter les hypothèses et les informations manquantes avant de conclure." }
+      "session": {
+        "en": "Estimate one clearly specified use case and list the assumptions and missing information before drawing conclusions.",
+        "fr": "Estimer un usage bien défini et expliciter les hypothèses et les informations manquantes avant de conclure."
+      }
     },
     {
       "id": "epistemology",
       "title": { "en": "Epistemology and AI safety", "fr": "Épistémologie et sécurité de l’IA" },
-      "focus": { "en": "Proof, understanding, the limits of language models and AI safety.", "fr": "Preuve, compréhension, limites des modèles de langage et sécurité de l’IA." },
+      "focus": {
+        "en": "Proof, understanding, the limits of language models and AI safety.",
+        "fr": "Preuve, compréhension, limites des modèles de langage et sécurité de l’IA."
+      },
       "questions": [
-        { "en": "How can we understand mathematics found by machines? Could we know that a statement is true without understanding why?", "fr": "Comment comprendre les mathématiques trouvées par les machines ? Peut-on savoir qu’un énoncé est vrai sans comprendre pourquoi ?" },
-        { "en": "What does doing mathematics mean when exploration is largely automated?", "fr": "Que signifie faire des mathématiques lorsque l’exploration est largement automatisée ?" },
-        { "en": "Which claims about general intelligence, model limitations and existential risks are established, conjectural or matters of disagreement?", "fr": "Quelles affirmations sur l’intelligence générale, les limites des modèles et les risques existentiels sont établies, conjecturales ou débattues ?" }
+        {
+          "en": "How can we understand mathematics found by machines? Could we know that a statement is true without understanding why?",
+          "fr": "Comment comprendre les mathématiques trouvées par les machines ? Peut-on savoir qu’un énoncé est vrai sans comprendre pourquoi ?"
+        },
+        {
+          "en": "What does doing mathematics mean when exploration is largely automated?",
+          "fr": "Que signifie faire des mathématiques lorsque l’exploration est largement automatisée ?"
+        },
+        {
+          "en": "Which claims about general intelligence, model limitations and existential risks are established, conjectural or matters of disagreement?",
+          "fr": "Quelles affirmations sur l’intelligence générale, les limites des modèles et les risques existentiels sont établies, conjecturales ou débattues ?"
+        }
       ],
       "resources": [
         {
-          "title": { "en": "Artificial Intelligence and the Structure of Mathematics", "fr": "Artificial Intelligence and the Structure of Mathematics" },
+          "title": {
+            "en": "Artificial Intelligence and the Structure of Mathematics",
+            "fr": "Artificial Intelligence and the Structure of Mathematics"
+          },
           "url": "https://arxiv.org/abs/2604.06107",
-          "note": { "en": "Essay by Maissam Barkeshli, Michael R. Douglas and Michael H. Freedman on the structure of proofs and automated discovery.", "fr": "Essai de Maissam Barkeshli, Michael R. Douglas et Michael H. Freedman sur la structure des preuves et la découverte automatisée." }
+          "note": {
+            "en": "Essay by Maissam Barkeshli, Michael R. Douglas and Michael H. Freedman on the structure of proofs and automated discovery.",
+            "fr": "Essai de Maissam Barkeshli, Michael R. Douglas et Michael H. Freedman sur la structure des preuves et la découverte automatisée."
+          }
         },
         {
           "title": { "en": "LawZero — AI safety research", "fr": "LoiZéro — recherche sur la sécurité de l’IA" },
           "url": "https://lawzero.org/fr",
-          "note": { "en": "The initiative’s own account of its research direction; not a settled conclusion about AI risks.", "fr": "Présentation par l’initiative de son orientation de recherche, non conclusion définitive sur les risques de l’IA." }
+          "note": {
+            "en": "The initiative’s own account of its research direction; not a settled conclusion about AI risks.",
+            "fr": "Présentation par l’initiative de son orientation de recherche, non conclusion définitive sur les risques de l’IA."
+          }
         }
       ],
-      "session": { "en": "Discuss a concrete distinction between producing a proof, checking it and explaining it to another mathematician.", "fr": "Discuter d’une distinction concrète entre produire une preuve, la vérifier et l’expliquer à un autre mathématicien." }
+      "session": {
+        "en": "Discuss a concrete distinction between producing a proof, checking it and explaining it to another mathematician.",
+        "fr": "Discuter d’une distinction concrète entre produire une preuve, la vérifier et l’expliquer à un autre mathématicien."
+      }
     },
     {
       "id": "foundations",
       "title": { "en": "Understanding how AI works", "fr": "Comprendre le fonctionnement de l’IA" },
-      "focus": { "en": "Neural networks, learning theory and the mathematics of language models.", "fr": "Réseaux de neurones, théorie de l’apprentissage et mathématiques des modèles de langage." },
+      "focus": {
+        "en": "Neural networks, learning theory and the mathematics of language models.",
+        "fr": "Réseaux de neurones, théorie de l’apprentissage et mathématiques des modèles de langage."
+      },
       "questions": [
-        { "en": "How do neural networks and large language models work, and which mathematical ideas explain their basic operations?", "fr": "Comment fonctionnent les réseaux de neurones et les grands modèles de langage ? Quelles idées mathématiques éclairent leurs opérations de base ?" },
-        { "en": "Which foundational texts help distinguish a working mechanism from a theorem about learning or generalization?", "fr": "Quels textes fondateurs permettent de distinguer un mécanisme de fonctionnement d’un théorème sur l’apprentissage ou la généralisation ?" }
+        {
+          "en": "How do neural networks and large language models work, and which mathematical ideas explain their basic operations?",
+          "fr": "Comment fonctionnent les réseaux de neurones et les grands modèles de langage ? Quelles idées mathématiques éclairent leurs opérations de base ?"
+        },
+        {
+          "en": "Which foundational texts help distinguish a working mechanism from a theorem about learning or generalization?",
+          "fr": "Quels textes fondateurs permettent de distinguer un mécanisme de fonctionnement d’un théorème sur l’apprentissage ou la généralisation ?"
+        }
       ],
       "resources": [
         {
@@ -197,25 +350,43 @@
         {
           "title": { "en": "Deep Learning — Goodfellow, Bengio and Courville", "fr": "Deep Learning — Goodfellow, Bengio et Courville" },
           "url": "https://www.deeplearningbook.org/",
-          "note": { "en": "Textbook: mathematical background and neural-network methods.", "fr": "Manuel : bases mathématiques et méthodes des réseaux de neurones." }
+          "note": {
+            "en": "Textbook: mathematical background and neural-network methods.",
+            "fr": "Manuel : bases mathématiques et méthodes des réseaux de neurones."
+          }
         },
         {
           "title": { "en": "Mathematics for Machine Learning", "fr": "Mathematics for Machine Learning" },
           "url": "https://mml-book.com/",
-          "note": { "en": "Deisenroth, Faisal and Ong: linear algebra, probability, optimization and learning.", "fr": "Deisenroth, Faisal et Ong : algèbre linéaire, probabilités, optimisation et apprentissage." }
+          "note": {
+            "en": "Deisenroth, Faisal and Ong: linear algebra, probability, optimization and learning.",
+            "fr": "Deisenroth, Faisal et Ong : algèbre linéaire, probabilités, optimisation et apprentissage."
+          }
         },
         {
-          "title": { "en": "Understanding Machine Learning: From Theory to Algorithms", "fr": "Understanding Machine Learning: From Theory to Algorithms" },
+          "title": {
+            "en": "Understanding Machine Learning: From Theory to Algorithms",
+            "fr": "Understanding Machine Learning: From Theory to Algorithms"
+          },
           "url": "https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/",
-          "note": { "en": "Shai Shalev-Shwartz and Shai Ben-David: the authors’ page for the learning-theory textbook.", "fr": "Shai Shalev-Shwartz et Shai Ben-David : page des auteurs pour le manuel de théorie de l’apprentissage." }
+          "note": {
+            "en": "Shai Shalev-Shwartz and Shai Ben-David: the authors’ page for the learning-theory textbook.",
+            "fr": "Shai Shalev-Shwartz et Shai Ben-David : page des auteurs pour le manuel de théorie de l’apprentissage."
+          }
         },
         {
           "title": { "en": "The Simple Mathematics of Large Language Models", "fr": "The Simple Mathematics of Large Language Models" },
           "url": "https://crc.business-school.ed.ac.uk/sites/crc/files/2026-02/Mathematics_of_LLMs_2026.pdf",
-          "note": { "en": "Joseph L. Breeden’s introductory working paper (PDF).", "fr": "Document de travail introductif de Joseph L. Breeden (PDF)." }
+          "note": {
+            "en": "Joseph L. Breeden’s introductory working paper (PDF).",
+            "fr": "Document de travail introductif de Joseph L. Breeden (PDF)."
+          }
         }
       ],
-      "session": { "en": "Work through a small example and explain which quantities are defined by the architecture and which are learned from data.", "fr": "Étudier un petit exemple et expliquer quelles quantités sont définies par l’architecture et lesquelles sont apprises à partir des données." }
+      "session": {
+        "en": "Work through a small example and explain which quantities are defined by the architecture and which are learned from data.",
+        "fr": "Étudier un petit exemple et expliquer quelles quantités sont définies par l’architecture et lesquelles sont apprises à partir des données."
+      }
     }
   ]
 }
