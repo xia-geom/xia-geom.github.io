@@ -17,6 +17,12 @@ Animated lessons explain concepts through examples, visual arguments and counter
 
 [Curriculum](https://github.com/xia-geom/math_video_project/blob/main/curriculum/programme_principal_fr.yaml) · [Common-error lessons](https://github.com/xia-geom/math_video_project/tree/main/scenes/erreurs_frequentes_fr)
 
+### Example lesson: From the unit circle to the sine function
+
+This French-language lesson uses the unit circle to introduce the sine function.
+
+{% include video.liquid path="/assets/video/du-cercle-unite-a-la-fonction-sinus.mp4" width="100%" controls=true title="From the unit circle to the sine function" caption="Du cercle unité à la fonction sinus (in French)" %}
+
 ## UQAM programmes and study pathways
 
 This strand presents the mathematics bachelor’s programme, its study pathways and opportunities to combine mathematics or statistics with another discipline. It includes a longer programme overview and short recruitment and orientation videos.
@@ -25,6 +31,6 @@ This strand presents the mathematics bachelor’s programme, its study pathways 
 
 ## Source code
 
-The repository contains the scripts, animations, captions and production tools. The links above lead to project sources, not a public video catalogue.
+The repository contains the scripts, animations, captions and production tools. The links above lead to project sources; the lesson shown here is one video example.
 
 [GitHub repository](https://github.com/xia-geom/math_video_project)

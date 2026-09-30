@@ -17,6 +17,12 @@ Les leçons s’appuient sur des exemples, des arguments visuels et des contre-e
 
 [Programme des leçons](https://github.com/xia-geom/math_video_project/blob/main/curriculum/programme_principal_fr.yaml) · [Erreurs fréquentes](https://github.com/xia-geom/math_video_project/tree/main/scenes/erreurs_frequentes_fr)
 
+### Exemple de leçon : Du cercle unité à la fonction sinus
+
+Cette leçon présente la fonction sinus à partir du cercle unité.
+
+{% include video.liquid path="/assets/video/du-cercle-unite-a-la-fonction-sinus.mp4" width="100%" controls=true title="Du cercle unité à la fonction sinus" caption="Du cercle unité à la fonction sinus" %}
+
 ## Programmes et parcours à l’UQAM
 
 Ce volet présente le baccalauréat en mathématiques, ses cheminements et les possibilités d’associer les mathématiques ou la statistique à une autre discipline. Il comprend une présentation longue du programme et de courtes vidéos de recrutement et d’orientation.
@@ -25,6 +31,6 @@ Ce volet présente le baccalauréat en mathématiques, ses cheminements et les p
 
 ## Code source
 
-Le dépôt contient les scripts, animations, sous-titres et outils de production. Les liens ci-dessus donnent accès aux sources des projets, et non à un catalogue public de vidéos.
+Le dépôt contient les scripts, animations, sous-titres et outils de production. Les liens ci-dessus donnent accès aux sources des projets ; la leçon présentée ici est un exemple de vidéo.
 
 [Dépôt GitHub](https://github.com/xia-geom/math_video_project)
