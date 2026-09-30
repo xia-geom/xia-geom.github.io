@@ -64,4 +64,14 @@ class AiMathWorkingGroupTest < Minitest::Test
     @data['topics'][0]['focus']['fr'] = '<script>bad()</script>'
     assert_raises(ArgumentError) { AiMathWorkingGroup.validate(@data) }
   end
+
+  def test_removed_questions_rejected
+    @data['topics'][0]['questions'] = [{ 'en' => 'A question?', 'fr' => 'Une question ?' }]
+    assert_raises(ArgumentError) { AiMathWorkingGroup.validate(@data) }
+  end
+
+  def test_removed_session_prompt_rejected
+    @data['topics'][0]['session'] = { 'en' => 'A session idea.', 'fr' => 'Une idée de séance.' }
+    assert_raises(ArgumentError) { AiMathWorkingGroup.validate(@data) }
+  end
 end

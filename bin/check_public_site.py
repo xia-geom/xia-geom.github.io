@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import json
 import shutil
+from html import unescape
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
@@ -147,7 +148,8 @@ def validate(root: Path) -> dict:
             if route == "research":
                 if not any(t == "summary" for t, a in doc.tags):
                     errors.append(f"{label}: native disclosure controls missing")
-                if "complex projective line" not in doc.text:
+                # Accept both the earlier prose and the author's revised Unicode notation.
+                if not any(term in unescape(doc.text) for term in ("complex projective line", "ℂℙ¹")):
                     errors.append(f"{label}: repaired abstract absent")
     fr_cv = pages.get((root / "fr/cv/index.html").resolve())
     if fr_cv:
