@@ -2,7 +2,7 @@
 layout: page
 permalink: /fr/projects/
 title: Projets
-description: Vidéos pédagogiques, logiciel d’archives de conversations et lectures sur l’IA en mathématiques.
+description: Vidéos pédagogiques, projets logiciels et quelques liens utiles.
 nav: false
 lang: fr
 ---
@@ -19,8 +19,10 @@ Un logiciel expérimental pour organiser les exports de conversations avec des a
 
 [À propos de Conversation Archive]({{ '/fr/projects/conversation-archive/' | relative_url }}) · [Code source](https://github.com/xia-geom/conversation-archive)
 
-## IA et mathématiques
+## Liens utiles
 
-Actualités et lectures sur l’IA en mathématiques. Résultats, outils de preuve, évaluations et regards de la communauté, avec liens vers les sources originales.
+### Ressources IA et mathématiques
 
-[Parcourir les notes sur l’IA et les mathématiques]({{ '/fr/projects/ai-for-math/' | relative_url }})
+Une page de référence personnelle pour un groupe de travail auquel je participe, avec son programme provisoire, des lectures publiques choisies et des actualités sur l’IA et les mathématiques.
+
+[Ouvrir les ressources IA et mathématiques]({{ '/fr/projects/ai-for-math/' | relative_url }})
