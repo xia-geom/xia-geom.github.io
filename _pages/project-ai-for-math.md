@@ -1,13 +1,15 @@
 ---
 layout: page
 permalink: /projects/ai-for-math/
-title: AI for Math
-description: Working-group programme, selected readings and news.
+title: AI for Math — useful links
+description: Personal reference page for an AI-and-mathematics working group I participate in.
 nav: false
 lang: en
 ---
 
-[All projects]({{ '/projects/' | relative_url }})
+[Projects & useful links]({{ '/projects/' | relative_url }})
+
+I participate in an AI-and-mathematics working group. This personal reference page collects its provisional programme, useful public readings and selected news. It is not the group’s official website.
 
 <nav class="ai-news-nav" aria-label="On this page">
   <a href="#ai-programme">Programme</a>
@@ -22,13 +24,12 @@ lang: en
 {% include ai-math-news.liquid %}
 
 <section class="ai-working-group" id="ai-contact" aria-labelledby="ai-contact-title">
-  <h2 id="ai-contact-title">Suggestions</h2>
-  <p><a href="mailto:xiao.xia@courrier.uqam.ca?subject=AI%20for%20Math%20-%20reading%20suggestion">Send a reading suggestion or correction to Xia Xiao</a>.</p>
-  <p class="ai-news-meta">This link opens your email app. Calendar invitations, subscriptions and automatic reminders are not configured.</p>
+  <h2 id="ai-contact-title">Corrections</h2>
+  <p><a href="mailto:xiao.xia@courrier.uqam.ca?subject=AI%20for%20Math%20-%20correction">Report an outdated link or correction</a>.</p>
 </section>
 
 <details class="ai-news-method" id="ai-about">
   <summary>About this page</summary>
-  <p>The programme and readings are maintained separately from the news. Linked institutions are resources, not partners of this page.</p>
-  <p>News is prepared with an AI assistant. The source-check date is not a guarantee of daily updates or independent proof verification. Coverage is selective; reports, formalizations, competition results and opinions are distinguished. Links do not imply endorsement.</p>
+  <p>This is a personal reference page, not the working group’s official site. Programme information may change. Linked institutions are resources, not partners of this page.</p>
+  <p>News is prepared with an AI assistant. The source-check date is not a guarantee of daily updates or independent proof verification. Coverage is selective; reports, formalizations, competition results and opinions are distinguished.</p>
 </details>

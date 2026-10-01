@@ -2,7 +2,7 @@
 layout: page
 permalink: /projects/
 title: Projects
-description: Teaching videos, conversation-archive software, and a reading resource on AI and mathematics.
+description: Teaching videos, software projects and selected useful links.
 nav: true
 nav_order: 3.5
 lang: en
@@ -20,8 +20,10 @@ Experimental software for turning AI conversation exports into a Markdown refere
 
 [About Conversation Archive]({{ '/projects/conversation-archive/' | relative_url }}) · [Source code](https://github.com/xia-geom/conversation-archive)
 
-## AI for Math
+## Useful links
 
-News and reading material on AI in mathematics. Browse results, proof tools, evaluations and community perspectives, with links to original sources.
+### AI for Math working-group resources
 
-[Browse AI for Math]({{ '/projects/ai-for-math/' | relative_url }})
+A personal reference page for a working group I participate in, with its provisional programme, selected public readings and AI-and-mathematics news.
+
+[Open the AI for Math resources]({{ '/projects/ai-for-math/' | relative_url }})

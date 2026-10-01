@@ -36,7 +36,12 @@ I teach mathematics at UQAM. See [Teaching]({{ '/teaching/' | relative_url }}) f
 <ul class="project-links">
   <li><a href="{{ '/projects/math-video/' | relative_url }}">Mathematics and UQAM videos</a> — Animated lessons and presentations of UQAM study programmes.</li>
   <li><a href="{{ '/projects/conversation-archive/' | relative_url }}">Conversation Archive</a> — Software for turning AI conversation exports into a source-linked Markdown reference. <a href="https://github.com/xia-geom/conversation-archive">Source code</a>.</li>
-  <li><a href="{{ '/projects/ai-for-math/' | relative_url }}">AI for Math</a> — News and reading material on AI in mathematics, with original sources.</li>
+</ul>
+
+## Useful links
+
+<ul class="project-links">
+  <li><a href="{{ '/projects/ai-for-math/' | relative_url }}">AI for Math working-group resources</a> — Programme, selected readings and news from a working group I participate in.</li>
 </ul>
 
 ## Beyond work

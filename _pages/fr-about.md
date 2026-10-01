@@ -34,7 +34,12 @@ J'enseigne les mathématiques à l'UQAM. Voir [Enseignement]({{ '/fr/teaching/' 
 <ul class="project-links">
   <li><a href="{{ '/fr/projects/math-video/' | relative_url }}">Vidéos de mathématiques et sur l’UQAM</a> — Leçons animées et présentations des programmes d’études de l’UQAM.</li>
   <li><a href="{{ '/fr/projects/conversation-archive/' | relative_url }}">Conversation Archive</a> — Un logiciel pour organiser les exports de conversations avec des assistants d’IA dans un document Markdown avec références aux sources. <a href="https://github.com/xia-geom/conversation-archive">Code source</a>.</li>
-  <li><a href="{{ '/fr/projects/ai-for-math/' | relative_url }}">IA et mathématiques</a> — Actualités et lectures sur l’IA en mathématiques, avec les sources originales.</li>
+</ul>
+
+## Liens utiles
+
+<ul class="project-links">
+  <li><a href="{{ '/fr/projects/ai-for-math/' | relative_url }}">Ressources IA et mathématiques</a> — Programme, lectures choisies et actualités d’un groupe de travail auquel je participe.</li>
 </ul>
 
 ## En dehors du travail
