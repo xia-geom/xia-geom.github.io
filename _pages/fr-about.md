@@ -23,7 +23,7 @@ latest_posts:
   enabled: false
 ---
 
-Je suis doctorant en mathématiques à l'[UQAM](https://uqam.ca), sous la direction de [Julien Keller](https://www.cirget.uqam.ca/keller/) (UQAM) et [Hugues Auvray](https://www.imo.universite-paris-saclay.fr/~auvray/) (Université Paris-Saclay). Mes recherches portent sur la géométrie kählérienne et l'analyse géométrique, en particulier sur les métriques canoniques et les questions variationnelles qui leur sont liées. Voir [Recherche]({{ '/fr/research/' | relative_url }}) pour mes thèmes de recherche et mes articles.
+Je suis doctorant en mathématiques à l'[UQAM](https://uqam.ca), sous la direction de [Julien Keller](https://professeurs.uqam.ca/professeur/keller.julien.3/) (UQAM) et [Hugues Auvray](https://www.imo.universite-paris-saclay.fr/~auvray/) (Université Paris-Saclay). Mes recherches portent sur la géométrie kählérienne et l'analyse géométrique, en particulier sur les métriques canoniques et les questions variationnelles qui leur sont liées. Voir [Recherche]({{ '/fr/research/' | relative_url }}) pour mes thèmes de recherche et mes articles.
 
 **Courriel :** xiao.xia AT courrier DOT uqam DOT ca · **Localisation :** UQAM, Montréal, Canada
 

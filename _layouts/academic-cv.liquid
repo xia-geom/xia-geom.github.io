@@ -35,12 +35,17 @@ layout: default
     {% for section in cv.sections %}
       {% assign key = section[0] %}
       {% assign heading = key %}
+      {% if key == 'Publications' %}{% assign heading = 'Preprints' %}{% endif %}
       {% if french %}
         {% if key == 'Education' %}{% assign heading = 'Formation' %}{% endif %}
         {% if key == 'Experience' %}{% assign heading = 'Expérience' %}{% endif %}
+        {% if key == 'Publications' %}{% assign heading = 'Prépublications' %}{% endif %}
       {% endif %}
       <section class="card mt-3 p-3" id="{{ key | slugify }}">
         <h2 class="card-title">{{ heading }}</h2>
+        {% if key == 'Publications' %}
+          {% bibliography --template cv-bib --group_by none %}
+        {% endif %}
         {% for item in section[1] %}
           <div class="cv-entry">
             {% if key == 'Education' %}
@@ -65,13 +70,18 @@ layout: default
                 </p>
               {% endif %}
             {% elsif item.name %}
-              <p>
-                {{ item.name -}}
-                {%- if item.summary != blank -%}
-                  <br>
-                  {{ item.summary -}}
-                {%- endif %}
-              </p>
+              <h3 class="cv-entry-title">
+                {% if item.url %}
+                  <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+                {% else %}
+                  {{ item.name }}
+                {% endif %}
+              </h3>
+              {% if item.summary != blank %}
+                <p>
+                  {{ item.summary }}
+                </p>
+              {% endif %}
             {% elsif item.label %}
               <p>
                 <strong>{{ item.label }}:</strong> {{ item.details }}

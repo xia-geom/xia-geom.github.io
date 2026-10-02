@@ -1,7 +1,7 @@
 ---
 ---
 <article class="academic-publication" id="{{ entry.key }}" aria-labelledby="{{ entry.key }}-title">
-  <h3 class="paper-title" id="{{ entry.key }}-title">{{ entry.title }}</h3>
+  <h3 class="paper-title" id="{{ entry.key }}-title" lang="{{ entry.lang | default: 'en' }}">{{ entry.title }}</h3>
   <div class="author">
     {% for author in entry.author_array %}
       {{ author.first }}
@@ -17,7 +17,9 @@
       <em>{{ entry.booktitle }}</em>,
     {% endif %}
     {{ entry.year -}}
-    {%- if entry.note %} — {{ entry.note }}{% endif %}
+    {%- if entry.note %}
+      — {% if page.lang == 'fr' and entry.note == 'Submitted' %}Soumis{% else %}{{ entry.note }}{% endif %}
+    {% endif %}
   </p>
   <div class="paper-actions">
     {% if entry.arxiv -%}
@@ -43,7 +45,7 @@
           {% if page.lang == 'fr' %}Résumé{% else %}Abstract{% endif %}
         </summary>
         <div class="paper-panel">
-          <p>{{ entry.abstract }}</p>
+          <p lang="{{ entry.lang | default: 'en' }}">{{ entry.abstract }}</p>
         </div>
       </details>
     {% endif %}

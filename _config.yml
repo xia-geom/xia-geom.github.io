@@ -15,7 +15,7 @@ footer_text: >
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: Xia Xiao, Kähler geometry, geometric analysis, UQAM, MAT0339, Manim, French mathematics videos # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ∮  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: ∮ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://xia-geom.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -67,8 +67,8 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
@@ -175,6 +175,30 @@ kramdown:
 include: ["_pages", "_scripts"]
 exclude:
   - bin/
+  - AGENTS.md
+  - ANALYTICS.md
+  - CLAUDE.md
+  - QUICKSTART.md
+  - SEO.md
+  - TROUBLESHOOTING.md
+  - requirements.txt
+  # Theme examples are retained in source, but are not part of this personal site.
+  - assets/audio/epicaly-short-113909.mp3
+  - assets/bibliography/2018-12-22-distill.bib
+  - assets/html/relativity.html
+  - assets/img/book_covers/
+  - assets/img/publication_preview/
+  - assets/json/resume.json
+  - assets/json/table_data.json
+  - assets/jupyter/
+  - assets/pdf/example_pdf.pdf
+  - assets/plotly/demo.html
+  - assets/rendercv/design.yaml
+  - assets/rendercv/locale.yaml
+  - assets/rendercv/settings.yaml
+  - assets/rendercv/rendercv_output/Albert_Einstein_CV.pdf
+  - assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4
+  - assets/video/tutorial_al_folio.mp4
   - CONTRIBUTING.md
   - CUSTOMIZE.md
   - Dockerfile
@@ -299,8 +323,8 @@ scholar:
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid
 enable_publication_badges:
-  altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
-  dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
+  altmetric: false # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
+  dimensions: false # Dimensions badge (Customization options: https://badge.dimensions.ai/)
   google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
   inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
 
@@ -395,7 +419,7 @@ enable_openpanel_analytics: false # enables Openpanel analytics (https://openpan
 enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
 enable_cookie_consent: false # enables GDPR-compliant cookie consent dialog (https://github.com/orestbida/cookieconsent)
-enable_masonry: true # enables automatic project cards arrangement
+enable_masonry: false # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
@@ -646,9 +670,7 @@ third_party_libraries:
 # Get external JSON data
 # -----------------------------------------------------------------------------
 
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
+jekyll_get_json: [] # The CV reads _data/cv.yml directly; do not import the theme example resume.
 
 jsonresume:
   - basics

@@ -2,7 +2,7 @@ cv:
   name: Xia Xiao
   label: PhD Candidate in Mathematics
   email: xiao.xia AT courrier DOT uqam DOT ca
-  summary: "PhD candidate in mathematics at UQAM, specializing in Kähler geometry, complex geometry, and geometric analysis."
+  summary: "PhD candidate in mathematics at UQAM working in Kähler geometry, geometric analysis, and variational methods, with experience in mathematics teaching and Python-based research and educational tools."
 
   sections:
     Education:
@@ -14,7 +14,7 @@ cv:
         end_date: Present
         highlights:
           - "Advisors: Julien Keller (UQAM) and Hugues Auvray (Université Paris-Saclay)"
-          - "Dissertation: *Convexity of the Weighted Twisted K-Energy* (in preparation)"
+          - "Expected completion: April 2027"
 
       - institution: Université Paris-Saclay
         location: Orsay, France
@@ -31,6 +31,8 @@ cv:
         studyType: M.Sc.
         start_date: 2018-03
         end_date: 2020-02
+        highlights:
+          - "Advisor: Reimundo Heluani"
 
       - institution: Sichuan University (SCU)
         location: Chengdu, China
@@ -41,18 +43,76 @@ cv:
         highlights:
           - "Dissertation: *Skorokhod Representation Theorem* (Probability) — advised by Zechun Hu"
 
-    Experience:
-      - position: "See teaching page"
-        url: /teaching/
-
     Research Interests:
       - label: "Topics"
-        details: "Kähler geometry, K-stability, canonical metrics, pluripotential theory"
+        details: "Kähler geometry, canonical metrics, pluripotential theory, K-stability, variational methods, and geometric PDEs"
+
+    # Rendered directly from _bibliography/papers.bib.
+    Publications: []
+
+    Experience:
+      - position: "Lecturer / Teaching Assistant"
+        company: Université du Québec à Montréal (UQAM)
+        start_date: "2022"
+        end_date: Present
+        highlights:
+          - "Teach and support undergraduate courses in calculus, complex analysis, linear algebra, differential calculus, and general mathematics."
+          - "Prepare self-contained LaTeX teaching materials and explain mathematical ideas to students with varied backgrounds."
+          - "[Courses and teaching activities](/teaching/)"
+
+    Selected Projects:
+      - name: "Mathematical Video Production and Automation"
+        url: /projects/math-video/
+        start_date: "2026"
+        end_date: Present
+        summary: "Collaborative UQAM educational innovation project. Develop French-language mathematical animations with Python and Manim, integrate narration with Microsoft Azure Speech, and contribute rendering, validation, and packaging tools."
+      - name: "Conversation Archive"
+        url: /projects/conversation-archive/
+        start_date: "2026"
+        end_date: Present
+        summary: "Work on a Python application that organizes AI conversation exports into source-linked Markdown while preserving evidence and user edits."
+      - name: "AI-Assisted Mathematical Research"
+        start_date: "2026"
+        end_date: Present
+        summary: "Configure and adapt existing systems, including Danus, Codex, and Claude Code, for proof exploration, counterexample search, and manuscript review; organize persistent research state and review generated results."
+      - name: "Mathematical RAG and MCP Prototype"
+        start_date: "2026"
+        summary: "Exploratory Python prototype for document ingestion, persistent indexing, retrieval, and a read-only MCP interface, with Docker packaging."
+
+    Selected Conference Participation:
+      - name: "Geometrie"
+        summary: "Mathematisches Forschungsinstitut Oberwolfach, Germany — June 14–19, 2026."
+      - name: "Complex Geometry in Bordeaux"
+        summary: "Institut de Mathématiques de Bordeaux, France — May 26–29, 2026."
+      - name: "Complex Geometry, Complex Analysis and Dynamics"
+        summary: "CIRM, France — July 7–11, 2025."
+      - name: "Real Algebraic Geometry and Birational Geometry"
+        summary: "CIRM, France — June 2–6, 2025."
+
+    Selected Scholarships:
+      - name: "Sophie Germain Fellowships"
+        summary: "Consulat général de France à Québec — 2023 and 2025."
+      - name: "Sophie Germain Master's Scholarship"
+        summary: "Fondation Mathématique Jacques Hadamard (FMJH), for the M2 AAG at Université Paris-Saclay — 2020–2021."
+      - name: "IMPA Master's Fellowship"
+        summary: "2017–2019 (fellowship period)."
+
+    Professional Development:
+      - name: "IVADO Bootcamp: Statistical Insights into Modern AI Systems"
+        summary: "Montréal, May 4–8, 2026. Week-long programme with practical workshops using Python, PyTorch, and Hugging Face Transformers."
 
     Languages:
-      - name: "Chinese (Mandarin, Sichuanese), English, French, Portuguese"
-        summary: ""
+      - label: "Chinese"
+        details: "Native Sichuanese; fluent Mandarin"
+      - label: "English"
+        details: "Fluent"
+      - label: "French and Portuguese"
+        details: "Advanced comprehension, speaking, and reading; intermediate writing"
 
     Software:
-      - label: "Tools"
-        details: "LaTeX, Python, Git"
+      - label: "Programming and systems"
+        details: "Python, Git/GitHub, Linux, SSH, Docker, API integration"
+      - label: "Scientific and content tools"
+        details: "LaTeX, Beamer, Manim, Microsoft Azure Speech, FFmpeg/ffprobe"
+      - label: "Research workflows"
+        details: "Configuration and use of existing AI-assisted systems, including Danus, Codex, and Claude Code"

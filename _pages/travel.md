@@ -5,6 +5,7 @@ permalink: /travel/
 description: Snapshots from long-distance hiking and cycling adventures.
 nav: true
 nav_order: 5
+lang: en
 ---
 
 <style>
@@ -20,7 +21,7 @@ nav_order: 5
 }
 .travel-section .trip-meta {
   font-size: 0.88rem;
-  color: #888;
+  color: var(--global-text-color);
   margin-bottom: 1.2rem;
 }
 .photo-grid {
@@ -38,7 +39,7 @@ nav_order: 5
   position: relative;
   overflow: hidden;
   border-radius: 4px;
-  background: #f0f0f0;
+  background: var(--global-card-bg-color);
 }
 .photo-cell img {
   width: 100%;
@@ -53,7 +54,7 @@ nav_order: 5
 }
 .photo-caption {
   font-size: 0.78rem;
-  color: #666;
+  color: var(--global-text-color);
   text-align: center;
   padding: 4px 4px 0;
   line-height: 1.3;
@@ -67,27 +68,27 @@ nav_order: 5
 <p class="trip-meta">October – November 2021 · Coastal and Central Portuguese Routes · ~600 km</p>
 <div class="photo-grid">
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-portugal_01.jpg" alt="Ponte de Lima, Portugal" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/camino-portugal_01.jpg" alt="Ponte de Lima, Portugal" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Ponte de Lima, Portugal</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-portugal_02.jpg" alt="Viana do Castelo, Portugal" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/camino-portugal_02.jpg" alt="Viana do Castelo, Portugal" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Viana do Castelo, Portugal</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-portugal_03.jpg" alt="Viana do Castelo, Portugal" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/camino-portugal_03.jpg" alt="Viana do Castelo, Portugal" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Viana do Castelo, Portugal</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-portugal_04.jpg" alt="Barcelos, Portugal" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/camino-portugal_04.jpg" alt="Barcelos, Portugal" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Barcelos, Portugal</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-portugal_05.jpg" alt="Ourense, Galicia, Spain" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/camino-portugal_05.jpg" alt="Ourense, Galicia, Spain" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Ourense, Galicia</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-portugal_06.jpg" alt="Chaves, Portugal" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/camino-portugal_06.jpg" alt="Chaves, Portugal" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Chaves, Portugal</div>
   </div>
   {% for photo_number in (7..15) %}
@@ -98,7 +99,7 @@ nav_order: 5
     {% endif %}
     {% assign photo_path = 'assets/img/travel/camino-portugal_' | append: photo_suffix | append: '.jpg' %}
     <div class="photo-cell">
-      {% include figure.liquid path=photo_path alt="Camino Portuguese Route" zoomable=true loading="lazy" %}
+      {% include figure.liquid path=photo_path alt="Camino Portuguese Route" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
       <div class="photo-caption">Camino Portuguese Route</div>
     </div>
   {% endfor %}
@@ -112,30 +113,30 @@ nav_order: 5
 <p class="trip-meta">September – November 2021 · Camino Francés · ~800 km, Saint-Jean-Pied-de-Port to Santiago</p>
 <div class="photo-grid">
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-spain_01.jpg" alt="León, Spain" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/camino-spain_01.jpg" alt="León, Spain" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">León, Spain</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-spain_02.jpg" alt="León, Spain" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/camino-spain_02.jpg" alt="León, Spain" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">León, Spain</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-spain_03.jpg" alt="León, Spain" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/camino-spain_03.jpg" alt="León, Spain" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">León, Spain</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-spain_04.jpg" alt="Zubiri, Navarra, Spain" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/camino-spain_04.jpg" alt="Zubiri, Navarra, Spain" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Zubiri, Navarra</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/camino-spain_05.jpg" alt="Logroño, La Rioja, Spain" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/camino-spain_05.jpg" alt="Logroño, La Rioja, Spain" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Logroño, La Rioja</div>
   </div>
   {% for photo_number in (6..8) %}
     {% assign photo_suffix = photo_number | prepend: '0' %}
     {% assign photo_path = 'assets/img/travel/camino-spain_' | append: photo_suffix | append: '.jpg' %}
     <div class="photo-cell">
-      {% include figure.liquid path=photo_path alt="Camino Francés" zoomable=true loading="lazy" %}
+      {% include figure.liquid path=photo_path alt="Camino Francés" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
       <div class="photo-caption">Camino Francés</div>
     </div>
   {% endfor %}
@@ -149,39 +150,39 @@ nav_order: 5
 <p class="trip-meta">June 2021 · 100 km loop through France, Italy & Switzerland</p>
 <div class="photo-grid">
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_01.jpg" alt="Champex-Lac, Switzerland" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/mont-blanc_01.jpg" alt="Champex-Lac, Switzerland" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Champex-Lac, Switzerland</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_02.jpg" alt="Col de Balme, France/Switzerland" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/mont-blanc_02.jpg" alt="Col de Balme, France/Switzerland" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Col de Balme</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_03.jpg" alt="Champex-Lac, Switzerland" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/mont-blanc_03.jpg" alt="Champex-Lac, Switzerland" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Champex-Lac, Switzerland</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_04.jpg" alt="Champex-Lac, Switzerland" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/mont-blanc_04.jpg" alt="Champex-Lac, Switzerland" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Champex-Lac, Switzerland</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_05.jpg" alt="Argentière, Chamonix Valley, France" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/mont-blanc_05.jpg" alt="Argentière, Chamonix Valley, France" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Argentière, Chamonix</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_06.jpg" alt="Le Tour, Chamonix Valley, France" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/mont-blanc_06.jpg" alt="Le Tour, Chamonix Valley, France" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Le Tour, Chamonix</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_07.jpg" alt="Chamonix, France" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/mont-blanc_07.jpg" alt="Chamonix, France" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Chamonix, France</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_08.jpg" alt="Les Houches, Chamonix Valley, France" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/mont-blanc_08.jpg" alt="Les Houches, Chamonix Valley, France" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Les Houches, Chamonix</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/mont-blanc_09.jpg" alt="Tour du Mont Blanc" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/mont-blanc_09.jpg" alt="Tour du Mont Blanc" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Tour du Mont Blanc</div>
   </div>
 </div>
@@ -194,15 +195,15 @@ nav_order: 5
 <p class="trip-meta">September 2021 · Haute Route & Vaud Alps</p>
 <div class="photo-grid">
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/swiss-alps_01.jpg" alt="Aigle, Vaud" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/swiss-alps_01.jpg" alt="Aigle, Vaud" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Aigle, Vaud</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/swiss-alps_02.jpg" alt="Château-d'Oex" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/swiss-alps_02.jpg" alt="Château-d'Oex" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Château-d'Oex</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/swiss-alps_03.jpg" alt="Nyon, Lake Geneva" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/swiss-alps_03.jpg" alt="Nyon, Lake Geneva" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Nyon, Lake Geneva</div>
   </div>
   {% for photo_number in (4..17) %}
@@ -213,7 +214,7 @@ nav_order: 5
     {% endif %}
     {% assign photo_path = 'assets/img/travel/swiss-alps_' | append: photo_suffix | append: '.jpg' %}
     <div class="photo-cell">
-      {% include figure.liquid path=photo_path alt="Swiss Alps" zoomable=true loading="lazy" %}
+      {% include figure.liquid path=photo_path alt="Swiss Alps" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
       <div class="photo-caption">Swiss Alps</div>
     </div>
   {% endfor %}
@@ -227,39 +228,39 @@ nav_order: 5
 <p class="trip-meta">August – September 2023 · Montreal → Calgary · ~3,800 km</p>
 <div class="photo-grid">
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/cross-canada_01.jpg" alt="Winnipeg, Manitoba" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/cross-canada_01.jpg" alt="Winnipeg, Manitoba" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Winnipeg, Manitoba</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/cross-canada_02.jpg" alt="Winnipeg, Manitoba" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/cross-canada_02.jpg" alt="Winnipeg, Manitoba" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Winnipeg, Manitoba</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/cross-canada_03.jpg" alt="Winnipeg, Manitoba" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/cross-canada_03.jpg" alt="Winnipeg, Manitoba" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Winnipeg, Manitoba</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/cross-canada_04.jpg" alt="Winnipeg, Manitoba" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/cross-canada_04.jpg" alt="Winnipeg, Manitoba" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Winnipeg, Manitoba</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/cross-canada_05.jpg" alt="Sault Ste. Marie, Ontario" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/cross-canada_05.jpg" alt="Sault Ste. Marie, Ontario" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Sault Ste. Marie, Ontario</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/cross-canada_06.jpg" alt="Thunder Bay, Ontario" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/cross-canada_06.jpg" alt="Thunder Bay, Ontario" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Thunder Bay, Ontario</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/cross-canada_07.jpg" alt="Lake Superior Shore, Ontario" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/cross-canada_07.jpg" alt="Lake Superior Shore, Ontario" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Lake Superior Shore</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/cross-canada_08.jpg" alt="Calgary, Alberta" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/cross-canada_08.jpg" alt="Calgary, Alberta" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Calgary, Alberta</div>
   </div>
   <div class="photo-cell">
-    {% include figure.liquid path="assets/img/travel/cross-canada_09.jpg" alt="Canadian Prairies" zoomable=true loading="lazy" %}
+    {% include figure.liquid path="assets/img/travel/cross-canada_09.jpg" alt="Canadian Prairies" zoomable=true loading="lazy" sizes="(min-width: 930px) 220px, (min-width: 768px) 25vw, 50vw" %}
     <div class="photo-caption">Canadian Prairies</div>
   </div>
 </div>

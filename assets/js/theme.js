@@ -14,7 +14,12 @@ let toggleThemeSetting = () => {
 
 // Change the theme setting and apply the theme.
 let setThemeSetting = (themeSetting) => {
-  localStorage.setItem("theme", themeSetting);
+  // Keep the control usable when browser privacy settings disable storage.
+  try {
+    localStorage.setItem("theme", themeSetting);
+  } catch {
+    // The document attribute retains the preference for this page.
+  }
 
   document.documentElement.setAttribute("data-theme-setting", themeSetting);
 
@@ -58,6 +63,7 @@ let applyTheme = () => {
   }
 
   document.documentElement.setAttribute("data-theme", theme);
+  updateThemeToggleLabel();
 
   // Add class to tables.
   let tables = document.getElementsByTagName("table");
@@ -259,6 +265,7 @@ let setCookieConsentTheme = (theme) => {
 };
 
 let transTheme = () => {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   document.documentElement.classList.add("transition");
   window.setTimeout(() => {
     document.documentElement.classList.remove("transition");
@@ -268,11 +275,34 @@ let transTheme = () => {
 // Determine the expected state of the theme toggle, which can be "dark", "light", or
 // "system". Default is "system".
 let determineThemeSetting = () => {
-  let themeSetting = localStorage.getItem("theme");
+  let themeSetting = document.documentElement.getAttribute("data-theme-setting");
+  if (!themeSetting) {
+    try {
+      themeSetting = localStorage.getItem("theme");
+    } catch {
+      themeSetting = "system";
+    }
+  }
   if (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") {
     themeSetting = "system";
   }
   return themeSetting;
+};
+
+// Describe all three settings, including the action of the next activation.
+let updateThemeToggleLabel = () => {
+  const toggle = document.getElementById("light-toggle");
+  if (!toggle) return;
+
+  const french = document.documentElement.lang === "fr";
+  const labels = french ? { system: "automatique", light: "clair", dark: "sombre" } : { system: "system", light: "light", dark: "dark" };
+  const setting = determineThemeSetting();
+  const next = { system: "light", light: "dark", dark: "system" }[setting];
+  const label = french
+    ? `Thème actuel : ${labels[setting]}. Passer au thème ${labels[next]}.`
+    : `Current theme: ${labels[setting]}. Switch to ${labels[next]} theme.`;
+  toggle.setAttribute("aria-label", label);
+  toggle.title = label;
 };
 
 // Determine the computed theme, which can be "dark" or "light". If the theme setting is
@@ -299,7 +329,8 @@ let initTheme = () => {
   // Add event listener to the theme toggle button.
   document.addEventListener("DOMContentLoaded", function () {
     const mode_toggle = document.getElementById("light-toggle");
-
+    if (!mode_toggle) return;
+    updateThemeToggleLabel();
     mode_toggle.addEventListener("click", function () {
       toggleThemeSetting();
     });

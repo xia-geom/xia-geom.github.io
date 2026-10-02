@@ -2,9 +2,6 @@
 layout: about
 title: about
 permalink: /
-redirect_from:
-  - /about/
-  - /about
 description: Xia Xiao is a PhD candidate in mathematics at UQAM working in Kähler geometry and geometric analysis.
 subtitle: PhD candidate in Mathematics · <a href="https://uqam.ca">Université du Québec à Montréal (UQAM)</a>
 lang: en
@@ -25,7 +22,7 @@ latest_posts:
   enabled: false
 ---
 
-I am a PhD candidate in mathematics at [UQAM](https://uqam.ca), under the supervision of [Julien Keller](https://www.cirget.uqam.ca/keller/) (UQAM) and [Hugues Auvray](https://www.imo.universite-paris-saclay.fr/~auvray/) (Université Paris-Saclay). My research is in Kähler geometry and geometric analysis, with a focus on canonical metrics and related variational questions. See [Research]({{ '/research/' | relative_url }}) for research interests and papers.
+I am a PhD candidate in mathematics at [UQAM](https://uqam.ca), under the supervision of [Julien Keller](https://professeurs.uqam.ca/professeur/keller.julien.3/) (UQAM) and [Hugues Auvray](https://www.imo.universite-paris-saclay.fr/~auvray/) (Université Paris-Saclay). My research is in Kähler geometry and geometric analysis, with a focus on canonical metrics and related variational questions. See [Research]({{ '/research/' | relative_url }}) for research interests and papers.
 
 **Email:** xiao.xia AT courrier DOT uqam DOT ca · **Location:** UQAM, Montréal, Canada
 

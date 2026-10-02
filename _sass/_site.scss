@@ -19,6 +19,76 @@ summary:focus-visible {
   outline-offset: 3px;
 }
 
+#back-to-top:focus-visible {
+  outline: 3px solid var(--global-theme-color);
+  outline-offset: 3px;
+}
+
+.image-zoom-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: inherit;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.image-zoom-button:focus-visible {
+  outline-offset: -3px;
+}
+
+.image-viewer {
+  max-width: calc(100vw - 2rem);
+  max-height: calc(100vh - 2rem);
+  padding: 3.5rem 1rem 1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.25rem;
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+}
+
+.image-viewer::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.image-viewer img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: calc(100vw - 4rem);
+  max-height: calc(100vh - 7rem);
+  object-fit: contain;
+}
+
+.image-viewer-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 0.25rem;
+  background: var(--global-bg-color);
+  color: var(--global-theme-color);
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.transition,
+  html.transition *,
+  html.transition *::before,
+  html.transition *::after,
+  .navbar-toggler .icon-bar,
+  .photo-cell img,
+  .medium-zoom-image,
+  .medium-zoom-overlay,
+  #back-to-top {
+    // Keep transitionend events used by the zoom library while removing motion.
+    transition-duration: 0.001ms !important;
+    transition-delay: 0ms !important;
+  }
+}
+
 @media (max-width: 991.98px) {
   #navbarNav {
     max-height: calc(100vh - 64px);
@@ -160,6 +230,18 @@ summary:focus-visible {
 
 .cv-dates {
   font-size: 0.9rem;
+}
+
+#toc-sidebar {
+  max-height: calc(100vh - 8rem);
+  overflow-y: auto;
+}
+
+@media (max-width: 576px) {
+  // Remove the sidebar immediately; visibility transitions can overlap the CV.
+  #toc-sidebar {
+    display: none;
+  }
 }
 
 // Keep text links recognizable without changing publication buttons.

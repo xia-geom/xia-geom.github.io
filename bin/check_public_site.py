@@ -9,7 +9,6 @@ from __future__ import annotations
 import argparse
 import json
 import shutil
-from html import unescape
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
@@ -17,13 +16,20 @@ import xml.etree.ElementTree as ET
 
 SITE_HOST = "xia-geom.github.io"
 PRIMARY = ("", "research", "teaching", "projects", "projects/math-video",
-           "projects/conversation-archive", "cv", "travel")
+           "projects/conversation-archive", "projects/ai-for-math", "cv", "travel")
 FORBIDDEN = ("people", "books", "blog", "news", "repositories",
              "projects/french-learning", "fr/projects/french-learning")
 GUIDES = ("AGENTS", "ANALYTICS", "CLAUDE", "QUICKSTART", "SEO", "TROUBLESHOOTING",
           "README", "CONTRIBUTING", "CUSTOMIZE", "FAQ", "INSTALL")
 SAMPLES = ("assets/video/tutorial_al_folio.mp4", "assets/html/relativity.html",
-           "assets/jupyter/blog.ipynb.html")
+           "assets/jupyter", "assets/plotly/demo.html",
+           "assets/rendercv/design.yaml", "assets/rendercv/locale.yaml",
+           "assets/rendercv/settings.yaml", "assets/rendercv/rendercv_output/Albert_Einstein_CV.pdf",
+           "assets/json/resume.json", "assets/json/table_data.json",
+           "assets/pdf/example_pdf.pdf", "assets/audio/epicaly-short-113909.mp3",
+           "assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4",
+           "assets/bibliography/2018-12-22-distill.bib", "assets/img/book_covers",
+           "assets/img/publication_preview")
 
 
 class Document(HTMLParser):
@@ -32,12 +38,23 @@ class Document(HTMLParser):
         self.tags: list[tuple[str, dict[str, str]]] = []
         self.ids: set[str] = set()
         self.refs: list[str] = []
+        self.structured_data: list[str] = []
+        self.details: list[str] = []
+        self._json = None
+        self._details = None
+        self._in_summary = False
         self.text = text
         self.feed(text)
 
     def handle_starttag(self, tag, attrs):
         data = dict(attrs)
         self.tags.append((tag, data))
+        if tag == "script" and data.get("type") == "application/ld+json":
+            self._json = ""
+        if tag == "details":
+            self._details = ""
+        if tag == "summary":
+            self._in_summary = True
         if data.get("id"):
             self.ids.add(data["id"])
         if tag == "a" and data.get("name"):
@@ -49,6 +66,22 @@ class Document(HTMLParser):
             for item in data["srcset"].split(","):
                 if item.strip():
                     self.refs.append(item.strip().split()[0])
+
+    def handle_data(self, data):
+        if self._json is not None:
+            self._json += data
+        if self._details is not None and not self._in_summary:
+            self._details += data
+
+    def handle_endtag(self, tag):
+        if tag == "summary":
+            self._in_summary = False
+        if tag == "script" and self._json is not None:
+            self.structured_data.append(self._json)
+            self._json = None
+        if tag == "details" and self._details is not None:
+            self.details.append(self._details.strip())
+            self._details = None
 
 
 def local_target(root: Path, source: Path, ref: str):
@@ -78,7 +111,7 @@ def local_target(root: Path, source: Path, ref: str):
 
 def prepare(root: Path) -> list[str]:
     removed = []
-    paths = list(FORBIDDEN) + list(SAMPLES)
+    paths = list(FORBIDDEN) + list(SAMPLES) + ["requirements.txt"]
     paths += [f"{name}.{ext}" for name in GUIDES for ext in ("md", "html")]
     for path in paths:
         target = root / path
@@ -145,29 +178,61 @@ def validate(root: Path) -> dict:
             langs = {a.get("hreflang") for t, a in doc.tags if t == "link" and a.get("rel") == "alternate"}
             if not {"en", "fr"}.issubset(langs):
                 errors.append(f"{label}: language alternates missing")
+            canonical = [a.get("href") for t, a in doc.tags
+                         if t == "link" and a.get("rel") == "canonical"]
+            expected_url = f"https://{SITE_HOST}/{prefix}{route}"
+            if not expected_url.endswith("/"):
+                expected_url += "/"
+            if canonical != [expected_url]:
+                errors.append(f"{label}: canonical URL missing or incorrect")
+            meta = {a.get("name", a.get("property")): a.get("content", "")
+                    for t, a in doc.tags if t == "meta"}
+            for key in ("description", "og:title", "og:description", "twitter:card"):
+                if not meta.get(key, "").strip():
+                    errors.append(f"{label}: metadata missing: {key}")
+            if meta.get("og:url") != expected_url:
+                errors.append(f"{label}: Open Graph URL missing or incorrect")
+            expected_lang = "fr" if prefix else "en"
+            if meta.get("og:locale") != f"{expected_lang}_CA":
+                errors.append(f"{label}: incorrect Open Graph locale")
+            if "noindex" in meta.get("robots", ""):
+                errors.append(f"{label}: public page unexpectedly noindex")
+            if not doc.structured_data:
+                errors.append(f"{label}: structured data missing")
+            for raw_schema in doc.structured_data:
+                try:
+                    schema = json.loads(raw_schema)
+                    if not isinstance(schema, dict) or schema.get("url") != expected_url or schema.get("inLanguage") != expected_lang:
+                        errors.append(f"{label}: structured data URL or language incorrect")
+                except json.JSONDecodeError:
+                    errors.append(f"{label}: invalid structured data JSON")
             if route == "research":
                 if not any(t == "summary" for t, a in doc.tags):
                     errors.append(f"{label}: native disclosure controls missing")
-                # Accept both the earlier prose and the author's revised Unicode notation.
-                if not any(term in unescape(doc.text) for term in ("complex projective line", "ℂℙ¹")):
-                    errors.append(f"{label}: repaired abstract absent")
+                if not doc.details or any(not text.strip() for text in doc.details):
+                    errors.append(f"{label}: empty publication disclosure")
     fr_cv = pages.get((root / "fr/cv/index.html").resolve())
     if fr_cv:
         for text in ("sichuanais", "Coordonnées", "Formation"):
-            if text not in fr_cv.text:
+            if text.casefold() not in fr_cv.text.casefold():
                 errors.append(f"French CV missing: {text}")
         if "Contact Information" in fr_cv.text or "Professional Summary" in fr_cv.text:
             errors.append("French CV has untranslated template labels")
     for route in FORBIDDEN:
         if (root / route).exists():
             errors.append(f"Non-public route exists: {route}")
+    for sample in SAMPLES:
+        if (root / sample).exists():
+            errors.append(f"Theme example published: {sample}")
+    if (root / "requirements.txt").exists():
+        errors.append("Internal dependency list published: requirements.txt")
     for name in GUIDES:
         for ext in ("html", "md"):
             if (root / f"{name}.{ext}").exists():
                 errors.append(f"Internal guide published: {name}.{ext}")
     if not (root / ".nojekyll").is_file():
         errors.append("Missing .nojekyll publication marker")
-    return {"html_files": len(pages), "required_pages": 16,
+    return {"html_files": len(pages), "required_pages": len(PRIMARY) * 2,
             "local_references_checked": checked, "errors": errors}
 
 

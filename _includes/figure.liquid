@@ -7,6 +7,7 @@
     slot="{{ include.slot }}"
   {% endif %}
 >
+  {% capture image_markup %}
   <picture>
     <!-- Auto scaling with imagemagick -->
     <!--
@@ -63,7 +64,7 @@
         "
       {% endif %}
       {% if include.alt %}
-        alt="{{ include.alt }}"
+        alt="{{ include.alt | escape }}"
       {% endif %}
       {% if include.title %}
         title="{{ include.title }}"
@@ -76,9 +77,24 @@
       {% elsif site.lazy_loading_images %}
         loading="lazy"
       {% endif %}
-      onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
+      onerror="this.onerror=null; this.closest('picture')?.querySelectorAll('source').forEach(source => source.remove());"
     >
   </picture>
+  {% endcapture %}
+
+  {% if include.zoomable and site.enable_medium_zoom %}
+    <button
+      type="button"
+      class="image-zoom-button"
+      aria-haspopup="dialog"
+      aria-expanded="false"
+      aria-label="{% if document_lang == 'fr' or page.lang == 'fr' %}Agrandir l’image{% else %}Enlarge image{% endif %}{% if include.alt %}: {{ include.alt | escape }}{% endif %}"
+    >
+      {{ image_markup }}
+    </button>
+  {% else %}
+    {{ image_markup }}
+  {% endif %}
 
   {% if include.caption %}
     <figcaption class="caption">{{ include.caption }}</figcaption>

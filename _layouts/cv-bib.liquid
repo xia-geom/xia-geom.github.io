@@ -1,0 +1,23 @@
+---
+---
+<div class="cv-entry">
+  <h3 class="cv-entry-title" lang="{{ entry.lang | default: 'en' }}">
+    {% if entry.arxiv %}
+      <a href="https://arxiv.org/abs/{{ entry.arxiv }}">{{ entry.title }}</a>
+    {% else %}
+      {{ entry.title }}
+    {% endif %}
+  </h3>
+  <p>
+    {% for author in entry.author_array %}
+      {{ author.first }}
+      {{ author.last -}}
+      {%- unless forloop.last %}, {% endunless %}
+    {% endfor %}
+    · {{ entry.year }}
+    {% if entry.note %}
+      — {% if page.lang == 'fr' and entry.note == 'Submitted' %}Soumis{% else %}{{ entry.note }}{% endif %}
+    {% endif %}
+    {% if entry.arxiv %} · arXiv:{{ entry.arxiv }}{% endif %}
+  </p>
+</div>

@@ -2,7 +2,7 @@ cv:
   name: Xia Xiao
   label: Doctorant en Mathématiques
   email: xiao.xia AT courrier DOT uqam DOT ca
-  summary: "Doctorant en mathématiques à l'UQAM, spécialisé en géométrie kählérienne, géométrie complexe et analyse géométrique."
+  summary: "Doctorant en mathématiques à l'UQAM, avec des recherches en géométrie kählérienne, analyse géométrique et méthodes variationnelles, ainsi qu’une expérience en enseignement et en développement d’outils Python pour la recherche et la pédagogie."
 
   sections:
     Education:
@@ -14,7 +14,7 @@ cv:
         end_date: Présent
         highlights:
           - "Directeurs : Julien Keller (UQAM) et Hugues Auvray (Université Paris-Saclay)"
-          - "Thèse : *Convexité de l'énergie K-tordue pondérée* (en préparation)"
+          - "Fin prévue du doctorat : avril 2027"
 
       - institution: Université Paris-Saclay
         location: Orsay, France
@@ -31,6 +31,8 @@ cv:
         studyType: M.Sc.
         start_date: 2018-03
         end_date: 2020-02
+        highlights:
+          - "Directeur : Reimundo Heluani"
 
       - institution: Université du Sichuan (SCU)
         location: Chengdu, Chine
@@ -41,18 +43,76 @@ cv:
         highlights:
           - "Thèse : *Théorème de représentation de Skorokhod* (Probabilités) — sous la direction de Zechun Hu"
 
-    Experience:
-      - position: "Voir la page Enseignement"
-        url: /fr/teaching/
-
     Thèmes de recherche:
       - label: "Thèmes"
-        details: "Géométrie kählérienne, K-stabilité, métriques canoniques, théorie du pluripotentiel"
+        details: "Géométrie kählérienne, métriques canoniques, théorie du pluripotentiel, K-stabilité, méthodes variationnelles et EDP géométriques"
+
+    # Affichées directement depuis _bibliography/papers.bib.
+    Publications: []
+
+    Experience:
+      - position: "Chargé de cours / Démonstrateur"
+        company: Université du Québec à Montréal (UQAM)
+        start_date: "2022"
+        end_date: Présent
+        highlights:
+          - "Enseignement et accompagnement de cours de premier cycle en calcul, analyse complexe, algèbre linéaire, calcul différentiel et mathématiques générales."
+          - "Rédaction de supports de cours autonomes en LaTeX et explication de notions mathématiques à des étudiants de parcours variés."
+          - "[Cours et activités d’enseignement](/fr/teaching/)"
+
+    Projets sélectionnés:
+      - name: "Production et automatisation de vidéos mathématiques"
+        url: /fr/projects/math-video/
+        start_date: "2026"
+        end_date: Présent
+        summary: "Projet collaboratif d’innovation pédagogique à l’UQAM. Développement d’animations mathématiques en français avec Python et Manim, intégration de la narration avec Microsoft Azure Speech et contribution aux outils de rendu, de validation et de préparation des vidéos."
+      - name: "Conversation Archive"
+        url: /fr/projects/conversation-archive/
+        start_date: "2026"
+        end_date: Présent
+        summary: "Contribution à une application Python qui organise des exports de conversations avec des assistants d’IA en documents Markdown reliés aux sources, tout en préservant les éléments d’origine et les modifications de l’utilisateur."
+      - name: "Recherche mathématique assistée par l’IA"
+        start_date: "2026"
+        end_date: Présent
+        summary: "Configuration et adaptation de systèmes existants, dont Danus, Codex et Claude Code, pour l’exploration de preuves, la recherche de contre-exemples et la relecture de manuscrits ; organisation du suivi de recherche et examen des résultats générés."
+      - name: "Prototype RAG et MCP pour les mathématiques"
+        start_date: "2026"
+        summary: "Prototype exploratoire en Python pour l’ingestion de documents, l’indexation persistante, la recherche documentaire et une interface MCP en lecture seule, avec conteneurisation Docker."
+
+    Participation à des conférences — sélection:
+      - name: "Geometrie"
+        summary: "Mathematisches Forschungsinstitut Oberwolfach, Allemagne — du 14 au 19 juin 2026."
+      - name: "Complex Geometry in Bordeaux"
+        summary: "Institut de Mathématiques de Bordeaux, France — du 26 au 29 mai 2026."
+      - name: "Complex Geometry, Complex Analysis and Dynamics"
+        summary: "CIRM, France — du 7 au 11 juillet 2025."
+      - name: "Real Algebraic Geometry and Birational Geometry"
+        summary: "CIRM, France — du 2 au 6 juin 2025."
+
+    Bourses sélectionnées:
+      - name: "Bourses Sophie Germain"
+        summary: "Consulat général de France à Québec — 2023 et 2025."
+      - name: "Bourse de master Sophie Germain"
+        summary: "Fondation Mathématique Jacques Hadamard (FMJH), pour le M2 AAG à l’Université Paris-Saclay — 2020–2021."
+      - name: "Bourse de maîtrise de l’IMPA"
+        summary: "2017–2019 (période de financement)."
+
+    Formation complémentaire:
+      - name: "IVADO Bootcamp: Statistical Insights into Modern AI Systems"
+        summary: "Montréal, du 4 au 8 mai 2026. Programme d’une semaine avec ateliers pratiques utilisant Python, PyTorch et Hugging Face Transformers."
 
     Langues:
-      - name: "Chinois (mandarin, sichuanais), anglais, français, portugais"
-        summary: ""
+      - label: "Chinois"
+        details: "Sichuanais langue maternelle ; mandarin courant"
+      - label: "Anglais"
+        details: "Courant"
+      - label: "Français et portugais"
+        details: "Compréhension, expression orale et lecture avancées ; expression écrite intermédiaire"
 
     Logiciels:
-      - label: "Outils"
-        details: "LaTeX, Python, Git"
+      - label: "Programmation et systèmes"
+        details: "Python, Git/GitHub, Linux, SSH, Docker, intégration d’API"
+      - label: "Outils scientifiques et multimédias"
+        details: "LaTeX, Beamer, Manim, Microsoft Azure Speech, FFmpeg/ffprobe"
+      - label: "Méthodes de travail en recherche"
+        details: "Configuration et utilisation de systèmes existants d’assistance par l’IA, dont Danus, Codex et Claude Code"

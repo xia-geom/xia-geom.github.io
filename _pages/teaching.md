@@ -12,7 +12,7 @@ All courses at [Université du Québec à Montréal (UQAM)](https://uqam.ca).
 
 ---
 
-### Instructor
+## Instructor
 
 | Semester    | Course                                                                         |
 | ----------- | ------------------------------------------------------------------------------ |
@@ -22,7 +22,7 @@ All courses at [Université du Québec à Montréal (UQAM)](https://uqam.ca).
 
 ---
 
-### Teaching Assistant
+## Teaching Assistant
 
 | Semester    | Course                                       |
 | ----------- | -------------------------------------------- |
@@ -36,7 +36,7 @@ All courses at [Université du Québec à Montréal (UQAM)](https://uqam.ca).
 
 ---
 
-### Mathematics and UQAM videos
+## Mathematics and UQAM videos
 
 The [Math Video Project]({{ '/projects/math-video/' | relative_url }}) brings together
 animated mathematics lessons, explanations of common errors, and videos presenting

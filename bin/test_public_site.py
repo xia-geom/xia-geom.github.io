@@ -40,6 +40,48 @@ class PublicationTests(unittest.TestCase):
         prepare(self.root)
         self.assertEqual(prepare(self.root), [])
 
+    def test_prepare_removes_unused_theme_assets_and_sitemap_entries(self):
+        demo = self.root / "assets/plotly/demo.html"
+        demo.parent.mkdir(parents=True)
+        demo.write_text("theme example")
+        sitemap = self.root / "sitemap.xml"
+        sitemap.write_text('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+                           '<url><loc>https://xia-geom.github.io/assets/plotly/demo.html</loc></url>'
+                           '<url><loc>https://xia-geom.github.io/</loc></url></urlset>')
+        prepare(self.root)
+        self.assertFalse(demo.exists())
+        self.assertNotIn("demo.html", sitemap.read_text())
+        self.assertIn("https://xia-geom.github.io/", sitemap.read_text())
+
+    def test_unprepared_theme_resume_is_rejected(self):
+        resume = self.root / "assets/json/resume.json"
+        resume.parent.mkdir(parents=True)
+        resume.write_text('{"name":"Albert Einstein"}')
+        self.assertTrue(any("Theme example published: assets/json/resume.json" in e
+                            for e in validate(self.root)["errors"]))
+
+    def test_ai_math_is_required_in_both_languages(self):
+        result = validate(self.root)
+        self.assertEqual(result["required_pages"], 18)
+        for route in ("projects/ai-for-math", "fr/projects/ai-for-math"):
+            self.assertIn(f"Required page absent: {route}/index.html", result["errors"])
+
+    def test_invalid_structured_data_is_rejected(self):
+        (self.root / "index.html").write_text('<script type="application/ld+json">{"name":broken}</script>')
+        self.assertIn("index.html: invalid structured data JSON", validate(self.root)["errors"])
+
+    def test_wrong_canonical_is_rejected(self):
+        (self.root / "index.html").write_text('<link rel="canonical" href="https://example.org/">')
+        self.assertIn("index.html: canonical URL missing or incorrect", validate(self.root)["errors"])
+
+    def test_publication_disclosures_do_not_depend_on_abstract_wording(self):
+        research = self.root / "research/index.html"
+        research.parent.mkdir()
+        research.write_text('<details><summary>Abstract</summary><p>Updated research on ℂℙ¹.</p></details>')
+        self.assertFalse(any("empty publication disclosure" in e for e in validate(self.root)["errors"]))
+        research.write_text('<details><summary>Abstract</summary></details>')
+        self.assertIn("research/index.html: empty publication disclosure", validate(self.root)["errors"])
+
     def test_removed_book_reference_is_rejected(self):
         (self.root / "index.html").write_text('<a href="/projects/french-learning/">Book</a>')
         self.assertTrue(any("book still referenced" in e for e in validate(self.root)["errors"]))
@@ -58,7 +100,7 @@ class PublicationTests(unittest.TestCase):
                     (folder / "index.html").write_text(
                         f'<details><summary>Abstract</summary><p>{notation}</p></details>', encoding="utf-8")
                 errors = validate(self.root)["errors"]
-                self.assertFalse(any("repaired abstract absent" in e for e in errors))
+                self.assertFalse(any("empty publication disclosure" in e for e in errors))
 
     def test_missing_abstract_still_rejected_in_both_languages(self):
         for route in ("research", "fr/research"):
@@ -66,7 +108,7 @@ class PublicationTests(unittest.TestCase):
             folder.mkdir(parents=True, exist_ok=True)
             (folder / "index.html").write_text('<details><summary>Abstract</summary></details>')
         errors = validate(self.root)["errors"]
-        self.assertEqual(sum("repaired abstract absent" in e for e in errors), 2)
+        self.assertEqual(sum("empty publication disclosure" in e for e in errors), 2)
 
 
 if __name__ == "__main__":

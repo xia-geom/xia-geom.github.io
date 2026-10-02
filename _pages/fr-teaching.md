@@ -11,7 +11,7 @@ Tous les cours dispensés à l'[Université du Québec à Montréal (UQAM)](http
 
 ---
 
-### Chargé de cours
+## Chargé de cours
 
 | Session      | Cours                                                                                 |
 | ------------ | ------------------------------------------------------------------------------------- |
@@ -21,7 +21,7 @@ Tous les cours dispensés à l'[Université du Québec à Montréal (UQAM)](http
 
 ---
 
-### Démonstrateur
+## Démonstrateur
 
 | Session      | Cours                                               |
 | ------------ | --------------------------------------------------- |
@@ -35,7 +35,7 @@ Tous les cours dispensés à l'[Université du Québec à Montréal (UQAM)](http
 
 ---
 
-### Vidéos de mathématiques et sur l’UQAM
+## Vidéos de mathématiques et sur l’UQAM
 
 Le [Math Video Project]({{ '/fr/projects/math-video/' | relative_url }}) réunit des
 leçons animées de mathématiques, des explications d’erreurs fréquentes et des vidéos
