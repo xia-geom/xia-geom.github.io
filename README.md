@@ -14,7 +14,10 @@ The header and language metadata find matching pages automatically; there is no
 separate language-toggle map to update.
 
 The CV views read `_data/cv.yml` and `_data/cv_fr.yml` without duplicating records.
-`_layouts/academic-cv.liquid` renders both languages. Research pages use
+`_layouts/academic-cv.liquid` renders both languages, with publications from
+`_bibliography/papers.bib`. These YAML files use the site's custom schema, not
+RenderCV. No PDF export is configured; the unused template RenderCV workflow has
+been removed. Research pages use
 `_layouts/academic-bib.liquid`, with native Abstract and BibTeX disclosures.
 
 ## Local checks
