@@ -9,7 +9,7 @@ lang: en
 
 [Projects & useful links]({{ '/projects/' | relative_url }})
 
-I participate in an AI-and-mathematics working group. This personal reference page collects its provisional programme, useful public readings and selected news. It is not the group’s official website.
+I participate in an AI-and-mathematics working group. This personal reference page collects its programme, useful public readings and selected news. It is not the group’s official website.
 
 <nav class="ai-news-nav" aria-label="On this page">
   <a href="#ai-programme">Programme</a>

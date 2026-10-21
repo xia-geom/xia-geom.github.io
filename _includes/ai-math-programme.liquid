@@ -8,28 +8,23 @@
     {{ programme.year }}
   </h2>
   <p id="ai-programme-note">
-    <strong>
-      {% if programme.status == 'provisional' %}
-        {% if programme_lang == 'fr' %}Programme provisoire.{% else %}Provisional programme.{% endif %}
-      {% else %}
-        {% if programme_lang == 'fr' %}Programme confirmé.{% else %}Confirmed programme.{% endif %}
-      {% endif %}
-    </strong>
     {% if programme_lang == 'fr' %}
-      {% if programme.status == 'provisional' %}Dates et intervenants proposés, sous réserve de confirmation.{% endif %}
-      Les thèmes ne sont pas des titres d’exposé. Les horaires figurent ci-dessous ; salles et modalités de participation à préciser.
+      Pour participer au groupe de travail sur l’IA et les mathématiques, merci de
+      <a href="mailto:xiao.xia@courrier.uqam.ca?subject=IA%20et%20math%C3%A9matiques%20-%20participation">me contacter par courriel</a>.
+      Toute personne souhaitant discuter d’articles et partager des idées sur l’IA et les mathématiques est la bienvenue.
     {% else %}
-      {% if programme.status == 'provisional' %}Proposed dates and speakers, subject to confirmation.{% endif %}
-      Themes are not talk titles. Times are listed below; rooms and participation details are still to be arranged.
+      To participate in the AI for Math working group, please
+      <a href="mailto:xiao.xia@courrier.uqam.ca?subject=AI%20for%20Math%20-%20participation">contact me by email</a>.
+      Anyone interested in discussing papers and sharing ideas about AI and mathematics is welcome.
     {% endif %}
   </p>
   <div class="table-responsive">
     <table class="ai-programme-table" aria-describedby="ai-programme-note">
       <caption class="sr-only">
         {% if programme_lang == 'fr' -%}
-          Séances proposées pour le groupe IA et mathématiques
+          Séances du groupe IA et mathématiques
         {%- else -%}
-          Proposed AI for Math working-group sessions
+          AI for Math working-group sessions
         {%- endif %}
       </caption>
       <thead>
