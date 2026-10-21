@@ -68,7 +68,11 @@ module AiMathWorkingGroup
     sessions = programme.fetch('sessions')
     raise ArgumentError, 'Expected 1 to 52 sessions' unless sessions.is_a?(Array) && (1..52).cover?(sessions.size)
     dates = sessions.map do |session|
-      object(session, %w[date speaker affiliation theme])
+      object(session, %w[date time speaker affiliation theme])
+      time = session.fetch('time')
+      unless time.is_a?(String) && time.match?(/\A(?:[01]\d|2[0-3]):[0-5]\d\z/)
+        raise ArgumentError, 'Expected a 24-hour session time in HH:MM format'
+      end
       raw = session.fetch('date')
       raise ArgumentError, 'Expected ISO session date' unless raw.is_a?(String) && raw.match?(/\A\d{4}-\d{2}-\d{2}\z/)
       date = Date.iso8601(raw)

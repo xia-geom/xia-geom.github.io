@@ -3,16 +3,16 @@
     "year": 2026,
     "status": "provisional",
     "sessions": [
-      { "date": "2026-10-01", "speaker": "Bin Dong", "affiliation": "Peking University", "theme": "research" },
-      { "date": "2026-10-08", "speaker": "Chao Xu", "affiliation": "UESTC", "theme": "research" },
-      { "date": "2026-10-15", "speaker": null, "affiliation": null, "theme": null },
-      { "date": "2026-10-22", "speaker": "Marouane Il Idrissi", "affiliation": "UQAM", "theme": "foundations" },
-      { "date": "2026-10-29", "speaker": "Hao Zhang", "affiliation": "University of Wisconsin–Madison", "theme": "research" },
-      { "date": "2026-11-05", "speaker": null, "affiliation": null, "theme": null },
-      { "date": "2026-11-12", "speaker": null, "affiliation": null, "theme": null },
-      { "date": "2026-11-19", "speaker": "Guillaume Lajoie", "affiliation": "Université de Montréal", "theme": "foundations" },
-      { "date": "2026-11-26", "speaker": null, "affiliation": null, "theme": null },
-      { "date": "2026-12-03", "speaker": null, "affiliation": null, "theme": null }
+      { "date": "2026-10-01", "time": "09:30", "speaker": "Bin Dong", "affiliation": "Peking University", "theme": "research" },
+      { "date": "2026-10-08", "time": "12:30", "speaker": "Chao Xu", "affiliation": "UESTC", "theme": "research" },
+      { "date": "2026-10-15", "time": "12:30", "speaker": "Gérard Biau", "affiliation": "Sorbonne Université", "theme": null },
+      { "date": "2026-10-22", "time": "12:30", "speaker": "Marouane Il Idrissi", "affiliation": "UQAM", "theme": "foundations" },
+      { "date": "2026-10-29", "time": "12:30", "speaker": "Hao Zhang", "affiliation": "University of Wisconsin–Madison", "theme": "research" },
+      { "date": "2026-11-05", "time": "12:30", "speaker": null, "affiliation": null, "theme": null },
+      { "date": "2026-11-12", "time": "12:30", "speaker": "Patrick Massot", "affiliation": "Université Paris-Saclay", "theme": null },
+      { "date": "2026-11-19", "time": "12:30", "speaker": "Guillaume Lajoie", "affiliation": "Université de Montréal", "theme": "foundations" },
+      { "date": "2026-11-26", "time": "12:30", "speaker": "Ryan Kavanagh", "affiliation": "UQAM (Département d’informatique)", "theme": null },
+      { "date": "2026-12-03", "time": "09:30", "speaker": "Amaury Hayat", "affiliation": "École des Ponts", "theme": null }
     ]
   },
   "topics": [
