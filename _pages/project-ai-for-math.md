@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /projects/ai-for-math/
-title: AI for Math — useful links
+title: AI for Math — programme and news
 description: Personal reference page for an AI-and-mathematics working group I participate in.
 nav: false
 lang: en
@@ -9,17 +9,14 @@ lang: en
 
 [Projects & useful links]({{ '/projects/' | relative_url }})
 
-I participate in an AI-and-mathematics working group. This personal reference page collects its programme, useful public readings and selected news. It is not the group’s official website.
+I participate in an AI-and-mathematics working group. This personal reference page collects its programme and selected news on AI for mathematics and science. It is not the group’s official website.
 
 <nav class="ai-news-nav" aria-label="On this page">
   <a href="#ai-programme">Programme</a>
-  <a href="#ai-working-group">Readings</a>
-  <a href="#ai-latest">News</a>
+  <a href="#ai-news">News</a>
 </nav>
 
 {% include ai-math-programme.liquid %}
-
-{% include ai-math-working-group.liquid %}
 
 {% include ai-math-news.liquid %}
 

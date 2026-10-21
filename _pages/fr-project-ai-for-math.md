@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /fr/projects/ai-for-math/
-title: IA et mathématiques — liens utiles
+title: IA et mathématiques — programme et actualités
 description: Page de référence personnelle pour un groupe de travail sur l’IA et les mathématiques auquel je participe.
 nav: false
 lang: fr
@@ -9,17 +9,14 @@ lang: fr
 
 [Projets et liens utiles]({{ '/fr/projects/' | relative_url }})
 
-Je participe à un groupe de travail sur l’IA et les mathématiques. Cette page de référence personnelle rassemble son programme, des lectures publiques utiles et une sélection d’actualités. Ce n’est pas le site officiel du groupe.
+Je participe à un groupe de travail sur l’IA et les mathématiques. Cette page de référence personnelle rassemble son programme et une sélection d’actualités sur l’IA pour les mathématiques et les sciences. Ce n’est pas le site officiel du groupe.
 
 <nav class="ai-news-nav" aria-label="Sur cette page">
   <a href="#ai-programme">Programme</a>
-  <a href="#ai-working-group">Lectures</a>
-  <a href="#ai-latest">Actualités</a>
+  <a href="#ai-news">Actualités</a>
 </nav>
 
 {% include ai-math-programme.liquid %}
-
-{% include ai-math-working-group.liquid %}
 
 {% include ai-math-news.liquid %}
 
