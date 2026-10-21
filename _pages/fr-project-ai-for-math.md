@@ -9,7 +9,7 @@ lang: fr
 
 [Projets et liens utiles]({{ '/fr/projects/' | relative_url }})
 
-Je participe à un groupe de travail sur l’IA et les mathématiques. Cette page de référence personnelle rassemble son programme provisoire, des lectures publiques utiles et une sélection d’actualités. Ce n’est pas le site officiel du groupe.
+Je participe à un groupe de travail sur l’IA et les mathématiques. Cette page de référence personnelle rassemble son programme, des lectures publiques utiles et une sélection d’actualités. Ce n’est pas le site officiel du groupe.
 
 <nav class="ai-news-nav" aria-label="Sur cette page">
   <a href="#ai-programme">Programme</a>
