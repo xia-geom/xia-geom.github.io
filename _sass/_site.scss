@@ -349,7 +349,7 @@ summary:focus-visible {
   }
 }
 
-// Working-group programme: keep dates, speakers and reading themes together.
+// Working-group programme: keep dates, times, speakers, institutions and themes together.
 .ai-programme,
 .ai-programme-table tr,
 .ai-working-group details {
@@ -358,6 +358,7 @@ summary:focus-visible {
 
 .ai-programme-table {
   width: 100%;
+  min-width: 44rem;
   table-layout: fixed;
   margin: 1rem 0 2rem;
   border-collapse: collapse;
@@ -374,15 +375,27 @@ summary:focus-visible {
 }
 
 .ai-programme-table th:first-child {
-  width: 18%;
+  width: 12%;
 }
 
 .ai-programme-table th:nth-child(2) {
-  width: 51%;
+  width: 12%;
 }
 
 .ai-programme-table th:nth-child(3) {
+  width: 23%;
+}
+
+.ai-programme-table th:nth-child(4) {
   width: 31%;
+}
+
+.ai-programme-table th:nth-child(5) {
+  width: 22%;
+}
+
+.ai-programme-table td:nth-child(2) {
+  white-space: nowrap;
 }
 
 .ai-programme-table tbody th {
