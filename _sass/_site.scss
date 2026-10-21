@@ -191,6 +191,13 @@ summary:focus-visible {
   margin: 1rem 0 1.5rem;
 }
 
+.ai-news {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--global-divider-color);
+  scroll-margin-top: 6rem;
+}
+
 .ai-news-section {
   margin-top: 2rem;
   scroll-margin-top: 6rem;
@@ -202,9 +209,17 @@ summary:focus-visible {
   scroll-margin-top: 6rem;
 }
 
-.ai-news-entry h3 {
+.ai-news-section > h3 {
+  padding-bottom: 0.65rem;
+  border-bottom: 2px solid var(--global-divider-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.ai-news-entry h4 {
   font-size: 1.1rem;
   font-weight: 600;
+  line-height: 1.5;
 }
 
 .ai-news-meta,
@@ -251,7 +266,6 @@ summary:focus-visible {
 }
 
 .ai-news-nav a,
-.ai-news-topics a,
 .ai-news-back a {
   display: inline-block;
   padding: 0.25rem 0;
@@ -279,28 +293,65 @@ summary:focus-visible {
 }
 
 .ai-news-latest time,
-.ai-news-topics p,
 .ai-news-back {
   font-size: 0.9rem;
 }
 
+.ai-news .ai-news-label {
+  margin: 0 0 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.ai-news-latest {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.5rem;
+}
+
+.ai-news-latest ul,
+.ai-news-topics ul {
+  margin-bottom: 0;
+}
+
 .ai-news-topics {
-  margin: 1.75rem 0;
+  margin: 1.5rem 0 2rem;
 }
 
 .ai-news-topics ul {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .ai-news-topics li {
-  padding-left: 0.75rem;
-  border-left: 2px solid var(--global-divider-color);
+  max-width: 100%;
 }
 
-.ai-news-topics p {
-  margin: 0.25rem 0 0;
+.ai-news-topics a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 100%;
+  min-height: 2.75rem;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.4rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.ai-news-topics a:hover {
+  border-color: var(--global-theme-color);
+}
+
+.ai-news-count {
+  flex: 0 0 auto;
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
 }
 
 .ai-news-status {
@@ -343,8 +394,7 @@ summary:focus-visible {
 }
 
 @media (max-width: 575.98px) {
-  .ai-news-latest li,
-  .ai-news-topics ul {
+  .ai-news-latest li {
     grid-template-columns: minmax(0, 1fr);
   }
 }

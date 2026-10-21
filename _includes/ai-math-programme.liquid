@@ -82,16 +82,14 @@
             </td>
             <td>
               {% if session.theme %}
-                <a href="#ai-study-{{ session.theme | escape }}">
-                  {% if session.theme == 'research' %}
-                    {% if programme_lang == 'fr' %}IA pour les maths{% else %}AI for mathematics{% endif %}
-                  {% elsif session.theme == 'foundations' %}
-                    {% if programme_lang == 'fr' %}Sous le capot{% else %}Under the hood{% endif %}
-                  {% else %}
-                    {% assign topic = site.data.ai_math_working_group.topics | where: 'id', session.theme | first %}
-                    {{ topic.title[programme_lang] | escape }}
-                  {% endif %}
-                </a>
+                {% if session.theme == 'research' %}
+                  {% if programme_lang == 'fr' %}IA pour les maths{% else %}AI for mathematics{% endif %}
+                {% elsif session.theme == 'foundations' %}
+                  {% if programme_lang == 'fr' %}Sous le capot{% else %}Under the hood{% endif %}
+                {% else %}
+                  {% assign topic = site.data.ai_math_working_group.topics | where: 'id', session.theme | first %}
+                  {{ topic.title[programme_lang] | escape }}
+                {% endif %}
               {% else %}
                 {% if programme_lang == 'fr' %}À définir{% else %}To be decided{% endif %}
               {% endif %}
