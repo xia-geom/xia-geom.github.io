@@ -1,6 +1,354 @@
 {
-  "last_checked": "2026-09-28",
+  "last_checked": "2026-10-21",
   "entries": [
+    {
+      "id": "anthropic-scorpion-minibinders",
+      "date": "2026-10-20",
+      "category": "research",
+      "author": "Anthropic with Adaptyv Bio and Twist Bioscience",
+      "title": {
+        "en": "Claude-designed scorpion neurotoxin binders undergo laboratory tests",
+        "fr": "Des protéines conçues par Claude pour lier des neurotoxines de scorpion sont testées au laboratoire"
+      },
+      "summary": {
+        "en": "Anthropic reports laboratory binding tests of 211 protein designs, of which 17 met a predefined binding criterion for individual scorpion neurotoxins. The study does not establish neutralization of venom or clinical efficacy.",
+        "fr": "Anthropic rapporte des tests de liaison de 211 protéines conçues avec l'IA, dont 17 satisfont un critère prédéfini de liaison pour des neurotoxines individuelles de scorpion. L'étude ne démontre ni la neutralisation du venin ni une efficacité clinique."
+      },
+      "status": {
+        "en": "Company-led experimental binding measurements, not an antivenom; designs and data released.",
+        "fr": "Mesures expérimentales de liaison dirigées par l'entreprise, non un antivenin ; les séquences et données sont publiées."
+      },
+      "sources": [
+        {
+          "label": "Anthropic study and data links",
+          "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
+        }
+      ]
+    },
+    {
+      "id": "tao-tenth-discriminant-challenge",
+      "date": "2026-10-20",
+      "category": "community",
+      "author": "Terence Tao",
+      "title": {
+        "en": "Tao launches a collaborative AI-math bound-finding challenge",
+        "fr": "Tao lance un défi collaboratif de recherche de bornes avec l'IA"
+      },
+      "summary": {
+        "en": "Tao invites mathematicians to use AI to derive explicit bounds for a hypothetical tenth class-number-one discriminant from recent arguments on Siegel zeroes, highlighting checked contributions and explanatory value.",
+        "fr": "Tao invite les mathématiciens à utiliser l'IA pour déduire des bornes explicites pour un hypothétique dixième discriminant de nombre de classes un à partir d'arguments récents sur les zéros de Siegel, en privilégiant les contributions vérifiées et l'explication."
+      },
+      "status": {
+        "en": "Collaborative invitation concerning an already classified problem, not an announced new result.",
+        "fr": "Invitation à collaborer sur un problème de classification déjà résolu, et non annonce d'un nouveau résultat."
+      },
+      "sources": [
+        {
+          "label": "Terence Tao's challenge",
+          "url": "https://terrytao.wordpress.com/2026/10/20/an-experimental-ai-math-challenge-using-tenth-discriminant-bounds-to-explore-arguments-ruling-out-siegel-zeroes/"
+        }
+      ]
+    },
+    {
+      "id": "tao-siegel-zero-exposition",
+      "date": "2026-10-19",
+      "category": "community",
+      "author": "Terence Tao",
+      "title": {
+        "en": "Tao explains a recent approach to excluding Siegel zeroes",
+        "fr": "Tao explique une approche récente pour exclure les zéros de Siegel"
+      },
+      "summary": {
+        "en": "Tao sketches mathematical ideas from recent preprints on Landau-Siegel zeroes, focusing on an adelic polynomial-method argument, and says he used an open mathematics AI chat service to help understand the proofs.",
+        "fr": "Tao présente une esquisse des idées mathématiques de prépublications récentes sur les zéros de Landau-Siegel, centrée sur une méthode polynomiale adélique, et indique avoir utilisé un service d'IA mathématique ouvert pour comprendre ces preuves."
+      },
+      "status": {
+        "en": "Exposition with simplifying assumptions; this entry is not a separate independent proof audit.",
+        "fr": "Exposé avec hypothèses simplificatrices ; cette note ne constitue pas un audit indépendant des preuves."
+      },
+      "sources": [
+        {
+          "label": "Tao's mathematical exposition",
+          "url": "https://terrytao.wordpress.com/2026/10/19/a-sketch-of-the-proof-of-non-existence-of-siegel-zeroes/"
+        }
+      ]
+    },
+    {
+      "id": "aptamer-lab-loop",
+      "date": "2026-10-17",
+      "category": "research",
+      "author": "Zachary Cutts and collaborators",
+      "title": {
+        "en": "Laboratory feedback improves AI-designed aptamer binders",
+        "fr": "Le retour expérimental améliore les aptamères conçus par l'IA"
+      },
+      "summary": {
+        "en": "Researchers test AI-guided aptamer designs for thrombin and myoglobin over three design-test-revision cycles. They report improved target-binding hit rates in later rounds and use laboratory measurements to expose off-target binding and assay artifacts.",
+        "fr": "Des chercheurs testent des aptamères conçus avec l'IA pour la thrombine et la myoglobine au cours de trois cycles de conception, d'essai et de révision. Ils rapportent une amélioration des taux de liaison ciblée aux derniers cycles et détectent des liaisons hors cible et des artefacts expérimentaux."
+      },
+      "status": {
+        "en": "Preprint with wet-lab binding measurements; no demonstration of therapeutic efficacy.",
+        "fr": "Prépublication avec mesures expérimentales de liaison ; aucune démonstration d'efficacité thérapeutique."
+      },
+      "sources": [
+        {
+          "label": "Original preprint",
+          "url": "https://arxiv.org/abs/2610.24806"
+        }
+      ]
+    },
+    {
+      "id": "formalize-all-mathematics-essay",
+      "date": "2026-10-16",
+      "category": "community",
+      "author": "Jeremy Avigad, Kevin Buzzard, Johan Commelin, Rémy Degenne, Kim Morrison, Oliver Nash and Adam Topaz",
+      "title": {
+        "en": "Researchers debate formalizing the mathematical literature",
+        "fr": "Des chercheurs débattent de la formalisation de la littérature mathématique"
+      },
+      "summary": {
+        "en": "Seven researchers discuss whether large-scale formalization of mathematics can be accelerated with AI and why explanation, proof maintenance and research priorities still matter beyond machine-checked volume.",
+        "fr": "Sept chercheurs discutent de l'accélération possible de la formalisation des mathématiques grâce à l'IA, tout en soulignant le rôle de l'explication, de la maintenance des preuves et des priorités de recherche au-delà du volume de textes vérifiés."
+      },
+      "status": {
+        "en": "Collective discussion, not a completed proof library or new theorem.",
+        "fr": "Discussion collective, non bibliothèque complète de preuves ni nouveau théorème."
+      },
+      "sources": [
+        {
+          "label": "Xena Project authors' essay",
+          "url": "https://xenaproject.wordpress.com/2026/10/16/how-to-formalize-all-of-mathematics/"
+        }
+      ]
+    },
+    {
+      "id": "sair-open-math-os-launch",
+      "date": "2026-10-16",
+      "category": "community",
+      "author": "Terence Tao / SAIR Foundation",
+      "title": {
+        "en": "SAIR launches an early collaborative AI workspace for mathematics",
+        "fr": "SAIR lance un espace collaboratif expérimental d'IA pour les mathématiques"
+      },
+      "summary": {
+        "en": "Tao announced a soft launch of SAIR Open Math OS, initially serving existing open mathematical language models for discussion and moderate Lean formalization, with shared team prompts. A specialized model remains under development.",
+        "fr": "Tao annonce le lancement préliminaire de SAIR Open Math OS, proposant d'abord des modèles ouverts existants pour les discussions mathématiques et des formalisations Lean de taille moyenne, avec des requêtes partagées par les équipes. Un modèle spécialisé reste à développer."
+      },
+      "status": {
+        "en": "Early service announcement; not evidence of a newly trained high-performing math model.",
+        "fr": "Annonce d'un service expérimental ; ce n'est pas la preuve qu'un nouveau modèle mathématique de pointe a été entraîné."
+      },
+      "sources": [
+        {
+          "label": "Terence Tao's announcement",
+          "url": "https://terrytao.wordpress.com/2026/10/16/sair-open-math-os-released/"
+        }
+      ]
+    },
+    {
+      "id": "cern-mistral-foundation-model",
+      "date": "2026-10-15",
+      "category": "community",
+      "author": "CERN and Mistral AI",
+      "title": {
+        "en": "CERN and Mistral propose a foundation model for collider physics",
+        "fr": "Le CERN et Mistral envisagent un modèle de fondation pour la physique des collisionneurs"
+      },
+      "summary": {
+        "en": "CERN and Mistral announced an intention to build a physics foundation model trained on simulated proton collisions, potentially assisting particle identification and event reconstruction. No deployed model performance is reported.",
+        "fr": "Le CERN et Mistral ont annoncé leur intention de construire un modèle de fondation pour la physique, entraîné sur des collisions de protons simulées, afin d'aider à identifier des particules et à reconstruire des événements. Aucune performance d'un modèle déployé n'est encore présentée."
+      },
+      "status": {
+        "en": "Planned research collaboration rather than an experimentally confirmed advance.",
+        "fr": "Collaboration de recherche envisagée, non avancée confirmée par une expérience."
+      },
+      "sources": [
+        {
+          "label": "CERN announcement",
+          "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/"
+        }
+      ]
+    },
+    {
+      "id": "llm-quantum-circuit-search",
+      "date": "2026-10-15",
+      "category": "research",
+      "author": "Andi Gu, Alek H. Kemeny, Susanne F. Yelin and Mikhail D. Lukin",
+      "title": {
+        "en": "Evaluator-guided language models optimize quantum circuits",
+        "fr": "Des modèles de langage guidés par un évaluateur optimisent des circuits quantiques"
+      },
+      "summary": {
+        "en": "A preprint couples LLM-generated reversible quantum circuits to an independent correctness and cost evaluator. The authors report lower Toffoli-gate and qubit requirements in seven of eight tested computational tasks, and a new modular-inversion architecture in the eighth.",
+        "fr": "Une prépublication associe des circuits quantiques réversibles proposés par des modèles de langage à un évaluateur indépendant de correction et de coût. Les auteurs rapportent des besoins réduits en portes Toffoli et en qubits pour sept des huit tâches testées, et une nouvelle architecture d'inversion modulaire pour la huitième."
+      },
+      "status": {
+        "en": "Preprint with evaluator-checked algorithms, not a reported fault-tolerant quantum hardware experiment.",
+        "fr": "Prépublication d'algorithmes contrôlés par un évaluateur, sans expérience annoncée sur du matériel quantique tolérant aux fautes."
+      },
+      "sources": [
+        {
+          "label": "Original preprint",
+          "url": "https://arxiv.org/abs/2610.22367"
+        }
+      ]
+    },
+    {
+      "id": "simons-math-ai-initiative",
+      "date": "2026-10-15",
+      "category": "community",
+      "author": "Simons Foundation, Anthropic and OpenAI",
+      "title": {
+        "en": "Simons Foundation launches a $15 million Math+AI initiative",
+        "fr": "La Simons Foundation lance une initiative Maths+IA de 15 millions de dollars"
+      },
+      "summary": {
+        "en": "The foundation announced a combined $15 million commitment in funding and resources with Anthropic and OpenAI to support mathematicians, workshops and critical assessment of AI in mathematics, including a new institute call.",
+        "fr": "La fondation annonce un engagement commun de 15 millions de dollars en financement et ressources avec Anthropic et OpenAI pour soutenir les mathématiciens, des ateliers et l'évaluation critique de l'IA en mathématiques, avec un appel à instituts."
+      },
+      "status": {
+        "en": "Institutional funding announcement, not a mathematical discovery.",
+        "fr": "Annonce de financement institutionnel, non découverte mathématique."
+      },
+      "sources": [
+        {
+          "label": "Simons Foundation",
+          "url": "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/"
+        }
+      ]
+    },
+    {
+      "id": "subseasonal-bias-correction",
+      "date": "2026-10-14",
+      "category": "research",
+      "author": "Hannah Guan, Soukayna Mouatadid and collaborators",
+      "title": {
+        "en": "Machine learning improves subseasonal weather forecast calibration",
+        "fr": "L'apprentissage automatique améliore la calibration des prévisions météorologiques subseasonnières"
+      },
+      "summary": {
+        "en": "A Nature study applies probabilistic machine-learning bias correction to existing two-to-six-week weather forecasts. The authors report improvements over tested baseline forecasts for a majority of temperature, pressure and precipitation targets.",
+        "fr": "Une étude publiée dans Nature applique une correction probabiliste des biais par apprentissage automatique aux prévisions météorologiques de deux à six semaines. Les auteurs rapportent des améliorations, sur la majorité des cibles de température, de pression et de précipitations testées."
+      },
+      "status": {
+        "en": "Peer-reviewed modeling and forecast evaluation; gains depend on the baselines and regions tested.",
+        "fr": "Étude évaluée par les pairs, portant sur des modèles et des prévisions ; les gains dépendent des références et régions testées."
+      },
+      "sources": [
+        {
+          "label": "Nature research article",
+          "url": "https://www.nature.com/articles/s41586-026-11126-x"
+        }
+      ]
+    },
+    {
+      "id": "openai-october-math-release",
+      "date": "2026-10-06",
+      "category": "research",
+      "author": "OpenAI",
+      "title": {
+        "en": "OpenAI publishes AI-generated mathematics with subsequent corrections",
+        "fr": "OpenAI publie des manuscrits de mathématiques produits par IA, puis des corrections"
+      },
+      "summary": {
+        "en": "OpenAI released a large collection of AI-produced manuscripts and proof artifacts. The current repository lists 719 manuscripts across 372 families, with about 42% of headline results formalized in Lean. An October 7 update records three withdrawals caused by a sign error and revisions to 14 others.",
+        "fr": "OpenAI a publié un grand ensemble de manuscrits mathématiques produits par IA et de fichiers de preuve. Le dépôt recense actuellement 719 manuscrits dans 372 familles, dont environ 42 % des résultats principaux sont formalisés dans Lean. Une mise à jour du 7 octobre signale trois retraits liés à une erreur de signe et la révision de 14 autres textes."
+      },
+      "status": {
+        "en": "Many claims remain unformalized; source authors themselves warn of possible gaps. This page has not audited the proofs.",
+        "fr": "De nombreuses affirmations ne sont pas formalisées ; les auteurs signalent eux-mêmes des lacunes possibles. Cette page n'a pas audité les preuves."
+      },
+      "sources": [
+        {
+          "label": "OpenAI announcement",
+          "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/"
+        },
+        {
+          "label": "Release repository",
+          "url": "https://github.com/openai/math"
+        },
+        {
+          "label": "Corrections and withdrawals",
+          "url": "https://github.com/openai/math/blob/main/history.md"
+        }
+      ]
+    },
+    {
+      "id": "ai-magic-state-factories",
+      "date": "2026-10-05",
+      "category": "research",
+      "author": "Shubham P. Jain, Adam Wills and Shraddha Singh",
+      "title": {
+        "en": "AI-assisted search discovers magic-state distillation protocols",
+        "fr": "Une recherche assistée par IA découvre des protocoles de distillation d'états magiques"
+      },
+      "summary": {
+        "en": "The authors combine symmetry, language-model search, deterministic solving and independent checking to identify 699 classes of quantum magic-state factories, including 564 new ones, with improved overhead in specified regimes.",
+        "fr": "Les auteurs combinent symétries, recherche par modèles de langage, résolution déterministe et vérifications indépendantes pour identifier 699 classes de fabriques d'états magiques quantiques, dont 564 nouvelles, et améliorer certains coûts."
+      },
+      "status": {
+        "en": "Preprint with computationally checked constructions; not a hardware demonstration.",
+        "fr": "Prépublication présentant des constructions vérifiées par calcul, sans démonstration sur un processeur physique."
+      },
+      "sources": [
+        {
+          "label": "Original preprint",
+          "url": "https://arxiv.org/abs/2610.06535"
+        }
+      ]
+    },
+    {
+      "id": "avigad-future-mathematics",
+      "date": "2026-10-05",
+      "category": "community",
+      "author": "Jeremy Avigad",
+      "title": {
+        "en": "Jeremy Avigad on mathematics beyond problem solving",
+        "fr": "Jeremy Avigad sur les mathématiques au-delà de la résolution de problèmes"
+      },
+      "summary": {
+        "en": "Avigad argues that mathematical progress includes understanding, communication and a culture of reasoning, and urges researchers to shape AI and proof-assistant tools rather than judge them only by theorem-solving scores.",
+        "fr": "Avigad défend l'idée que le progrès mathématique comprend la compréhension, la communication et une culture du raisonnement. Il invite les chercheurs à participer à la conception des outils d'IA et des assistants de preuve."
+      },
+      "status": {
+        "en": "Personal essay by Avigad, hosted on Tao's blog; not an institutional position.",
+        "fr": "Essai personnel d'Avigad, hébergé sur le blog de Tao ; ce n'est pas une position institutionnelle."
+      },
+      "sources": [
+        {
+          "label": "Jeremy Avigad (guest post)",
+          "url": "https://terrytao.wordpress.com/2026/10/05/the-future-of-mathematics/"
+        }
+      ]
+    },
+    {
+      "id": "mhd-stellarator-symmetry",
+      "date": "2026-10-05",
+      "category": "research",
+      "author": "Opal Issan, Jonathan Citrin, Matt Landreman and Brendan Tracey",
+      "title": {
+        "en": "Analytic 3D plasma equilibria without stellarator symmetry",
+        "fr": "Des équilibres analytiques de plasma 3D sans symétrie stellaire"
+      },
+      "summary": {
+        "en": "Extending Landreman's recent AI-assisted analytic counterexamples to a formulation of Grad's conjecture, the authors introduce symmetry-breaking parameters that preserve exact non-axisymmetric magnetohydrodynamic equilibria.",
+        "fr": "Prolongeant les contre-exemples analytiques récents de Landreman, découverts avec l'aide de l'IA et relatifs à une formulation de la conjecture de Grad, les auteurs introduisent des paramètres brisant la symétrie tout en préservant des équilibres magnétohydrodynamiques exacts."
+      },
+      "status": {
+        "en": "Mathematical preprint and analytic benchmark for codes; not evidence of improved fusion confinement.",
+        "fr": "Prépublication mathématique et cas test analytique pour les logiciels ; pas de démonstration d'un meilleur confinement en fusion."
+      },
+      "sources": [
+        {
+          "label": "Follow-up preprint",
+          "url": "https://arxiv.org/abs/2610.07304"
+        },
+        {
+          "label": "Earlier AI-assisted construction",
+          "url": "https://arxiv.org/abs/2609.26742"
+        }
+      ]
+    },
     {
       "id": "mathathon-redesign",
       "date": "2026-09-28",
@@ -48,6 +396,34 @@
         {
           "label": "Ivan Corwin",
           "url": "https://terrytao.wordpress.com/2026/09/26/a-value-based-approach-to-mathematics/"
+        }
+      ]
+    },
+    {
+      "id": "claude-nine-loop-amplitude",
+      "date": "2026-09-25",
+      "category": "research",
+      "author": "Matt von Hippel, with Lance Dixon",
+      "title": {
+        "en": "Claude computes a nine-loop amplitude in planar N=4 SYM",
+        "fr": "Claude calcule une amplitude à neuf boucles dans la théorie N=4 SYM plane"
+      },
+      "summary": {
+        "en": "Anthropic physicists Liam Fitzpatrick and Siddharth Mishra-Sharma used Claude to compute the six-particle MHV amplitude in planar N=4 super Yang–Mills theory at nine loops by two established routes. The source presents this theory as a toy model used to develop amplitude methods.",
+        "fr": "Les physiciens d’Anthropic Liam Fitzpatrick et Siddharth Mishra-Sharma ont utilisé Claude pour calculer à neuf boucles l’amplitude MHV à six particules de la théorie de super Yang–Mills N=4 plane, par deux méthodes établies. La source présente cette théorie comme un modèle servant à développer les méthodes de calcul d’amplitudes."
+      },
+      "status": {
+        "en": "Anthropic-hosted guest report with released result files; Lance Dixon reports independent validation of the nine-loop result. The released function-level result notes that it has no second independent computation.",
+        "fr": "Compte rendu invité hébergé par Anthropic, avec fichiers de résultats publiés ; Lance Dixon indique avoir validé indépendamment le résultat à neuf boucles. Le résultat publié au niveau fonctionnel précise qu’il n’existe pas de second calcul indépendant."
+      },
+      "sources": [
+        {
+          "label": "Anthropic / Matt von Hippel & Lance Dixon",
+          "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops"
+        },
+        {
+          "label": "Cosmic9 result files",
+          "url": "https://smsharma.io/cosmic-nine-loops/"
         }
       ]
     },
@@ -102,6 +478,62 @@
         {
           "label": "Terence Tao",
           "url": "https://terrytao.wordpress.com/2026/09/25/iciam-statement-on-mathematics-and-artificial-intelligence/"
+        }
+      ]
+    },
+    {
+      "id": "anthropic-art-enzyme",
+      "date": "2026-09-23",
+      "category": "research",
+      "author": "Anthropic life sciences team",
+      "title": {
+        "en": "Claude identifies a previously uncharacterized enzyme system",
+        "fr": "Claude repère un système enzymatique encore mal caractérisé"
+      },
+      "summary": {
+        "en": "Anthropic reports that agents screening microbial DNA found an array-associated reverse transcriptase (ART) system. Preliminary laboratory work detected small RNA products, but its biological function remains unknown.",
+        "fr": "Anthropic rapporte que des agents analysant de l'ADN microbien ont identifié un système de transcriptases inverses associées à des répétitions (ART). Des expériences préliminaires ont détecté de petits ARN, mais la fonction biologique reste inconnue."
+      },
+      "status": {
+        "en": "Company research report; not a validated gene-editing technology.",
+        "fr": "Rapport de recherche de l'entreprise ; pas une technologie d'édition génétique validée."
+      },
+      "sources": [
+        {
+          "label": "Anthropic research report",
+          "url": "https://www.anthropic.com/research/claude-discovers-novel-enzyme-system"
+        }
+      ]
+    },
+    {
+      "id": "agmai-advisory-group",
+      "date": "2026-09-21",
+      "category": "community",
+      "author": "Advisory Group on Mathematics and Artificial Intelligence (AGMAI)",
+      "title": {
+        "en": "IAS-hosted advisory group on AI and mathematics",
+        "fr": "Un groupe consultatif de l’IAS sur l’IA et les mathématiques"
+      },
+      "summary": {
+        "en": "An independent group of mathematicians hosted at the Institute for Advanced Study says it will advise AI companies on their interactions with mathematical research, including responsible presentation and release of results. Its current task is advising OpenAI on how to coordinate results that OpenAI reports were produced by an internal model.",
+        "fr": "Un groupe indépendant de mathématiciens hébergé à l’Institute for Advanced Study annonce qu’il conseillera les entreprises d’IA sur leurs interactions avec la recherche mathématique, notamment sur la présentation et la diffusion responsables des résultats. Sa tâche actuelle consiste à conseiller OpenAI sur la coordination de résultats que l’entreprise dit avoir obtenus avec un modèle interne."
+      },
+      "status": {
+        "en": "Institutional/group announcement; AGMAI is independent of AI companies. Its reference to OpenAI’s reported results is not a validation of those mathematical claims.",
+        "fr": "Annonce institutionnelle et collective ; AGMAI se dit indépendant des entreprises d’IA. La mention des résultats annoncés par OpenAI ne constitue pas une validation de ces affirmations mathématiques."
+      },
+      "sources": [
+        {
+          "label": "AGMAI",
+          "url": "https://agmai.org/"
+        },
+        {
+          "label": "Institute for Advanced Study",
+          "url": "https://www.ias.edu/nccr/projects"
+        },
+        {
+          "label": "AGMAI guest post on Terence Tao’s blog",
+          "url": "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/"
         }
       ]
     },
