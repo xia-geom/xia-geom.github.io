@@ -17,71 +17,93 @@
     </strong>
     {% if programme_lang == 'fr' %}
       {% if programme.status == 'provisional' %}Dates et intervenants proposés, sous réserve de confirmation.{% endif %}
-      Les thèmes ne sont pas des titres d’exposé. Horaires, salles et modalités de participation à préciser.
+      Les thèmes ne sont pas des titres d’exposé. Les horaires figurent ci-dessous ; salles et modalités de participation à préciser.
     {% else %}
       {% if programme.status == 'provisional' %}Proposed dates and speakers, subject to confirmation.{% endif %}
-      Themes are not talk titles. Times, rooms and participation details are still to be arranged.
+      Themes are not talk titles. Times are listed below; rooms and participation details are still to be arranged.
     {% endif %}
   </p>
-  <table class="ai-programme-table" aria-describedby="ai-programme-note">
-    <caption class="sr-only">
-      {% if programme_lang == 'fr' -%}
-        Séances proposées pour le groupe IA et mathématiques
-      {%- else -%}
-        Proposed AI for Math working-group sessions
-      {%- endif %}
-    </caption>
-    <thead>
-      <tr>
-        <th scope="col">Date</th>
-        <th scope="col">
-          {% if programme_lang == 'fr' %}Intervenant{% else %}Speaker{% endif %}
-        </th>
-        <th scope="col">
-          {% if programme_lang == 'fr' %}Thème{% else %}Theme{% endif %}
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for session in sessions %}
-        <tr id="ai-session-{{ session.date | escape }}">
-          <th scope="row">
-            <time datetime="{{ session.date | escape }}">
-              {% if programme_lang == 'fr' %}
-                {% assign month_index = session.date | date: '%-m' | minus: 1 %}
-                {{ session.date | date: '%-d' }}
-                {{ months_fr[month_index] }}
-              {% else %}
-                {{ session.date | date: '%-d %b' }}
-              {% endif %}
-            </time>
+  <div class="table-responsive">
+    <table class="ai-programme-table" aria-describedby="ai-programme-note">
+      <caption class="sr-only">
+        {% if programme_lang == 'fr' -%}
+          Séances proposées pour le groupe IA et mathématiques
+        {%- else -%}
+          Proposed AI for Math working-group sessions
+        {%- endif %}
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">
+            {% if programme_lang == 'fr' %}Heure{% else %}Time{% endif %}
           </th>
-          <td>
-            {% if session.speaker %}
-              {{ session.speaker | escape }}
-              <span class="ai-programme-affiliation">{{ session.affiliation | escape }}</span>
-            {% else %}
-              {% if programme_lang == 'fr' %}À confirmer{% else %}To be confirmed{% endif %}
-            {% endif %}
-          </td>
-          <td>
-            {% if session.theme %}
-              <a href="#ai-study-{{ session.theme | escape }}">
-                {% if session.theme == 'research' %}
-                  {% if programme_lang == 'fr' %}IA pour les maths{% else %}AI for mathematics{% endif %}
-                {% elsif session.theme == 'foundations' %}
-                  {% if programme_lang == 'fr' %}Sous le capot{% else %}Under the hood{% endif %}
-                {% else %}
-                  {% assign topic = site.data.ai_math_working_group.topics | where: 'id', session.theme | first %}
-                  {{ topic.title[programme_lang] | escape }}
-                {% endif %}
-              </a>
-            {% else %}
-              {% if programme_lang == 'fr' %}À définir{% else %}To be decided{% endif %}
-            {% endif %}
-          </td>
+          <th scope="col">
+            {% if programme_lang == 'fr' %}Intervenant{% else %}Speaker{% endif %}
+          </th>
+          <th scope="col">Institution</th>
+          <th scope="col">
+            {% if programme_lang == 'fr' %}Thème{% else %}Theme{% endif %}
+          </th>
         </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        {% for session in sessions %}
+          <tr id="ai-session-{{ session.date | escape }}">
+            <th scope="row">
+              <time datetime="{{ session.date | escape }}">
+                {% if programme_lang == 'fr' %}
+                  {% assign month_index = session.date | date: '%-m' | minus: 1 %}
+                  {{ session.date | date: '%-d' }}
+                  {{ months_fr[month_index] }}
+                {% else %}
+                  {{ session.date | date: '%-d %b' }}
+                {% endif %}
+              </time>
+            </th>
+            <td>
+              <time datetime="{{ session.time | escape }}">
+                {% if programme_lang == 'fr' %}
+                  {% assign session_hour = session.time | slice: 0, 2 | plus: 0 %}
+                  {{ session_hour }}h{{ session.time | slice: 3, 2 }}
+                {% else %}
+                  {{ session.time | escape }}
+                {% endif %}
+              </time>
+            </td>
+            <td>
+              {% if session.speaker %}
+                {{ session.speaker | escape }}
+              {% else %}
+                {% if programme_lang == 'fr' %}À confirmer{% else %}To be confirmed{% endif %}
+              {% endif %}
+            </td>
+            <td>
+              {% if session.affiliation %}
+                {{ session.affiliation | escape }}
+              {% else %}
+                —
+              {% endif %}
+            </td>
+            <td>
+              {% if session.theme %}
+                <a href="#ai-study-{{ session.theme | escape }}">
+                  {% if session.theme == 'research' %}
+                    {% if programme_lang == 'fr' %}IA pour les maths{% else %}AI for mathematics{% endif %}
+                  {% elsif session.theme == 'foundations' %}
+                    {% if programme_lang == 'fr' %}Sous le capot{% else %}Under the hood{% endif %}
+                  {% else %}
+                    {% assign topic = site.data.ai_math_working_group.topics | where: 'id', session.theme | first %}
+                    {{ topic.title[programme_lang] | escape }}
+                  {% endif %}
+                </a>
+              {% else %}
+                {% if programme_lang == 'fr' %}À définir{% else %}To be decided{% endif %}
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
 </section>

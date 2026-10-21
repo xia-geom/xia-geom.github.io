@@ -10,6 +10,30 @@ class AiMathWorkingGroupTest < Minitest::Test
     assert AiMathWorkingGroup.validate(@data)
   end
 
+  def test_valid_session_times
+    %w[00:00 09:30 12:30 23:59].each do |time|
+      @data['programme']['sessions'][0]['time'] = time
+      assert AiMathWorkingGroup.validate(@data)
+    end
+  end
+
+  def test_invalid_session_times_rejected
+    ['24:00', '12:60', '9:30', '9h30', '', nil, 1230].each do |time|
+      @data['programme']['sessions'][0]['time'] = time
+      assert_raises(ArgumentError) { AiMathWorkingGroup.validate(@data) }
+    end
+  end
+
+  def test_missing_session_time_rejected
+    @data['programme']['sessions'][0].delete('time')
+    assert_raises(ArgumentError) { AiMathWorkingGroup.validate(@data) }
+  end
+
+  def test_email_in_affiliation_rejected
+    @data['programme']['sessions'][0]['affiliation'] = 'person@example.org'
+    assert_raises(ArgumentError) { AiMathWorkingGroup.validate(@data) }
+  end
+
   def test_unassigned_session_allowed
     @data['programme']['sessions'][0].merge!('speaker' => nil, 'affiliation' => nil, 'theme' => nil)
     assert AiMathWorkingGroup.validate(@data)
