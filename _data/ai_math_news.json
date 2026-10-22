@@ -1,6 +1,70 @@
 {
-  "last_checked": "2026-10-21",
+  "last_checked": "2026-10-22",
   "entries": [
+    {
+      "id": "nus-physics-informed-pta-inference",
+      "date": "2026-10-22",
+      "category": "research",
+      "author": "Subhajit Dandapat and Alvin J. K. Chua",
+      "title": {
+        "en": "Physics-informed AI models gravitational-wave signals in pulsar timing data",
+        "fr": "Une IA guidée par la physique modélise les ondes gravitationnelles dans les données de pulsars"
+      },
+      "summary": {
+        "en": "In an October 22 research summary, NUS describes a Transformer with orbital-phase encodings and simulation-based inference for eccentric black-hole binaries. The underlying July preprint reports improved inference and uncertainty calibration on simulated pulsar timing-array signals, not a confirmed detection in real observations.",
+        "fr": "Dans une présentation du 22 octobre, la NUS décrit un Transformer intégrant la phase orbitale et une inférence fondée sur la simulation pour des couples de trous noirs sur orbite excentrique. La prépublication de juillet rapporte une meilleure estimation des paramètres et des incertitudes sur des signaux simulés de réseaux de chronométrage de pulsars, sans détection confirmée dans des observations réelles."
+      },
+      "status": {
+        "en": "Earlier preprint highlighted in new institutional report; simulation-based evaluation, not an observed gravitational-wave source.",
+        "fr": "Prépublication antérieure présentée dans un nouveau communiqué universitaire ; évaluation par simulation, non détection d'une source d'ondes gravitationnelles."
+      },
+      "sources": [
+        {
+          "label": "NUS research report",
+          "url": "https://www.science.nus.edu.sg/blog/2026/10/physics-informed-artificial-intelligence-ai-to-decode-gravitational-waves-from-supermassive-black-hole-pairs/"
+        },
+        {
+          "label": "Original preprint (July 2026)",
+          "url": "https://arxiv.org/abs/2607.03904"
+        }
+      ]
+    },
+    {
+      "id": "kls-human-guided-ai-and-formalization",
+      "date": "2026-10-21",
+      "category": "research",
+      "author": "Zhao Song and Xinzhi Zhang; independent KLS research teams",
+      "title": {
+        "en": "Human-guided AI contributes to resolving the KLS conjecture",
+        "fr": "Une recherche guidée par des humains et assistée par IA contribue à résoudre la conjecture KLS"
+      },
+      "summary": {
+        "en": "Microsoft's October 21 account describes a human-directed multi-agent search behind Song and Zhang's dimension-free Poincaré bound for isotropic log-concave measures; their complete proof was posted on October 4. Bizeul, Klartag and Lehec supplied another proof using the Song–Zhang criterion, while Hongru Zhao released a Lean 4 development proving a universal Poincaré bound of 500.",
+        "fr": "Le compte rendu de Microsoft du 21 octobre décrit une recherche multiagents guidée par des mathématiciens ayant contribué à la borne de Poincaré indépendante de la dimension obtenue par Song et Zhang pour les mesures log-concaves isotropes ; leur preuve complète a été déposée le 4 octobre. Bizeul, Klartag et Lehec ont donné une autre preuve utilisant leur critère, tandis que Hongru Zhao a publié un développement Lean 4 établissant une borne universelle de Poincaré égale à 500."
+      },
+      "status": {
+        "en": "Original proofs and formal code are public; independent proofs use shared ideas. Repository-reported kernel checks were not rerun or independently audited for this page.",
+        "fr": "Preuves et code formel publiés ; les preuves distinctes utilisent certaines idées communes. Les vérifications par le noyau rapportées dans le dépôt n'ont pas été relancées ni auditées ici."
+      },
+      "sources": [
+        {
+          "label": "Microsoft Research (October 21)",
+          "url": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/"
+        },
+        {
+          "label": "Song and Zhang preprint",
+          "url": "https://arxiv.org/abs/2610.01447"
+        },
+        {
+          "label": "Bizeul, Klartag and Lehec preprint",
+          "url": "https://arxiv.org/abs/2610.05474"
+        },
+        {
+          "label": "KLS500 Lean project",
+          "url": "https://github.com/HongruZhao/KLS500"
+        }
+      ]
+    },
     {
       "id": "anthropic-scorpion-minibinders",
       "date": "2026-10-20",
@@ -146,6 +210,30 @@
       ]
     },
     {
+      "id": "lean-graph-search",
+      "date": "2026-10-15",
+      "category": "research",
+      "author": "Yihan Xu, Jia-Chen Gu, Junyi Zhang and collaborators",
+      "title": {
+        "en": "Dependency-graph retrieval improves Lean premise search",
+        "fr": "La recherche dans un graphe de dépendances améliore le repérage des lemmes dans Lean"
+      },
+      "summary": {
+        "en": "LeanGraphSearch expands semantic lemma retrieval along Mathlib declaration dependencies using personalized PageRank, then reranks candidates for Lean 4 proving. On the authors' MathlibQR evaluation subset, Recall@100 increases from 82.7% with LeanSearch v2 to 94.7%; downstream gains are reported on selected theorem-proving benchmarks.",
+        "fr": "LeanGraphSearch élargit la recherche sémantique de lemmes en parcourant les dépendances des déclarations de Mathlib grâce à un PageRank personnalisé, puis reclasse les candidats pour la preuve dans Lean 4. Sur le sous-ensemble MathlibQR évalué par les auteurs, Recall@100 passe de 82,7 % avec LeanSearch v2 à 94,7 % ; des gains sont aussi annoncés sur certains bancs d'essai de démonstration."
+      },
+      "status": {
+        "en": "Research preprint with retrieval and formal-proving benchmark results; not a newly proved mathematical theorem.",
+        "fr": "Prépublication évaluant la recherche de prémisses et la preuve formelle sur des bancs d'essai ; il ne s'agit pas d'un nouveau théorème mathématique démontré."
+      },
+      "sources": [
+        {
+          "label": "Original research preprint",
+          "url": "https://arxiv.org/abs/2610.22339"
+        }
+      ]
+    },
+    {
       "id": "cern-mistral-foundation-model",
       "date": "2026-10-15",
       "category": "community",
@@ -238,6 +326,34 @@
         {
           "label": "Nature research article",
           "url": "https://www.nature.com/articles/s41586-026-11126-x"
+        }
+      ]
+    },
+    {
+      "id": "poincare-ai-lean-formalization",
+      "date": "2026-10-06",
+      "category": "formalization",
+      "author": "Zhiyuan Zhang, Axel Delaval, Leheng Chen, Jinxuan Chen, Jie Xu, Yuxuan Liao, Jiedong Jiang, Chunlei Liu and Bin Dong",
+      "title": {
+        "en": "AI-assisted Lean formalization of the Poincaré theorem",
+        "fr": "Formalisation du théorème de Poincaré dans Lean avec l'aide de l'IA"
+      },
+      "summary": {
+        "en": "An October 6 preprint reports formalizations of the topological and smooth Poincaré theorems guided by a Morgan–Tian proof blueprint and about 90 mathematician-reviewed milestones. The public Lean project documents builds and Comparator/Nanoda checks of its formal endpoints; the code is still being reorganized into reusable geometric-analysis infrastructure.",
+        "fr": "Une prépublication du 6 octobre annonce la formalisation des versions topologique et lisse du théorème de Poincaré, à partir d'un plan de preuve inspiré de Morgan–Tian et d'environ 90 étapes examinées par des mathématiciens. Le projet Lean public documente la compilation ainsi que des contrôles par Comparator et Nanoda des énoncés finaux ; le code doit encore être réorganisé en bibliothèque réutilisable de géométrie analytique."
+      },
+      "status": {
+        "en": "Formalization of Perelman's existing theorem, not a new solution. Authors report machine checks; this page has not reproduced them or reviewed the encodings.",
+        "fr": "Formalisation du théorème déjà démontré par Perelman, et non nouvelle résolution. Les auteurs annoncent des contrôles automatiques ; cette page ne les a ni reproduits ni audité les énoncés formalisés."
+      },
+      "sources": [
+        {
+          "label": "Original preprint",
+          "url": "https://arxiv.org/abs/2610.08329"
+        },
+        {
+          "label": "Public Lean repository",
+          "url": "https://github.com/frenzymath/PoincareConjecture"
         }
       ]
     },
