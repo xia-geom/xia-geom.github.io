@@ -16,7 +16,14 @@
     {% endfor %}
     · {{ entry.year }}
     {% if entry.note %}
-      — {% if page.lang == 'fr' and entry.note == 'Submitted' %}Soumis{% else %}{{ entry.note }}{% endif %}
+      —
+      {% if page.lang == 'fr' and entry.note == 'Submitted' -%}
+        Soumis
+      {%- elsif page.lang == 'fr' and entry.note == 'Preprint' -%}
+        Prépublication
+      {%- else -%}
+        {{- entry.note -}}
+      {%- endif %}
     {% endif %}
     {% if entry.arxiv %} · arXiv:{{ entry.arxiv }}{% endif %}
   </p>
