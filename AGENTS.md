@@ -2,6 +2,12 @@
 
 A simple, clean, and responsive Jekyll theme for academics.
 
+## Website publication policy
+
+For user-requested updates to `xia-geom/xia-geom.github.io`, use a focused branch and pull request. After verifying the content and passing the applicable build and CI checks, merge the pull request and verify the GitHub Pages deployment automatically, without asking for a separate merge or publication approval.
+
+This is the owner's standing instruction as of November 3, 2026, replacing the earlier requirement for explicit approval before merging website updates. Honor any later request to leave a draft, stop for review, or avoid publication. Keep changes within the requested scope and respect repository protections and access controls; do not bypass failed checks or required reviews.
+
 ## Quick Links by Role
 
 - **Are you a coding agent?** → Read [`.github/copilot-instructions.md`](.github/copilot-instructions.md) first (tech stack, build, CI/CD, common pitfalls & solutions)
