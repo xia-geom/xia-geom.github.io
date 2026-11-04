@@ -18,7 +18,14 @@
     {% endif %}
     {{ entry.year -}}
     {%- if entry.note %}
-      — {% if page.lang == 'fr' and entry.note == 'Submitted' %}Soumis{% else %}{{ entry.note }}{% endif %}
+      —
+      {% if page.lang == 'fr' and entry.note == 'Submitted' -%}
+        Soumis
+      {%- elsif page.lang == 'fr' and entry.note == 'Preprint' -%}
+        Prépublication
+      {%- else -%}
+        {{- entry.note -}}
+      {%- endif %}
     {% endif %}
   </p>
   <div class="paper-actions">
