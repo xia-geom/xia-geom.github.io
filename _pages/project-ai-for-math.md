@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /projects/ai-for-math/
-title: AI for Math — programme and news
+title: AI cum versus Math - programme and news
 description: Personal reference page for an AI-and-mathematics working group I participate in.
 nav: false
 lang: en
@@ -9,7 +9,7 @@ lang: en
 
 [Projects & useful links]({{ '/projects/' | relative_url }})
 
-I participate in an AI-and-mathematics working group. This personal reference page collects its programme and selected news on AI for mathematics and science. It is not the group’s official website.
+I participate in an AI and mathematics working group set up during the summer 2026 by my advisor, Professor Julien Keller. This personal reference page compiles the group's programme and selected news on AI for mathematics and science. The group's official website is only available via registration on Moodle.
 
 <nav class="ai-news-nav" aria-label="On this page">
   <a href="#ai-programme">Programme</a>
