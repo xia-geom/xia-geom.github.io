@@ -1,6 +1,378 @@
 {
-  "last_checked": "2026-10-21",
+  "last_checked": "2026-11-14",
   "entries": [
+    {
+      "id": "grothendieck-riemann-roch-formalization",
+      "date": "2026-11-13",
+      "category": "formalization",
+      "author": "Grothendieck Labs",
+      "title": {
+        "en": "Lean formalization of Grothendieck–Riemann–Roch released",
+        "fr": "Publication d'une formalisation Lean de Grothendieck–Riemann–Roch"
+      },
+      "summary": {
+        "en": "Grothendieck Labs released an AI-assisted Lean development of Grothendieck–Riemann–Roch for projective morphisms between smooth, separated schemes of finite type over a field. It follows Fulton's intersection-theory approach and includes Hirzebruch–Riemann–Roch.",
+        "fr": "Grothendieck Labs publie une formalisation Lean assistée par IA de Grothendieck–Riemann–Roch pour les morphismes projectifs entre schémas lisses, séparés et de type fini sur un corps. Elle suit l'approche de Fulton en théorie de l'intersection et comprend Hirzebruch–Riemann–Roch."
+      },
+      "status": {
+        "en": "Formalization of established mathematics. The repository reports standard-axiom proofs without placeholders; its checker and translation of the theorem have not been audited here.",
+        "fr": "Formalisation de mathématiques établies. Le dépôt annonce des preuves sans lacunes déclarées, utilisant les axiomes usuels ; le vérificateur et la traduction du théorème n'ont pas été audités ici."
+      },
+      "sources": [
+        {
+          "label": "Released Lean development",
+          "url": "https://github.com/grothendiecklabs/grothendieck-riemann-roch"
+        }
+      ]
+    },
+    {
+      "id": "mathhelm-discussion-forum",
+      "date": "2026-11-13",
+      "category": "community",
+      "author": "MathHelm scientific committee",
+      "title": {
+        "en": "MathHelm opens a forum for discussing AI-generated mathematics",
+        "fr": "MathHelm ouvre un forum de discussion sur les mathématiques produites par IA"
+      },
+      "summary": {
+        "en": "The MathHelm scientific committee introduced a nonprofit forum for discussing AI-generated papers. Researchers can ask about arguments, supply references and share explanatory notes, with discussion covering correctness, readability, originality and mathematical ideas.",
+        "fr": "Le comité scientifique de MathHelm présente un forum à but non lucratif consacré aux articles produits par IA. Les chercheurs peuvent discuter des arguments, apporter des références et partager des notes explicatives sur la correction, la lisibilité, l'originalité et les idées mathématiques."
+      },
+      "status": {
+        "en": "Community discussion platform; its launch does not certify the papers discussed. The announcement is a committee guest post on Tao's blog.",
+        "fr": "Plateforme de discussion collective ; son lancement ne certifie pas les articles discutés. L'annonce est un billet invité du comité sur le blog de Tao."
+      },
+      "sources": [
+        {
+          "label": "Scientific committee announcement",
+          "url": "https://terrytao.wordpress.com/2026/11/13/introducing-mathhelm-a-place-to-discuss-ai-generated-papers/"
+        },
+        {
+          "label": "MathHelm",
+          "url": "https://mathhelm.org/"
+        }
+      ]
+    },
+    {
+      "id": "axiom-faltings-formalization",
+      "date": "2026-11-12",
+      "category": "formalization",
+      "author": "Axiom",
+      "title": {
+        "en": "Axiom releases a Lean formalization of Faltings' theorem",
+        "fr": "Axiom publie une formalisation Lean du théorème de Faltings"
+      },
+      "summary": {
+        "en": "Axiom released an AI-written Lean development of finiteness of rational points on smooth projective geometrically integral curves of genus at least two over number fields. It follows the Bombieri–Vojta proof and builds on Mathlib and the Stacks Project formalization.",
+        "fr": "Axiom publie un développement Lean écrit par IA de la finitude des points rationnels des courbes lisses, projectives et géométriquement intègres de genre au moins deux sur les corps de nombres. Il suit la preuve de Bombieri–Vojta et s'appuie sur Mathlib et la formalisation du Stacks Project."
+      },
+      "status": {
+        "en": "Formalization of an established theorem. The repository reports kernel-checked proofs but says its AI-written code has not yet been reviewed by humans.",
+        "fr": "Formalisation d'un théorème établi. Le dépôt annonce des preuves vérifiées par le noyau, mais précise que le code écrit par IA n'a pas encore été relu par des humains."
+      },
+      "sources": [
+        {
+          "label": "Axiom announcement",
+          "url": "https://axiommath.ai/research/faltings-theorem-formalized/"
+        },
+        {
+          "label": "Released Lean development",
+          "url": "https://github.com/AxiomMath/Mordell"
+        }
+      ]
+    },
+    {
+      "id": "test-free-pdl-interpolation",
+      "date": "2026-11-12",
+      "category": "research",
+      "author": "Malvin Gattinger",
+      "title": {
+        "en": "AI-assisted counterexample addresses interpolation in dynamic logic",
+        "fr": "Un contre-exemple assisté par IA traite l'interpolation en logique dynamique"
+      },
+      "summary": {
+        "en": "Gattinger's preprint gives a counterexample to Craig interpolation for propositional dynamic logic without tests. It documents how experiments with Aristotle, Claude and Lean led to the result, and supplies a human-written proof and a Lean formalization.",
+        "fr": "La prépublication de Gattinger donne un contre-exemple à l'interpolation de Craig pour la logique dynamique propositionnelle sans tests. Elle décrit comment des essais avec Aristotle, Claude et Lean ont mené au résultat, et fournit une preuve rédigée par l'auteur ainsi qu'une formalisation Lean."
+      },
+      "status": {
+        "en": "Research preprint with public proof artifacts and contribution records. The author simplified the example; the formal proof has not been rerun for this page.",
+        "fr": "Prépublication avec fichiers de preuve et description des contributions. L'auteur a simplifié l'exemple ; la preuve formelle n'a pas été revérifiée pour cette page."
+      },
+      "sources": [
+        {
+          "label": "Original preprint",
+          "url": "https://arxiv.org/abs/2611.16759"
+        },
+        {
+          "label": "Author's proof and project materials",
+          "url": "https://malv.in/2026/test-free-pdl-no-interpolation/"
+        }
+      ]
+    },
+    {
+      "id": "yang-mills-lean-construction",
+      "date": "2026-11-11",
+      "category": "research",
+      "author": "OpenAI / Yang–Mills working group",
+      "title": {
+        "en": "Yang–Mills group releases a Lean construction with explicit scope",
+        "fr": "Le groupe Yang–Mills publie une construction Lean à la portée explicitée"
+      },
+      "summary": {
+        "en": "The working group released OpenAI's Lean development of a four-dimensional Wilson-lattice Yang–Mills construction, with explicit continuum-limit and Wightman-reconstruction specifications. Scott Armstrong and Martin Hairer are preparing explanatory material.",
+        "fr": "Le groupe de travail publie le développement Lean d'OpenAI d'une construction de Yang–Mills en dimension quatre à partir de réseaux de Wilson, avec des spécifications sur les limites continues et la reconstruction de Wightman. Scott Armstrong et Martin Hairer préparent des explications."
+      },
+      "status": {
+        "en": "A positive mass gap and a general exclusion of continuous-mass generalized free fields are outside the stated result's scope. This page has not audited the proof.",
+        "fr": "Le résultat annoncé ne couvre ni une lacune de masse positive ni l'exclusion générale des champs libres généralisés à spectre de masse continu. Cette page n'a pas audité la preuve."
+      },
+      "sources": [
+        {
+          "label": "Released Lean code and scope statement",
+          "url": "https://github.com/yang-mills-group/OpenAI-YM-20261028"
+        },
+        {
+          "label": "Mathematicians' exposition project",
+          "url": "https://github.com/scottnarmstrong/yang-mills-informalization"
+        }
+      ]
+    },
+    {
+      "id": "lean-grimoire-teaching-game",
+      "date": "2026-11-11",
+      "category": "formalization",
+      "author": "Terence Tao",
+      "title": {
+        "en": "Tao introduces Lean Grimoire, a proof-crafting teaching game",
+        "fr": "Tao présente Lean Grimoire, un jeu d'apprentissage des preuves"
+      },
+      "summary": {
+        "en": "Tao used a coding agent to rebuild his QED logic game with an evolving proof display and an optional fantasy-themed interface. He invites playtesting to improve its use in teaching logical proofs and Lean.",
+        "fr": "Tao a utilisé un agent de programmation pour reconstruire son jeu de logique QED, avec un affichage progressif de la preuve et une interface fantastique facultative. Il invite à tester le prototype pour améliorer son intérêt pédagogique pour la logique et Lean."
+      },
+      "status": {
+        "en": "Educational prototype. The application describes its generated script as pseudo-Lean; live kernel verification is not established by this release.",
+        "fr": "Prototype pédagogique. L'application décrit le script produit comme du pseudo-Lean ; cette publication n'établit pas une vérification en direct par le noyau."
+      },
+      "sources": [
+        {
+          "label": "Terence Tao's announcement",
+          "url": "https://terrytao.wordpress.com/2026/11/11/lean-grimoire/"
+        },
+        {
+          "label": "Teaching application",
+          "url": "https://teorth.github.io/tao-web/apps/grimoire.html"
+        }
+      ]
+    },
+    {
+      "id": "longtails-optimization-research",
+      "date": "2026-11-10",
+      "category": "research",
+      "author": "Alexander Tyurin, QuocViet Pham, Valentin Khrulkov and Ivan Oseledets",
+      "title": {
+        "en": "LongTails couples optimization research to Lean verification",
+        "fr": "LongTails associe recherche en optimisation et vérification Lean"
+      },
+      "summary": {
+        "en": "LongTails fixes an optimization problem's assumptions and available oracle information, then asks agents to design algorithms and prove achievable complexity bounds in Lean 4. The authors report more than 100 new results across several optimization settings.",
+        "fr": "LongTails fixe les hypothèses d'un problème d'optimisation et l'information fournie par les oracles, puis demande aux agents de concevoir des algorithmes et de prouver dans Lean 4 des bornes de complexité atteignables. Les auteurs annoncent plus de 100 nouveaux résultats dans divers cadres."
+      },
+      "status": {
+        "en": "Preprint with formal proof artifacts. Novelty and comparisons with the literature require separate assessment; this page has not compiled the proofs.",
+        "fr": "Prépublication avec fichiers de preuve formelle. La nouveauté et les comparaisons bibliographiques nécessitent une évaluation distincte ; cette page n'a pas compilé les preuves."
+      },
+      "sources": [
+        {
+          "label": "Original preprint and proof links",
+          "url": "https://arxiv.org/abs/2611.13872"
+        }
+      ]
+    },
+    {
+      "id": "axiom-weil-formalization",
+      "date": "2026-11-06",
+      "category": "formalization",
+      "author": "Axiom",
+      "title": {
+        "en": "Axiom publishes a Lean formalization of the Weil conjectures",
+        "fr": "Axiom publie une formalisation Lean des conjectures de Weil"
+      },
+      "summary": {
+        "en": "Axiom released formal proofs of the classical Weil conjectures, including the finite-field Riemann hypothesis and comparison with Betti numbers under good reduction. The development builds on Mathlib and the Stacks Project formalization.",
+        "fr": "Axiom publie des preuves formelles des conjectures classiques de Weil, dont l'hypothèse de Riemann sur les corps finis et la comparaison avec les nombres de Betti en bonne réduction. Le développement s'appuie sur Mathlib et la formalisation du Stacks Project."
+      },
+      "status": {
+        "en": "Formalization of established results. The repository reports standard-axiom proofs but says its AI-written code has not yet been reviewed by humans.",
+        "fr": "Formalisation de résultats établis. Le dépôt annonce des preuves utilisant les axiomes usuels, mais précise que le code écrit par IA n'a pas encore été relu par des humains."
+      },
+      "sources": [
+        {
+          "label": "Axiom announcement",
+          "url": "https://axiommath.ai/research/the-weil-conjectures-formalized-in-lean/"
+        },
+        {
+          "label": "Released Lean development",
+          "url": "https://github.com/AxiomMath/Weil"
+        }
+      ]
+    },
+    {
+      "id": "tcsexam-research-benchmark",
+      "date": "2026-11-05",
+      "category": "benchmarks",
+      "author": "Yifan Luo, Zhengying Liu, Yang Yuan, Zhilin Yang and Andrew Chi-Chih Yao",
+      "title": {
+        "en": "TCSExam evaluates distinct kinds of theoretical-computer-science research",
+        "fr": "TCSExam évalue plusieurs formes de recherche en informatique théorique"
+      },
+      "summary": {
+        "en": "TCSExam introduces 100 expert-reviewed tasks across theorem proving, solver engineering, constructions and open-conjecture attempts, plus a 20-task subset. Submissions are checked by Lean or executable task checkers; the paper reports verified special cases and bounds alongside benchmark scores.",
+        "fr": "TCSExam propose 100 tâches examinées par des spécialistes, réparties entre preuves, développement de solveurs, constructions et tentatives sur des conjectures ouvertes, ainsi qu'un sous-ensemble de 20 tâches. Les soumissions passent par Lean ou des vérificateurs exécutables ; l'article rapporte aussi des cas particuliers et des bornes vérifiés."
+      },
+      "status": {
+        "en": "Benchmark preprint. The precise task statements, checking protocols and research novelty must be distinguished from aggregate scores.",
+        "fr": "Prépublication d'évaluation. Les énoncés précis, les protocoles de vérification et la nouveauté scientifique doivent être distingués des scores agrégés."
+      },
+      "sources": [
+        {
+          "label": "Original preprint",
+          "url": "https://arxiv.org/abs/2611.07962"
+        },
+        {
+          "label": "Benchmark paper and evaluation protocol",
+          "url": "https://moonshotai.github.io/TCSExam/paper/tcsexam.pdf"
+        }
+      ]
+    },
+    {
+      "id": "futures-of-maths-consultation",
+      "date": "2026-11-05",
+      "category": "community",
+      "author": "Francesco Fournier-Facio, Yara Kyrychenko, Jon Roozenbeek and Julian Wykowski",
+      "title": {
+        "en": "Futures of Maths launches an ongoing consultation on AI",
+        "fr": "Futures of Maths lance une consultation continue sur l'IA"
+      },
+      "summary": {
+        "en": "Four researchers launched an anonymous consultation where eligible research mathematicians rate and propose statements about AI in research and teaching. Participation requires a recent mathematics-journal publication or accepted article; the questions evolve with community contributions.",
+        "fr": "Quatre chercheurs lancent une consultation anonyme où les mathématiciens admissibles évaluent et proposent des affirmations sur l'IA dans la recherche et l'enseignement. La participation exige une publication récente dans une revue mathématique ou un article accepté ; les questions évoluent avec les contributions."
+      },
+      "status": {
+        "en": "Survey launch, not published findings or evidence of a consensus. Identity verification is separated from anonymous participation.",
+        "fr": "Lancement d'une enquête, sans résultats publiés ni preuve d'un consensus. La vérification d'identité est séparée de la participation anonyme."
+      },
+      "sources": [
+        {
+          "label": "Authors' original announcement",
+          "url": "https://proofsandprompts.com/2026/11/05/futures-of-maths-launch/"
+        }
+      ]
+    },
+    {
+      "id": "scientific-ai-use-study",
+      "date": "2026-11-05",
+      "category": "community",
+      "author": "Johannes Hermle, Ben Jones, Lukas Althoff and collaborators",
+      "title": {
+        "en": "Study examines how scientists use Claude across research tasks",
+        "fr": "Une étude examine les usages de Claude dans les tâches de recherche"
+      },
+      "summary": {
+        "en": "An Anthropic study analyzes about 207,000 scientific sessions from August–September 2026. It reports relatively high use in mathematics, statistics and computer science, with data analysis and writing more common than idea generation or data gathering.",
+        "fr": "Une étude d'Anthropic analyse environ 207 000 sessions scientifiques d'août et septembre 2026. Elle rapporte un usage relativement élevé en mathématiques, statistique et informatique, l'analyse de données et la rédaction étant plus fréquentes que la génération d'idées ou la collecte de données."
+      },
+      "status": {
+        "en": "Observational study of one provider's users. Its research-acceleration estimates are illustrative model scenarios, not measured productivity gains.",
+        "fr": "Étude observationnelle des utilisateurs d'un seul fournisseur. Ses estimations d'accélération sont des scénarios illustratifs issus d'un modèle, et non des gains de productivité mesurés."
+      },
+      "sources": [
+        {
+          "label": "Original study and methodology",
+          "url": "https://www.anthropic.com/research/how-researchers-use-claude"
+        }
+      ]
+    },
+    {
+      "id": "autodna-biomolecular-laboratory",
+      "date": "2026-11-04",
+      "category": "research",
+      "author": "Mingyu Wu, Zhaoguo Wang, Jiabin Wang and collaborators",
+      "title": {
+        "en": "AutoDNA connects AI agents to an automated biomolecular laboratory",
+        "fr": "AutoDNA relie des agents IA à un laboratoire biomoléculaire automatisé"
+      },
+      "summary": {
+        "en": "A Nature study presents AutoDNA, which combines AI agents and laboratory automation for nucleic-acid experiments. The authors report coordinating more than 20 instrument types across over 11,000 steps, including DNA synthesis and a DNA data-storage cycle with exact recovery.",
+        "fr": "Une étude de Nature présente AutoDNA, qui associe agents IA et automatisation du laboratoire pour des expériences sur les acides nucléiques. Les auteurs rapportent la coordination de plus de 20 types d'instruments sur plus de 11 000 étapes, dont une synthèse d'ADN et un cycle de stockage de données avec récupération exacte."
+      },
+      "status": {
+        "en": "Peer-reviewed experimental study of four applications. Humans replenish reagents and labware and maintain the hardware; broader autonomous discovery is not established.",
+        "fr": "Étude expérimentale évaluée par les pairs sur quatre applications. Les humains réapprovisionnent les réactifs et le matériel et assurent la maintenance ; une découverte autonome générale n'est pas établie."
+      },
+      "sources": [
+        {
+          "label": "Nature research article",
+          "url": "https://www.nature.com/articles/s41586-026-11228-6"
+        },
+        {
+          "label": "Authors' code repository",
+          "url": "https://github.com/IPADS-X/AutoDNA"
+        }
+      ]
+    },
+    {
+      "id": "claude-vault-particle-structure",
+      "date": "2026-11-04",
+      "category": "research",
+      "author": "Anthropic biology research team",
+      "title": {
+        "en": "Claude assists experimental study of a vault-particle structure",
+        "fr": "Claude contribue à l'étude expérimentale de la structure d'une particule vault"
+      },
+      "summary": {
+        "en": "Anthropic reports a cryo-electron-microscopy structure of a bacteriophage-derived vault protein shell produced in bacteria. Human researchers used Claude for sequence searches, construct design, purification and microscopy analysis, then tested modified proteins to investigate assembly.",
+        "fr": "Anthropic rapporte une structure obtenue par cryomicroscopie électronique d'une coque protéique de type vault issue d'un bactériophage et produite dans des bactéries. Les chercheurs ont utilisé Claude pour rechercher des séquences, concevoir des constructions, purifier et analyser les images, puis testé des protéines modifiées pour étudier l'assemblage."
+      },
+      "status": {
+        "en": "Company-reported experimental work with a linked preprint. Biological function remains unresolved, and the report documents errors requiring human correction.",
+        "fr": "Travail expérimental rapporté par l'entreprise, avec une prépublication liée. La fonction biologique reste inconnue, et le rapport décrit des erreurs nécessitant une correction humaine."
+      },
+      "sources": [
+        {
+          "label": "Experimental report and preprint link",
+          "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude"
+        }
+      ]
+    },
+    {
+      "id": "ahm-doctoral-advising-recommendations",
+      "date": "2026-10-27",
+      "category": "community",
+      "author": "Association for Human Mathematics, Teaching Working Group",
+      "title": {
+        "en": "AHM publishes recommendations on doctoral advising in the AI era",
+        "fr": "L'AHM publie des recommandations sur l'encadrement doctoral à l'ère de l'IA"
+      },
+      "summary": {
+        "en": "AHM's teaching working group published recommendations for doctoral programmes, supervisors and students. The report calls for most doctoral work to be completed without generative AI, emphasizes human-authored writing and ethical discussion, and recommends preserving a doctorate pathway with no AI use.",
+        "fr": "Le groupe pédagogique de l'AHM publie des recommandations pour les programmes doctoraux, les directions de thèse et les étudiants. Le rapport préconise que l'essentiel du travail doctoral soit réalisé sans IA générative, souligne la rédaction humaine et la discussion éthique, et recommande de préserver un parcours doctoral sans IA."
+      },
+      "status": {
+        "en": "Recommendations of the association's teaching working group, not an adopted university policy. The original report is dated October 27.",
+        "fr": "Recommandations du groupe de travail pédagogique de l'association, non politique universitaire adoptée. Le rapport original est daté du 27 octobre."
+      },
+      "sources": [
+        {
+          "label": "Original dated report page",
+          "url": "https://www.ahmath.org/doctoraladvising"
+        },
+        {
+          "label": "Doctoral advising recommendations",
+          "url": "https://www.ahmath.org/s/AHM_Doctoral_Advising_Recommendations_27Oct2026.pdf"
+        }
+      ]
+    },
     {
       "id": "anthropic-scorpion-minibinders",
       "date": "2026-10-20",
@@ -251,12 +623,12 @@
         "fr": "OpenAI publie des manuscrits de mathématiques produits par IA, puis des corrections"
       },
       "summary": {
-        "en": "OpenAI released a large collection of AI-produced manuscripts and proof artifacts. The current repository lists 719 manuscripts across 372 families, with about 42% of headline results formalized in Lean. An October 7 update records three withdrawals caused by a sign error and revisions to 14 others.",
-        "fr": "OpenAI a publié un grand ensemble de manuscrits mathématiques produits par IA et de fichiers de preuve. Le dépôt recense actuellement 719 manuscrits dans 372 familles, dont environ 42 % des résultats principaux sont formalisés dans Lean. Une mise à jour du 7 octobre signale trois retraits liés à une erreur de signe et la révision de 14 autres textes."
+        "en": "OpenAI's October 6 release of AI-produced manuscripts and proof artifacts remains subject to corrections. The history records three withdrawals and 14 revisions on October 7, two additional manuscripts and further formalizations on October 26, and a Comparator namespace correction on October 29.",
+        "fr": "La publication du 6 octobre d'OpenAI, réunissant des manuscrits produits par IA et des fichiers de preuve, reste sujette à corrections. L'historique signale trois retraits et 14 révisions le 7 octobre, deux manuscrits supplémentaires et de nouvelles formalisations le 26, puis une correction d'espaces de noms de Comparator le 29."
       },
       "status": {
-        "en": "Many claims remain unformalized; source authors themselves warn of possible gaps. This page has not audited the proofs.",
-        "fr": "De nombreuses affirmations ne sont pas formalisées ; les auteurs signalent eux-mêmes des lacunes possibles. Cette page n'a pas audité les preuves."
+        "en": "Updated through the October 29 correction record. Formalization scope differs between papers; released files and working-group examination do not constitute a proof audit by this page.",
+        "fr": "Mise à jour tenant compte de l'historique jusqu'au 29 octobre. La portée des formalisations varie selon les articles ; les fichiers publiés et l'examen par des groupes de travail ne constituent pas un audit des preuves par cette page."
       },
       "sources": [
         {
@@ -547,12 +919,12 @@
         "fr": "Lean Kernel Challenge : calcul certifié"
       },
       "summary": {
-        "en": "Stage 1 invites faster algorithms for eight computational tasks, with Lean proofs that submissions satisfy the given specifications. This concerns proof-checking infrastructure, not a newly solved open theorem.",
-        "fr": "La première étape propose d’accélérer huit tâches de calcul, avec des preuves Lean garantissant le respect des spécifications. Il s’agit d’infrastructure de vérification, et non de la résolution d’un nouveau problème ouvert."
+        "en": "Stage 1 invites faster algorithms for eight computational tasks, with Lean proofs that submissions satisfy the supplied specifications. The organizers give a submission deadline of November 20, 2026, at 23:59 AoE (UTC−12).",
+        "fr": "La première étape propose d'accélérer huit tâches de calcul, avec des preuves Lean garantissant le respect des spécifications fournies. Les organisateurs fixent la date limite au 20 novembre 2026 à 23 h 59 AoE (UTC−12)."
       },
       "status": {
-        "en": "Competition announcement; no claim of an AI research breakthrough.",
-        "fr": "Annonce de concours, sans revendication de percée mathématique par IA."
+        "en": "Competition announcement on verified computation; the submission period is still open as of November 14. No final results are reported here.",
+        "fr": "Annonce d'un concours de calcul certifié ; les soumissions sont encore ouvertes au 14 novembre. Aucun résultat final n'est annoncé ici."
       },
       "sources": [
         {
