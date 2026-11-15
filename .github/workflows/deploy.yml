@@ -21,6 +21,10 @@ jobs:
         with:
           ruby-version: "3.3.5"
           bundler-cache: true
+      - name: Validate the working-group programme
+        run: |
+          bundle exec ruby _plugins/ai_math_working_group.rb _data/ai_math_working_group.json
+          bundle exec ruby bin/test_ai_math_working_group.rb
       - uses: actions/setup-python@v5
         with:
           python-version: "3.13"

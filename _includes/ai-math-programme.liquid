@@ -1,11 +1,12 @@
 {% assign programme_lang = page.lang | default: 'en' %}
 {% assign programme = site.data.ai_math_working_group.programme %}
+{% assign programme_end_year = programme.end_year | default: programme.year %}
 {% assign sessions = programme.sessions | sort: 'date' %}
 {% assign months_fr = 'janv.,févr.,mars,avr.,mai,juin,juil.,août,sept.,oct.,nov.,déc.' | split: ',' %}
 <section class="ai-programme" id="ai-programme" aria-labelledby="ai-programme-title">
   <h2 id="ai-programme-title">
-    {% if programme_lang == 'fr' %}Programme · Automne{% else %}Programme · Autumn{% endif %}
-    {{ programme.year }}
+    Programme · {{ programme.year -}}
+    {%- if programme_end_year != programme.year %}–{{ programme_end_year }}{% endif %}
   </h2>
   <p id="ai-programme-note">
     {% if programme_lang == 'fr' %}
@@ -51,20 +52,25 @@
                   {% assign month_index = session.date | date: '%-m' | minus: 1 %}
                   {{ session.date | date: '%-d' }}
                   {{ months_fr[month_index] }}
+                  {{ session.date | date: '%Y' }}
                 {% else %}
-                  {{ session.date | date: '%-d %b' }}
+                  {{ session.date | date: '%-d %b %Y' }}
                 {% endif %}
               </time>
             </th>
             <td>
-              <time datetime="{{ session.time | escape }}">
-                {% if programme_lang == 'fr' %}
-                  {% assign session_hour = session.time | slice: 0, 2 | plus: 0 %}
-                  {{ session_hour }}h{{ session.time | slice: 3, 2 }}
-                {% else %}
-                  {{ session.time | escape }}
-                {% endif %}
-              </time>
+              {% if session.time %}
+                <time datetime="{{ session.time | escape }}">
+                  {% if programme_lang == 'fr' %}
+                    {% assign session_hour = session.time | slice: 0, 2 | plus: 0 %}
+                    {{ session_hour }}h{{ session.time | slice: 3, 2 }}
+                  {% else %}
+                    {{ session.time | escape }}
+                  {% endif %}
+                </time>
+              {% else %}
+                {% if programme_lang == 'fr' %}À confirmer{% else %}To be confirmed{% endif %}
+              {% endif %}
             </td>
             <td>
               {% if session.speaker %}
@@ -82,8 +88,10 @@
             </td>
             <td>
               {% if session.theme %}
-                {% if session.theme == 'research' %}
-                  {% if programme_lang == 'fr' %}IA pour les maths{% else %}AI for mathematics{% endif %}
+                {% if session.theme.en %}
+                  {{ session.theme[programme_lang] | escape }}
+                {% elsif session.theme == 'research' %}
+                  AI4maths
                 {% elsif session.theme == 'foundations' %}
                   {% if programme_lang == 'fr' %}Sous le capot{% else %}Under the hood{% endif %}
                 {% else %}

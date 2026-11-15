@@ -61,25 +61,33 @@ module AiMathWorkingGroup
     end
     raise ArgumentError, 'Unknown or duplicate theme ID' unless ids.sort == TOPICS.sort
     programme = data.fetch('programme')
-    object(programme, %w[year status sessions])
+    object(programme, %w[year status sessions], %w[end_year])
     year = programme.fetch('year')
     raise ArgumentError, 'Invalid programme year' unless year.is_a?(Integer) && (2000..2100).cover?(year)
+    end_year = programme.fetch('end_year', year)
+    unless end_year.is_a?(Integer) && (year..2100).cover?(end_year)
+      raise ArgumentError, 'Invalid programme end year'
+    end
     raise ArgumentError, 'Unsupported programme status' unless %w[provisional confirmed].include?(programme.fetch('status'))
     sessions = programme.fetch('sessions')
     raise ArgumentError, 'Expected 1 to 52 sessions' unless sessions.is_a?(Array) && (1..52).cover?(sessions.size)
     dates = sessions.map do |session|
       object(session, %w[date time speaker affiliation theme])
       time = session.fetch('time')
-      unless time.is_a?(String) && time.match?(/\A(?:[01]\d|2[0-3]):[0-5]\d\z/)
-        raise ArgumentError, 'Expected a 24-hour session time in HH:MM format'
+      unless time.nil? || (time.is_a?(String) && time.match?(/\A(?:[01]\d|2[0-3]):[0-5]\d\z/))
+        raise ArgumentError, 'Expected a 24-hour session time in HH:MM format or null'
       end
       raw = session.fetch('date')
       raise ArgumentError, 'Expected ISO session date' unless raw.is_a?(String) && raw.match?(/\A\d{4}-\d{2}-\d{2}\z/)
       date = Date.iso8601(raw)
-      raise ArgumentError, 'Session outside programme year' unless date.year == year
+      raise ArgumentError, 'Session outside programme years' unless (year..end_year).cover?(date.year)
       %w[speaker affiliation].each { |key| text(session.fetch(key)) unless session.fetch(key).nil? }
       theme = session.fetch('theme')
-      raise ArgumentError, 'Unknown session theme' unless theme.nil? || ids.include?(theme)
+      if theme.is_a?(Hash)
+        bilingual(theme)
+      elsif !theme.nil? && !ids.include?(theme)
+        raise ArgumentError, 'Unknown session theme'
+      end
       if session.fetch('speaker').nil? && (!session.fetch('affiliation').nil? || !theme.nil?)
         raise ArgumentError, 'Unassigned session must not invent an affiliation or theme'
       end
