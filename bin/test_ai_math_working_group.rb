@@ -18,10 +18,15 @@ class AiMathWorkingGroupTest < Minitest::Test
   end
 
   def test_invalid_session_times_rejected
-    ['24:00', '12:60', '9:30', '9h30', '', nil, 1230].each do |time|
+    ['24:00', '12:60', '9:30', '9h30', '', 1230].each do |time|
       @data['programme']['sessions'][0]['time'] = time
       assert_raises(ArgumentError) { AiMathWorkingGroup.validate(@data) }
     end
+  end
+
+  def test_unspecified_session_time_allowed
+    @data['programme']['sessions'][0]['time'] = nil
+    assert AiMathWorkingGroup.validate(@data)
   end
 
   def test_missing_session_time_rejected
@@ -64,6 +69,29 @@ class AiMathWorkingGroupTest < Minitest::Test
     assert_raises(ArgumentError) { AiMathWorkingGroup.validate(@data) }
   end
 
+  def test_single_year_programme_without_end_year_allowed
+    @data['programme'].delete('end_year')
+    @data['programme']['sessions'].select! { |session| session['date'].start_with?('2026-') }
+    assert AiMathWorkingGroup.validate(@data)
+  end
+
+  def test_following_year_requires_explicit_end_year
+    @data['programme'].delete('end_year')
+    assert_raises(ArgumentError) { AiMathWorkingGroup.validate(@data) }
+  end
+
+  def test_session_after_end_year_rejected
+    @data['programme']['sessions'][-1]['date'] = '2028-01-14'
+    assert_raises(ArgumentError) { AiMathWorkingGroup.validate(@data) }
+  end
+
+  def test_invalid_end_year_rejected
+    [2025, 2101, '2027', nil].each do |end_year|
+      @data['programme']['end_year'] = end_year
+      assert_raises(ArgumentError) { AiMathWorkingGroup.validate(@data) }
+    end
+  end
+
   def test_unknown_status_rejected
     @data['programme']['status'] = 'unknown'
     assert_raises(ArgumentError) { AiMathWorkingGroup.validate(@data) }
@@ -76,6 +104,21 @@ class AiMathWorkingGroupTest < Minitest::Test
 
   def test_unknown_theme_rejected
     @data['programme']['sessions'][0]['theme'] = 'missing'
+    assert_raises(ArgumentError) { AiMathWorkingGroup.validate(@data) }
+  end
+
+  def test_bilingual_session_theme_allowed
+    @data['programme']['sessions'][0]['theme'] = { 'en' => 'Transformers for math', 'fr' => 'Transformers pour les maths' }
+    assert AiMathWorkingGroup.validate(@data)
+  end
+
+  def test_session_theme_missing_translation_rejected
+    @data['programme']['sessions'][0]['theme'] = { 'en' => 'Lean' }
+    assert_raises(ArgumentError) { AiMathWorkingGroup.validate(@data) }
+  end
+
+  def test_email_in_session_theme_rejected
+    @data['programme']['sessions'][0]['theme'] = { 'en' => 'person@example.org', 'fr' => 'Lean' }
     assert_raises(ArgumentError) { AiMathWorkingGroup.validate(@data) }
   end
 
